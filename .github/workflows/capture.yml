@@ -28,12 +28,6 @@ on:
         required: false
         default: "1"
 
-concurrency:
-  # Never let two runs write frames at once; skip rather than queue, since the next cron
-  # tick is only minutes away.
-  group: capture-${{ github.ref }}
-  cancel-in-progress: false
-
 permissions:
   contents: write
 
@@ -41,12 +35,17 @@ jobs:
   capture:
     runs-on: ubuntu-latest
     timeout-minutes: 25
+    # One edition at a time; skip rather than queue, since the next cron tick is only
+    # minutes away.
+    concurrency:
+      group: capture-${{ github.ref }}-${{ matrix.edition }}
+      cancel-in-progress: false
     strategy:
       fail-fast: false
       matrix:
-        edition:
-          - triathlon-lausanne-2026
-          - powerman-world-championships-zofingen-2026
+        # Manual runs should capture only the requested edition. Scheduled runs poll every
+        # configured edition in parallel.
+        edition: ${{ github.event_name == 'workflow_dispatch' && fromJSON(format('["{0}"]', github.event.inputs.edition)) || fromJSON('["triathlon-lausanne-2026", "powerman-world-championships-zofingen-2026"]') }}
     steps:
       - uses: actions/checkout@v4
 
@@ -60,13 +59,13 @@ jobs:
       - name: Decide whether this edition is worth polling
         id: gate
         env:
-          EDITION: ${{ github.event.inputs.edition || matrix.edition }}
+          EDITION: ${{ matrix.edition }}
         run: python -m capture.gate --edition "$EDITION" >> "$GITHUB_OUTPUT"
 
       - name: Capture
         if: steps.gate.outputs.active == 'true'
         env:
-          EDITION: ${{ github.event.inputs.edition || matrix.edition }}
+          EDITION: ${{ matrix.edition }}
         run: |
           python -m capture.harness \
             --edition "$EDITION" \
@@ -77,13 +76,13 @@ jobs:
       - name: Summarise
         if: steps.gate.outputs.active == 'true'
         env:
-          EDITION: ${{ github.event.inputs.edition || matrix.edition }}
+          EDITION: ${{ matrix.edition }}
         run: python -m capture.report --input "docs/captures/$EDITION" --edition "$EDITION"
 
       - name: Commit frames and findings
         if: steps.gate.outputs.active == 'true'
         env:
-          EDITION: ${{ github.event.inputs.edition || matrix.edition }}
+          EDITION: ${{ matrix.edition }}
         run: |
           git config user.name "gap-iq capture"
           git config user.email "capture@users.noreply.github.com"
@@ -96,8 +95,11 @@ jobs:
           # The cron fires often and several editions share the branch, so rebase rather
           # than fail when another run landed first.
           for attempt in 1 2 3 4 5; do
-            git pull --rebase --autostash origin "${GITHUB_REF_NAME}" && \
-              git push origin "HEAD:${GITHUB_REF_NAME}" && exit 0
+            if git pull --rebase --autostash origin "${GITHUB_REF_NAME}" && \
+               git push origin "HEAD:${GITHUB_REF_NAME}"; then
+              exit 0
+            fi
+            git rebase --abort 2>/dev/null || true
             sleep $((attempt * 7))
           done
           echo "could not push after retries" >&2
