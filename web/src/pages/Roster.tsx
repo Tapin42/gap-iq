@@ -2,7 +2,7 @@ import { useCallback, useState } from "react";
 import { Link } from "react-router-dom";
 
 import { FreshnessBar } from "../components/FreshnessBar";
-import { api, type RosterResponse, type RosterRow } from "../lib/api";
+import { api, type RaceSummary, type RosterResponse, type RosterRow } from "../lib/api";
 import { usePolling } from "../lib/hooks";
 
 // Slower than the dashboard: the roster is a scanning view, and the whole list comes from
@@ -82,6 +82,7 @@ export function Roster() {
 
       <FreshnessBar
         freshness={data.freshness}
+        headline={rosterHeadline(data.race)}
         onRefresh={onRefresh}
         refreshing={refreshing}
         error={error}
@@ -159,6 +160,13 @@ export function Roster() {
       )}
     </div>
   );
+}
+
+function rosterHeadline(race: RaceSummary): string {
+  if (race.phase === "in_progress" && race.leading_checkpoint) {
+    return `${race.label} · ${race.leading_checkpoint}`;
+  }
+  return race.label;
 }
 
 function statusCopy(status: string): string {

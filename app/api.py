@@ -29,9 +29,13 @@ from app.config import get_settings
 from app.freshness import Freshness
 from app.poller import get_supervisor
 from app.roster import SCOPE_AGEGROUP, SCOPE_OVERALL, TrackedAthlete, get_roster_store, resolve_scope
-from app.state import STATE
+from app.state import STATE, SweepResult
 
 log = logging.getLogger("gapiq.api")
+
+#: Finishers as a fraction of starters → treat the event as complete. DNFs and late
+#: stragglers mean the finish mat never quite equals the start list.
+RACE_COMPLETE_FRACTION = 0.9
 
 router = APIRouter()
 
@@ -161,6 +165,57 @@ def _freshness(athlete: TrackedAthlete | None, view: GapView | None) -> Freshnes
     )
 
 
+def _race_summary(sweep: SweepResult | None) -> dict[str, str]:
+    """Event-level phase for the roster headline.
+
+    The freshness bar on an athlete dashboard names *that athlete's* last mat. On the roster
+    there is no single athlete, so we infer phase from the standings ladder instead.
+    """
+    if sweep is None:
+        return {"phase": "waiting", "label": "Waiting for timing data"}
+
+    store = get_roster_store()
+    slugs = store.list_slugs_in_use()
+
+    any_entries = False
+    first_count = 0
+    finish_count = 0
+    leading_label = ""
+    leading_index = -1
+
+    for slug in slugs:
+        by_checkpoint = sweep.standings.get(slug) or {}
+        usable = [cp for cp in (sweep.checkpoints.get(slug) or []) if cp.usable_for_gaps]
+        for index, checkpoint in enumerate(usable):
+            standings = by_checkpoint.get(checkpoint.id)
+            count = len(standings.entries) if standings else 0
+            if count <= 0:
+                continue
+            any_entries = True
+            if index == 0:
+                first_count = max(first_count, count)
+            if checkpoint.is_finish:
+                finish_count = max(finish_count, count)
+            if index > leading_index:
+                leading_index = index
+                leading_label = checkpoint.label
+
+    if not any_entries:
+        return {"phase": "not_started", "label": "Race hasn't started"}
+
+    if (
+        finish_count > 0
+        and first_count > 0
+        and finish_count >= first_count * RACE_COMPLETE_FRACTION
+    ):
+        return {"phase": "completed", "label": "Race complete"}
+
+    summary: dict[str, str] = {"phase": "in_progress", "label": "Race in progress"}
+    if leading_label:
+        summary["leading_checkpoint"] = leading_label
+    return summary
+
+
 # -- Endpoints --------------------------------------------------------------------------
 @router.get("/meta")
 async def meta() -> dict:
@@ -227,6 +282,7 @@ async def roster() -> dict:
 
     return {
         "athletes": rows,
+        "race": _race_summary(sweep),
         "freshness": _freshness(None, None).as_payload(),
         "scope_options": [SCOPE_AGEGROUP, SCOPE_OVERALL],
     }

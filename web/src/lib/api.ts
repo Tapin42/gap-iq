@@ -61,8 +61,17 @@ export interface RosterRow extends AthleteSummary {
   behind: Neighbour | null;
 }
 
+export type RacePhase = "waiting" | "not_started" | "in_progress" | "completed";
+
+export interface RaceSummary {
+  phase: RacePhase;
+  label: string;
+  leading_checkpoint?: string;
+}
+
 export interface RosterResponse {
   athletes: RosterRow[];
+  race: RaceSummary;
   freshness: Freshness;
   scope_options: string[];
 }

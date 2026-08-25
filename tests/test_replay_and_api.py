@@ -160,6 +160,9 @@ def test_roster_endpoint_reports_positions_and_statuses(client):
     body = client.get("/api/roster").json()
 
     assert body["athletes"], "roster should not be empty"
+    assert body["race"]["phase"] == "in_progress"
+    assert body["race"]["label"] == "Race in progress"
+    assert body["race"]["leading_checkpoint"] == "Finish"
     finished = [row for row in body["athletes"] if row["status"] == "finished"]
     assert finished, "the replay is at the end of the race, so some athletes finished"
     assert all(row["position"] for row in finished)
@@ -201,6 +204,38 @@ def test_unknown_athlete_is_a_clean_404(client):
 
     assert response.status_code == 404
     assert "roster" in response.json()["detail"]
+
+
+def test_race_summary_before_any_timing_data():
+    from app.api import _race_summary
+    from app.state import SweepResult
+
+    assert _race_summary(None)["phase"] == "waiting"
+    assert _race_summary(SweepResult(started_at=0.0, finished_at=0.0))["phase"] == "not_started"
+
+
+def test_race_summary_completed_when_the_field_has_mostly_finished(monkeypatch):
+    monkeypatch.setenv("GAPIQ_PROVIDER", "replay")
+    monkeypatch.setenv("GAPIQ_IGNORE_ACTIVE_WINDOWS", "true")
+    monkeypatch.setenv("GAPIQ_ROSTER_FILE", "roster.zofingen-2025.json")
+    monkeypatch.setenv("GAPIQ_REPLAY_OFFSET_SECONDS", str(600 * 60))
+    monkeypatch.setenv("GAPIQ_REPLAY_SPEED", "0")
+    reset_settings_cache()
+    reset_roster_cache()
+
+    from app.config import get_settings
+    from app.poller import PollerSupervisor, reset_supervisor
+    from app.roster import get_roster_store
+
+    from app.api import _race_summary
+
+    reset_supervisor()
+    settings = get_settings()
+    supervisor = PollerSupervisor(settings=settings, roster=get_roster_store(settings))
+    assert _race_summary(supervisor.sweeper.sweep())["phase"] == "completed"
+    reset_supervisor()
+    reset_settings_cache()
+    reset_roster_cache()
 
 
 def test_meta_reports_the_event_and_freshness(client):

@@ -11,11 +11,14 @@ import { formatAge, useAges } from "../lib/hooks";
  */
 export function FreshnessBar({
   freshness,
+  headline,
   onRefresh,
   refreshing,
   error,
 }: {
   freshness: Freshness;
+  /** Roster uses event phase; athlete dashboard uses per-athlete checkpoint from freshness. */
+  headline?: string;
   onRefresh: () => void;
   refreshing: boolean;
   error?: string | null;
@@ -32,7 +35,9 @@ export function FreshnessBar({
       <div className="min-w-0">
         {/* Deliberately the most legible line here. If a supporter cannot read how old the
             data is at a glance, the honesty this bar exists for is wasted. */}
-        {freshness.athlete_last_seen_checkpoint ? (
+        {headline ? (
+          <div className="truncate text-base font-bold">{headline}</div>
+        ) : freshness.athlete_last_seen_checkpoint ? (
           <div className="truncate text-base font-bold">
             {freshness.athlete_last_seen_checkpoint}
             {ages?.athleteAge !== null && ages?.athleteAge !== undefined && (
