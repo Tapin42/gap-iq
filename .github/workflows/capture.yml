@@ -1,0 +1,104 @@
+# Headless live-race capture.
+#
+# Runs as a scheduled job rather than on the fly.io app because capture is a batch poll,
+# not a service: Actions gives us a cron, egress, and a token that can commit the results
+# straight back to the repo, with no extra secrets and no compute bill.
+#
+# There is nothing to start by hand. The cron covers the rehearsal and race windows, and
+# each run exits immediately when the event is not live, so an idle day costs a few
+# seconds.
+
+name: capture
+
+on:
+  schedule:
+    # Every 5 minutes during the Lausanne rehearsal (Sat/Sun 29-30 Aug 2026, 04:00-18:00Z)
+    - cron: "*/5 4-18 29-30 8 *"
+    # Zofingen weekend (Sat 5 / Sun 6 Sep 2026, 05:00-19:00Z) -- the Saturday programme
+    # includes Zofingen 5000, which runs on the same edition slug as the long distance.
+    - cron: "*/5 5-19 5-6 9 *"
+  workflow_dispatch:
+    inputs:
+      edition:
+        description: Edition slug to capture
+        required: true
+        default: powerman-world-championships-zofingen-2026
+      passes:
+        description: Passes to make in this run
+        required: false
+        default: "1"
+
+concurrency:
+  # Never let two runs write frames at once; skip rather than queue, since the next cron
+  # tick is only minutes away.
+  group: capture-${{ github.ref }}
+  cancel-in-progress: false
+
+permissions:
+  contents: write
+
+jobs:
+  capture:
+    runs-on: ubuntu-latest
+    timeout-minutes: 25
+    strategy:
+      fail-fast: false
+      matrix:
+        edition:
+          - triathlon-lausanne-2026
+          - powerman-world-championships-zofingen-2026
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Install
+        run: pip install --quiet -e .
+
+      - name: Decide whether this edition is worth polling
+        id: gate
+        env:
+          EDITION: ${{ github.event.inputs.edition || matrix.edition }}
+        run: python -m capture.gate --edition "$EDITION" >> "$GITHUB_OUTPUT"
+
+      - name: Capture
+        if: steps.gate.outputs.active == 'true'
+        env:
+          EDITION: ${{ github.event.inputs.edition || matrix.edition }}
+        run: |
+          python -m capture.harness \
+            --edition "$EDITION" \
+            --output "docs/captures/$EDITION" \
+            --passes "${{ github.event.inputs.passes || '4' }}" \
+            --interval 45
+
+      - name: Summarise
+        if: steps.gate.outputs.active == 'true'
+        env:
+          EDITION: ${{ github.event.inputs.edition || matrix.edition }}
+        run: python -m capture.report --input "docs/captures/$EDITION" --edition "$EDITION"
+
+      - name: Commit frames and findings
+        if: steps.gate.outputs.active == 'true'
+        env:
+          EDITION: ${{ github.event.inputs.edition || matrix.edition }}
+        run: |
+          git config user.name "gap-iq capture"
+          git config user.email "capture@users.noreply.github.com"
+          git add "docs/captures/$EDITION"
+          if git diff --cached --quiet; then
+            echo "nothing changed upstream; not committing"
+            exit 0
+          fi
+          git commit -m "Capture $EDITION $(date -u +%Y-%m-%dT%H:%MZ)"
+          # The cron fires often and several editions share the branch, so rebase rather
+          # than fail when another run landed first.
+          for attempt in 1 2 3 4 5; do
+            git pull --rebase --autostash origin "${GITHUB_REF_NAME}" && \
+              git push origin "HEAD:${GITHUB_REF_NAME}" && exit 0
+            sleep $((attempt * 7))
+          done
+          echo "could not push after retries" >&2
+          exit 1
