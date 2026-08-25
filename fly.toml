@@ -1,0 +1,43 @@
+# Gap IQ -- single app, two stateless machines, no volume.
+#
+# There is deliberately no [mounts] section. The trend baseline is a different
+# *checkpoint*, not a different point in time, and one sweep returns every checkpoint at
+# once -- so there is no history to persist. Dropping the volume unpins us from a single
+# host, which matters more on race day than durability, because the roster's canonical
+# seed is committed to git.
+
+app = "gap-iq"
+primary_region = "fra"  # closest region to Zofingen
+
+[build]
+
+[env]
+  PORT = "8080"
+  GAPIQ_PROVIDER = "datasport"
+  GAPIQ_EDITION = "powerman-world-championships-zofingen-2026"
+
+[http_service]
+  internal_port = 8080
+  force_https = true
+  # Auto-stop is safe *between* windows and is the main idle-cost control. The poller
+  # keeps a machine busy during a window, and min_machines_running holds one up so a
+  # cold start never lands in the middle of a race.
+  auto_stop_machines = "suspend"
+  auto_start_machines = true
+  min_machines_running = 1
+
+  [http_service.concurrency]
+    type = "requests"
+    soft_limit = 200
+    hard_limit = 400
+
+[[http_service.checks]]
+  interval = "30s"
+  timeout = "5s"
+  grace_period = "20s"
+  method = "GET"
+  path = "/health/live"
+
+[[vm]]
+  size = "shared-cpu-1x"
+  memory = "512mb"

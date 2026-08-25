@@ -1,0 +1,26 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+venv/
+.pytest_cache/
+.ruff_cache/
+.mypy_cache/
+
+# Node
+node_modules/
+web/dist/
+web/.vite/
+
+# Local env
+.env
+.env.local
+
+# Playwright
+test-results/
+playwright-report/
+/web/playwright/.cache/
+
+# Capture scratch (committed frames live under docs/captures/, not here)
+/capture-scratch/

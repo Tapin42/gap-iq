@@ -1,0 +1,55 @@
+@import "tailwindcss";
+
+/* Gap IQ is read at arm's length, outdoors, in Swiss September sun, often by someone
+   holding a phone in one hand and a whiteboard marker in the other. The palette is
+   therefore high-contrast first and pretty second. */
+
+@theme {
+  --color-surface: oklch(0.16 0.01 260);
+  --color-surface-raised: oklch(0.22 0.012 260);
+  --color-surface-history: oklch(0.28 0.06 85);
+
+  --color-ink: oklch(0.98 0 0);
+  --color-ink-muted: oklch(0.72 0.01 260);
+
+  /* Green always means good for the tracked athlete, red always means bad, regardless
+     of which row it appears in. */
+  --color-good: oklch(0.78 0.19 145);
+  --color-bad: oklch(0.68 0.21 25);
+  --color-neutral: oklch(0.82 0.02 260);
+
+  --font-display: ui-sans-serif, system-ui, -apple-system, "Segoe UI", sans-serif;
+}
+
+html,
+body,
+#root {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  background: var(--color-surface);
+  color: var(--color-ink);
+  font-family: var(--font-display);
+  /* Tabular numerals stop gap times from jittering horizontally as they tick. */
+  font-variant-numeric: tabular-nums;
+  -webkit-font-smoothing: antialiased;
+  /* Respect the notch/home indicator: the dashboard runs full-bleed. */
+  padding: env(safe-area-inset-top) env(safe-area-inset-right) env(safe-area-inset-bottom)
+    env(safe-area-inset-left);
+}
+
+/* Never let a double-tap zoom fire while someone is jabbing the refresh button. */
+button {
+  touch-action: manipulation;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    transition-duration: 0.01ms !important;
+  }
+}
