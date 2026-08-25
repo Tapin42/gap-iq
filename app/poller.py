@@ -40,6 +40,36 @@ from app.state import STATE, AppState, SweepResult
 log = logging.getLogger("gapiq.poller")
 
 
+def _build_provider(settings: Settings, roster: RosterStore):
+    """Pick the data source.
+
+    The replay provider mirrors the same surface the sweeper uses, so switching to it
+    exercises the real poller and API rather than a parallel code path.
+    """
+    if settings.provider == "replay":
+        import time as _time
+        from pathlib import Path
+
+        from app.config import REPO_ROOT
+        from app.replay import ReplayClock, ReplayProvider
+
+        log.info(
+            "using the replay provider at %sx speed (a harness, not live data)",
+            settings.replay_speed,
+        )
+        return ReplayProvider(
+            Path(REPO_ROOT) / settings.replay_snapshot,
+            clock=ReplayClock(
+                started_at=_time.time(),
+                speed=settings.replay_speed,
+                offset_tenths=settings.replay_offset_seconds * 10,
+            ),
+        )
+    return DatasportProvider(
+        excluded_checkpoint_labels=roster.document.excluded_checkpoint_labels
+    )
+
+
 @dataclass
 class Ladders:
     """Standings for every division we track, keyed by list slug then checkpoint id."""
@@ -72,9 +102,7 @@ class Sweeper:
     ) -> None:
         self.settings = settings
         self.roster = roster
-        self.provider = provider or DatasportProvider(
-            excluded_checkpoint_labels=roster.document.excluded_checkpoint_labels
-        )
+        self.provider = provider or _build_provider(settings, roster)
         self.race = Race(
             event_key=settings.edition,
             display_name=settings.event_label,

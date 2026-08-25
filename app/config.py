@@ -82,6 +82,15 @@ class Settings(BaseSettings):
     supporter who is not competing."""
 
     # --- Gap engine -------------------------------------------------------------------
+    # --- Replay ----------------------------------------------------------------------
+    replay_snapshot: str = "snapshots/zofingen-2025-men.json"
+    replay_speed: float = 120.0
+    """Race seconds per wall-clock second. At 120x a seven-hour race takes about
+    three and a half minutes."""
+
+    replay_offset_seconds: int = 0
+    """Start the virtual clock partway in, to land directly on an interesting moment."""
+
     trend_policy: str = "slot"
     """"slot" colours the gap to whoever occupies the neighbouring position; "occupant"
     reproduces the original spec of blanking the trend when the neighbour changes
