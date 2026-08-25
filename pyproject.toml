@@ -32,6 +32,9 @@ include = ["app*", "capture*"]
 [tool.pytest.ini_options]
 testpaths = ["tests"]
 asyncio_mode = "auto"
+# Live tests need network and a real event, so they must never run by default -- including
+# in CI. Opt in with `pytest -m live`.
+addopts = "-m 'not live'"
 markers = [
     "live: hits live upstream timing APIs; excluded from the default run",
 ]

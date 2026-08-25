@@ -1,0 +1,53 @@
+name: ci
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+  schedule:
+    # Daily through the run-up to the race. This is the schema canary: list slugs rotate
+    # between editions and several upstream failures return HTTP 200, so the point is to
+    # find drift days early rather than on race morning.
+    - cron: "17 6 * * *"
+  workflow_dispatch:
+
+jobs:
+  python:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: pip install --quiet -e ".[dev]"
+      - name: Unit and integration tests
+        run: pytest -q
+
+  web:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "22"
+      - run: npm install
+        working-directory: web
+      - name: Typecheck and build
+        run: npm run build
+        working-directory: web
+
+  canary:
+    # Only on a schedule or by hand: it hits the live timing API, so it should not run on
+    # every push, and a red canary means upstream changed rather than that we broke a build.
+    if: github.event_name == 'schedule' || github.event_name == 'workflow_dispatch'
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: pip install --quiet -e ".[dev]"
+      - name: Live schema canary
+        run: pytest -m live -q
+      - name: Race-morning preflight
+        run: python -m scripts.preflight --edition powerman-world-championships-zofingen-2026 --deep
