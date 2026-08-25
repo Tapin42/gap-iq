@@ -125,6 +125,21 @@ def test_mid_race_a_lone_leader_falls_back_to_an_earlier_shared_mat():
             assert neighbour.measured_at.id != view.checkpoint.id
 
 
+def test_a_fresh_pass_to_the_ag_lead_does_not_stale_show_the_same_racer_ahead():
+    """At 32 minutes Furler has passed Castellano at Run1 - Heitere 2. Castellano must not
+    appear as both stale ahead (from Run1 - Lap 1) and fresh behind at the same time."""
+    from racedata.core.gaps import ABSENT_LEADING, compute_gap_view
+
+    view = compute_gap_view(athlete_id="furler-mark", ladder=ladder_at(32))
+
+    assert view.checkpoint.label == "Run1 - Heitere 2"
+    assert view.display_rank == 1
+    assert view.ahead is None
+    assert view.ahead_absent_reason == ABSENT_LEADING
+    assert view.behind is not None and view.behind.athlete.last_name == "Castellano"
+    assert not view.behind.is_stale
+
+
 # -- End to end through the API ---------------------------------------------------------
 @pytest.fixture()
 def client(monkeypatch):

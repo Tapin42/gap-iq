@@ -15,7 +15,7 @@ dependencies = [
     "pydantic-settings>=2.3",
     "requests>=2.28",
     # Pinned to a commit for reproducible fly.io builds; bump deliberately.
-    "racedata @ git+https://github.com/Tapin42/racedata.git@main",
+    "racedata @ git+https://github.com/Tapin42/racedata.git@d08f7e6",
 ]
 
 [project.optional-dependencies]
