@@ -1,0 +1,260 @@
+{
+ "_comment": [
+  "Completed 2025 edition. Used for local preview, manual testing and replay:",
+  "it is a real race with real results, so the UI can be exercised end to end without",
+  "waiting for a live event. Not the race-day config -- see roster.zofingen-2026.json."
+ ],
+ "event": {
+  "edition": "powerman-world-championships-zofingen-2025",
+  "label": "Powerman Zofingen 2025 (completed)",
+  "provider": "datasport",
+  "season_year": 2025
+ },
+ "excluded_checkpoint_labels": [
+  "Run2 - WZ OUT",
+  "Run2 - WZ IN"
+ ],
+ "default_scope": "agegroup",
+ "athletes": [
+  {
+   "athlete_slug": "boncelet-peter",
+   "name": "Boncelet Peter",
+   "bib": "201",
+   "year_of_birth": 1959,
+   "country": "USA",
+   "locality": "Naples",
+   "favorite_id": "Fw",
+   "contest": "World Triathlon Long Distance - AGE GROUPS",
+   "gender_list_slug": "world-triathlon-men-age-group",
+   "agegroup_list_slug": "world-triathlon-men-age-group-65-69"
+  },
+  {
+   "athlete_slug": "brenk-jan",
+   "name": "Brenk Jan",
+   "bib": "366",
+   "year_of_birth": 1972,
+   "country": "USA",
+   "locality": "Chicago",
+   "favorite_id": "AZ",
+   "contest": "World Triathlon Long Distance - AGE GROUPS",
+   "gender_list_slug": "world-triathlon-men-age-group",
+   "agegroup_list_slug": "world-triathlon-men-age-group-50-54"
+  },
+  {
+   "athlete_slug": "cobb-kenneth",
+   "name": "Cobb Kenneth",
+   "bib": "348",
+   "year_of_birth": 1976,
+   "country": "USA",
+   "locality": "Team USA",
+   "favorite_id": "PZ",
+   "contest": "World Triathlon Long Distance - AGE GROUPS",
+   "gender_list_slug": "world-triathlon-men-age-group",
+   "agegroup_list_slug": "world-triathlon-men-age-group-45-49"
+  },
+  {
+   "athlete_slug": "dykstra-craig",
+   "name": "Dykstra Craig",
+   "bib": "367",
+   "year_of_birth": 1973,
+   "country": "USA",
+   "locality": "Mills River",
+   "favorite_id": "Kk",
+   "contest": "World Triathlon Long Distance - AGE GROUPS",
+   "gender_list_slug": "world-triathlon-men-age-group",
+   "agegroup_list_slug": "world-triathlon-men-age-group-50-54"
+  },
+  {
+   "athlete_slug": "furler-mark",
+   "name": "Furler Mark",
+   "bib": "329",
+   "year_of_birth": 1982,
+   "country": "USA",
+   "locality": "Hollis",
+   "favorite_id": "UO",
+   "contest": "World Triathlon Long Distance - AGE GROUPS",
+   "gender_list_slug": "world-triathlon-men-age-group",
+   "agegroup_list_slug": "world-triathlon-men-age-group-40-44"
+  },
+  {
+   "athlete_slug": "hanus-charlie",
+   "name": "Hanus Charlie",
+   "bib": "213",
+   "year_of_birth": 1954,
+   "country": "USA",
+   "locality": "Manhattan",
+   "favorite_id": "5w",
+   "contest": "World Triathlon Long Distance - AGE GROUPS",
+   "gender_list_slug": "world-triathlon-men-age-group",
+   "agegroup_list_slug": "world-triathlon-men-age-group-70-74"
+  },
+  {
+   "athlete_slug": "henderson-bradford",
+   "name": "Henderson Bradford",
+   "bib": "394",
+   "year_of_birth": 1964,
+   "country": "USA",
+   "locality": "Wexford",
+   "favorite_id": "VH",
+   "contest": "World Triathlon Long Distance - AGE GROUPS",
+   "gender_list_slug": "world-triathlon-men-age-group",
+   "agegroup_list_slug": "world-triathlon-men-age-group-60-64"
+  },
+  {
+   "athlete_slug": "hoban-gerard",
+   "name": "Hoban Gerard",
+   "bib": "395",
+   "year_of_birth": 1964,
+   "country": "USA",
+   "locality": "New York City",
+   "favorite_id": "8Q",
+   "contest": "World Triathlon Long Distance - AGE GROUPS",
+   "gender_list_slug": "world-triathlon-men-age-group",
+   "agegroup_list_slug": "world-triathlon-men-age-group-60-64"
+  },
+  {
+   "athlete_slug": "humphrey-mary",
+   "name": "Humphrey Mary",
+   "bib": "139",
+   "year_of_birth": 1959,
+   "country": "USA",
+   "locality": "Naples",
+   "favorite_id": "CY",
+   "contest": "World Triathlon Long Distance - AGE GROUPS",
+   "gender_list_slug": "world-triathlon-women-age-group",
+   "agegroup_list_slug": "world-triathlon-women-age-group-65-69"
+  },
+  {
+   "athlete_slug": "lewis-john",
+   "name": "Lewis John",
+   "bib": "396",
+   "year_of_birth": 1965,
+   "country": "USA",
+   "locality": "Wheaton",
+   "favorite_id": "Ib",
+   "contest": "World Triathlon Long Distance - AGE GROUPS",
+   "gender_list_slug": "world-triathlon-men-age-group",
+   "agegroup_list_slug": "world-triathlon-men-age-group-60-64"
+  },
+  {
+   "athlete_slug": "maxwell-feilim",
+   "name": "Maxwell Feilim",
+   "bib": "381",
+   "year_of_birth": 1968,
+   "country": "USA",
+   "locality": "Morristown, New Jersey",
+   "favorite_id": "V6",
+   "contest": "World Triathlon Long Distance - AGE GROUPS",
+   "gender_list_slug": "world-triathlon-men-age-group",
+   "agegroup_list_slug": "world-triathlon-men-age-group-55-59"
+  },
+  {
+   "athlete_slug": "mosier-chris",
+   "name": "Mosier Chris",
+   "bib": "349",
+   "year_of_birth": 1980,
+   "country": "USA",
+   "locality": "Team USA",
+   "favorite_id": "2i",
+   "contest": "World Triathlon Long Distance - AGE GROUPS",
+   "gender_list_slug": "world-triathlon-men-age-group",
+   "agegroup_list_slug": "world-triathlon-men-age-group-45-49"
+  },
+  {
+   "athlete_slug": "muehlfellner-karoline",
+   "name": "Muehlfellner Karoline",
+   "bib": "113",
+   "year_of_birth": 1983,
+   "country": "USA",
+   "locality": "Dunedin Florida",
+   "favorite_id": "CC",
+   "contest": "World Triathlon Long Distance - AGE GROUPS",
+   "gender_list_slug": "world-triathlon-women-age-group",
+   "agegroup_list_slug": "world-triathlon-women-age-group-40-44"
+  },
+  {
+   "athlete_slug": "ruehle-claire",
+   "name": "Ruehle Claire",
+   "bib": "106",
+   "year_of_birth": 1993,
+   "country": "USA",
+   "locality": "Bunnell",
+   "favorite_id": "71",
+   "contest": "World Triathlon Long Distance - AGE GROUPS",
+   "gender_list_slug": "world-triathlon-women-age-group",
+   "agegroup_list_slug": "world-triathlon-women-age-group-30-34"
+  },
+  {
+   "athlete_slug": "sidigonde-shobha",
+   "name": "Sidigonde Shobha",
+   "bib": "114",
+   "year_of_birth": 1982,
+   "country": "USA",
+   "locality": "TeamUSA",
+   "favorite_id": "MN",
+   "contest": "World Triathlon Long Distance - AGE GROUPS",
+   "gender_list_slug": "world-triathlon-women-age-group",
+   "agegroup_list_slug": "world-triathlon-women-age-group-40-44"
+  },
+  {
+   "athlete_slug": "sturzl-cora",
+   "name": "Sturzl Cora",
+   "bib": "135",
+   "year_of_birth": 1963,
+   "country": "USA",
+   "locality": "Malaga",
+   "favorite_id": "4s",
+   "contest": "World Triathlon Long Distance - AGE GROUPS",
+   "gender_list_slug": "world-triathlon-women-age-group",
+   "agegroup_list_slug": "world-triathlon-women-age-group-60-64"
+  },
+  {
+   "athlete_slug": "ta-tien",
+   "name": "Ta Tien",
+   "bib": "707",
+   "year_of_birth": 1958,
+   "country": "USA",
+   "locality": "Atlanta",
+   "favorite_id": "Cg",
+   "contest": "Long Distance - OPEN",
+   "gender_list_slug": "ld-open-men-age-group",
+   "agegroup_list_slug": "ld-open-men-age-group-65-69"
+  },
+  {
+   "athlete_slug": "watson-nicholas",
+   "name": "Watson Nicholas",
+   "bib": "368",
+   "year_of_birth": 1974,
+   "country": "USA",
+   "locality": "Ada",
+   "favorite_id": "Uv",
+   "contest": "World Triathlon Long Distance - AGE GROUPS",
+   "gender_list_slug": "world-triathlon-men-age-group",
+   "agegroup_list_slug": "world-triathlon-men-age-group-50-54"
+  },
+  {
+   "athlete_slug": "williams-darin",
+   "name": "Williams Darin",
+   "bib": "317",
+   "year_of_birth": 1986,
+   "country": "USA",
+   "locality": "TeamUSA",
+   "favorite_id": "7M",
+   "contest": "World Triathlon Long Distance - AGE GROUPS",
+   "gender_list_slug": "world-triathlon-men-age-group",
+   "agegroup_list_slug": "world-triathlon-men-age-group-35-39"
+  },
+  {
+   "athlete_slug": "worth-steven",
+   "name": "worth steven",
+   "bib": "382",
+   "year_of_birth": 1970,
+   "country": "USA",
+   "locality": "Team USA",
+   "favorite_id": "8F",
+   "contest": "World Triathlon Long Distance - AGE GROUPS",
+   "gender_list_slug": "world-triathlon-men-age-group",
+   "agegroup_list_slug": "world-triathlon-men-age-group-55-59"
+  }
+ ]
+}
