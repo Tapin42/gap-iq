@@ -18,23 +18,40 @@ const HISTORY_IDLE_RETURN_MS = 120_000;
 export function Dashboard() {
   const { slug = "" } = useParams();
   const [checkpointIndex, setCheckpointIndex] = useState<number | undefined>(undefined);
+  const [prevSlug, setPrevSlug] = useState(slug);
+  if (prevSlug !== slug) {
+    setPrevSlug(slug);
+    setCheckpointIndex(undefined);
+  }
 
   const fetcher = useCallback(
     () => api.athlete(slug, checkpointIndex),
     [slug, checkpointIndex],
   );
-  const { data, error, loading, refresh, refreshing } = usePolling<AthleteDetail>(fetcher, POLL_MS);
+  const { data, error, loading, refresh, refreshing } = usePolling<AthleteDetail>(
+    fetcher,
+    POLL_MS,
+    [slug, checkpointIndex],
+  );
 
   // An athlete who withdrew or has not started is not "in history" -- there is no earlier
   // checkpoint being viewed -- so they must not get the history chrome.
   const onCourse = data ? data.on_course !== false : true;
-  const historic = data ? onCourse && data.is_live_checkpoint === false : false;
+  const showingHistory = data ? onCourse && data.is_live_checkpoint === false : false;
+  const wantsHistory = checkpointIndex !== undefined;
+  const navigating = Boolean(
+    data?.has_data &&
+      onCourse &&
+      (wantsHistory !== showingHistory ||
+        (wantsHistory && checkpointIndex !== data.checkpoint?.index)),
+  );
+  const historicView = wantsHistory || (showingHistory && !navigating);
 
   useEffect(() => {
-    if (!historic) return;
+    if (!showingHistory) return;
     const timer = window.setTimeout(() => setCheckpointIndex(undefined), HISTORY_IDLE_RETURN_MS);
     return () => window.clearTimeout(timer);
-  }, [historic, checkpointIndex]);
+  }, [showingHistory, checkpointIndex]);
 
   const onRefresh = useCallback(async () => {
     await api.refresh().catch(() => undefined);
@@ -67,14 +84,21 @@ export function Dashboard() {
   const checkpoints = data.checkpoints ?? [];
   const index = data.checkpoint?.index ?? null;
 
+  const activeIndex = checkpointIndex ?? index;
+  const checkpointLabel =
+    (wantsHistory
+      ? checkpoints.find((cp) => cp.index === checkpointIndex)?.label
+      : undefined) ??
+    data.checkpoint?.label;
+
   const step = (delta: number) => {
-    if (index === null) return;
-    const next = Math.min(Math.max(index + delta, 0), checkpoints.length - 1);
+    if (activeIndex === null) return;
+    const next = Math.min(Math.max(activeIndex + delta, 0), checkpoints.length - 1);
     setCheckpointIndex(next);
   };
 
   return (
-    <Shell historic={historic}>
+    <Shell historic={historicView}>
       {/* Header: who this is, and where they are. */}
       <header className="flex items-start justify-between gap-3 px-4 pt-3 pb-2">
         <div className="min-w-0">
@@ -96,14 +120,14 @@ export function Dashboard() {
         </div>
       </header>
 
-      {historic && (
+      {historicView && (
         // History has to be unmistakable. Mistaking an old checkpoint for the current one
         // is the exact failure this app exists to prevent, so it gets its own background,
         // a persistent banner, and a single always-visible way back.
         <div className="bg-surface-history flex items-center justify-between gap-3 px-4 py-2">
           <div className="min-w-0">
             <div className="text-xs font-black tracking-widest uppercase">Earlier checkpoint</div>
-            <div className="truncate text-sm font-semibold">{data.checkpoint?.label}</div>
+            <div className="truncate text-sm font-semibold">{checkpointLabel ?? "—"}</div>
           </div>
           <button
             type="button"
@@ -136,12 +160,12 @@ export function Dashboard() {
           )}
         </Centered>
       ) : (
-        <main className="flex flex-1 flex-col divide-y divide-white/15">
+        <main className="relative flex flex-1 flex-col divide-y divide-white/15">
           <GapRow
             slot="ahead"
             neighbour={data.ahead ?? null}
             absenceCopy={data.absence?.ahead}
-            historic={historic}
+            historic={historicView}
           />
 
           {/* The centre row: position and family name together, at the largest size on the
@@ -151,7 +175,7 @@ export function Dashboard() {
           <button
             type="button"
             onClick={() => step(-1)}
-            disabled={index === null || index <= 0}
+            disabled={navigating || activeIndex === null || activeIndex <= 0}
             className="bg-surface-raised flex min-h-[26vh] flex-col items-center justify-center gap-1 px-4 py-6 text-center disabled:opacity-100"
           >
             <div className="text-[clamp(3rem,18vw,7rem)] leading-[0.95] font-black tracking-tight">
@@ -161,7 +185,7 @@ export function Dashboard() {
               {data.field_size ? `of ${data.field_size} in ${data.division?.label ?? "division"}` : ""}
               {data.checkpoint?.is_finish && " · finished"}
             </div>
-            {index !== null && index > 0 && !historic && (
+            {activeIndex !== null && activeIndex > 0 && !historicView && (
               <div className="text-ink-muted mt-1 text-xs">tap for the previous checkpoint</div>
             )}
           </button>
@@ -170,8 +194,14 @@ export function Dashboard() {
             slot="behind"
             neighbour={data.behind ?? null}
             absenceCopy={data.absence?.behind}
-            historic={historic}
+            historic={historicView}
           />
+
+          {navigating && (
+            <div className="absolute inset-0 flex items-center justify-center bg-black/45 px-8 text-center">
+              <p className="text-lg font-semibold">Loading checkpoint…</p>
+            </div>
+          )}
         </main>
       )}
 
@@ -184,23 +214,23 @@ export function Dashboard() {
         </div>
       )}
 
-      {historic && index !== null && (
+      {historicView && activeIndex !== null && (
         <div className="flex items-center justify-between gap-2 px-4 py-2">
           <button
             type="button"
             onClick={() => step(-1)}
-            disabled={index <= 0}
+            disabled={navigating || activeIndex <= 0}
             className="rounded-md bg-white/15 px-4 py-3 font-semibold disabled:opacity-40"
           >
             ‹ Earlier
           </button>
           <span className="text-ink-muted text-xs">
-            {index + 1} of {checkpoints.length}
+            {activeIndex + 1} of {checkpoints.length}
           </span>
           <button
             type="button"
             onClick={() => step(1)}
-            disabled={index >= checkpoints.length - 1}
+            disabled={navigating || activeIndex >= checkpoints.length - 1}
             className="rounded-md bg-white/15 px-4 py-3 font-semibold disabled:opacity-40"
           >
             Later ›

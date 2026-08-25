@@ -16,6 +16,7 @@ import type { Freshness } from "./api";
 export function usePolling<T>(
   fetcher: () => Promise<T>,
   intervalMs: number,
+  reloadWhen: readonly unknown[] = [],
 ): {
   data: T | null;
   error: string | null;
@@ -29,18 +30,23 @@ export function usePolling<T>(
   const [refreshing, setRefreshing] = useState(false);
   const fetcherRef = useRef(fetcher);
   fetcherRef.current = fetcher;
+  const generationRef = useRef(0);
 
   const load = useCallback(async (manual: boolean) => {
+    const generation = ++generationRef.current;
     if (manual) setRefreshing(true);
     try {
       const next = await fetcherRef.current();
+      if (generation !== generationRef.current) return;
       setData(next);
       setError(null);
     } catch (cause) {
+      if (generation !== generationRef.current) return;
       // Keep the last good payload on screen rather than blanking it. Stale data that is
       // labelled stale is more useful than nothing; the freshness line does the honesty.
       setError(cause instanceof Error ? cause.message : String(cause));
     } finally {
+      if (generation !== generationRef.current) return;
       setLoading(false);
       if (manual) setRefreshing(false);
     }
@@ -69,6 +75,17 @@ export function usePolling<T>(
       document.removeEventListener("visibilitychange", onVisible);
     };
   }, [load, intervalMs]);
+
+  const skipReloadRef = useRef(true);
+  useEffect(() => {
+    if (skipReloadRef.current) {
+      skipReloadRef.current = false;
+      return;
+    }
+    void load(false);
+    // reloadWhen is the caller's explicit refetch trigger (e.g. checkpoint navigation).
+    // eslint-disable-next-line react-hooks/exhaustive-deps -- spread is intentional
+  }, [load, ...reloadWhen]);
 
   return { data, error, loading, refresh: () => load(true), refreshing };
 }
