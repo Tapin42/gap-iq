@@ -217,3 +217,25 @@ def test_health_is_ok_while_polling_is_permitted(client):
     assert body["status"] in {"ok", "starting", "degraded"}
     assert body["polling"]["allowed"] is True
     assert body["runbook"].endswith("RUNBOOK.md")
+
+
+def test_a_withdrawn_athlete_is_not_presented_as_a_history_view(client):
+    """An athlete who withdrew has no frontier checkpoint, so there is no 'earlier
+    checkpoint' being viewed. Reporting one dressed the screen in history chrome and implied
+    the reader had navigated backwards."""
+    rows = client.get("/api/roster").json()["athletes"]
+    withdrawn = next(row for row in rows if row["status"] == "withdrawn")
+
+    body = client.get(f"/api/athlete/{withdrawn['athlete_slug']}").json()
+
+    assert body["status"] == "withdrawn"
+    assert body["on_course"] is False
+    assert body["is_live_checkpoint"] is True, "not a history view"
+    assert body["checkpoint"]["index"] is None, "nothing to step through"
+
+
+def test_an_athlete_on_course_still_reports_a_navigable_checkpoint(client):
+    body = client.get("/api/athlete/furler-mark").json()
+
+    assert body["on_course"] is True
+    assert body["checkpoint"]["index"] is not None

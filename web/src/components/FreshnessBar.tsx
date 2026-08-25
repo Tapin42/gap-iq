@@ -25,23 +25,25 @@ export function FreshnessBar({
 
   return (
     <div
-      className={`flex items-center justify-between gap-3 px-4 py-2 text-xs ${
-        broken ? "bg-bad/25" : "bg-white/5"
+      className={`flex items-center justify-between gap-3 px-4 py-3 text-sm ${
+        broken ? "bg-bad/30" : "bg-white/10"
       }`}
     >
       <div className="min-w-0">
+        {/* Deliberately the most legible line here. If a supporter cannot read how old the
+            data is at a glance, the honesty this bar exists for is wasted. */}
         {freshness.athlete_last_seen_checkpoint ? (
-          <div className="truncate font-semibold">
+          <div className="truncate text-base font-bold">
             {freshness.athlete_last_seen_checkpoint}
             {ages?.athleteAge !== null && ages?.athleteAge !== undefined && (
-              <span className="text-ink-muted"> · {formatAge(ages.athleteAge)}</span>
+              <span className="font-semibold"> · {formatAge(ages.athleteAge)}</span>
             )}
           </div>
         ) : (
-          <div className="text-ink-muted truncate font-semibold">No checkpoint yet</div>
+          <div className="truncate text-base font-bold">No checkpoint yet</div>
         )}
 
-        <div className="text-ink-muted truncate">
+        <div className="truncate text-ink-muted">
           {!freshness.polling.allowed ? (
             // Idle by design is not the same as broken, and must not look like it.
             <>Idle — {freshness.polling.reason}</>
@@ -56,14 +58,14 @@ export function FreshnessBar({
             </>
           )}
         </div>
-        {error && <div className="text-bad truncate">Last refresh failed: {error}</div>}
+        {error && <div className="text-bad truncate font-semibold">Last refresh failed: {error}</div>}
       </div>
 
       <button
         type="button"
         onClick={onRefresh}
         disabled={refreshing}
-        className="shrink-0 rounded-md bg-white/15 px-3 py-2 font-semibold disabled:opacity-50"
+        className="min-h-[44px] shrink-0 rounded-md bg-white/20 px-4 py-2 font-semibold disabled:opacity-50"
       >
         {refreshing ? "Refreshing…" : "Refresh"}
       </button>

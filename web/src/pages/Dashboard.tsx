@@ -25,7 +25,10 @@ export function Dashboard() {
   );
   const { data, error, loading, refresh, refreshing } = usePolling<AthleteDetail>(fetcher, POLL_MS);
 
-  const historic = data ? data.is_live_checkpoint === false : false;
+  // An athlete who withdrew or has not started is not "in history" -- there is no earlier
+  // checkpoint being viewed -- so they must not get the history chrome.
+  const onCourse = data ? data.on_course !== false : true;
+  const historic = data ? onCourse && data.is_live_checkpoint === false : false;
 
   useEffect(() => {
     if (!historic) return;
@@ -112,13 +115,25 @@ export function Dashboard() {
         </div>
       )}
 
-      {!data.has_data ? (
+      {!data.has_data || !onCourse ? (
         <Centered>
-          <p className="text-xl font-semibold">Not started yet</p>
-          <p className="text-ink-muted mt-2 text-balance">
-            No timing data for {athlete.last_name || athlete.name} yet. This screen fills in
-            at the first checkpoint.
-          </p>
+          {data.status === "withdrawn" ? (
+            <>
+              <p className="text-xl font-semibold">No longer on course</p>
+              <p className="text-ink-muted mt-2 text-balance">
+                {athlete.last_name || athlete.name} has withdrawn. The timing feed removes a
+                withdrawn athlete's splits, so there is no position or gap to show.
+              </p>
+            </>
+          ) : (
+            <>
+              <p className="text-xl font-semibold">Not started yet</p>
+              <p className="text-ink-muted mt-2 text-balance">
+                No timing data for {athlete.last_name || athlete.name} yet. This screen fills
+                in at the first checkpoint.
+              </p>
+            </>
+          )}
         </Centered>
       ) : (
         <main className="flex flex-1 flex-col divide-y divide-white/15">

@@ -278,6 +278,12 @@ async def athlete_detail(
         if standings.contains(athlete_slug):
             frontier = index
 
+    # An athlete who withdrew or has not started has no frontier at all, so there is no
+    # "earlier checkpoint" to be looking at. Reporting that as a history view would dress
+    # the screen in history chrome and imply the reader had navigated backwards.
+    on_course = frontier is not None
+    is_live = (current_index == frontier) if on_course else True
+
     return {
         "athlete": _athlete_payload(athlete),
         "status": view.status,
@@ -292,11 +298,14 @@ async def athlete_detail(
         "checkpoint": {
             "id": view.checkpoint.id,
             "label": view.checkpoint.label,
-            "index": current_index,
+            # No index for an athlete who is not on course: there is nothing to step
+            # through, and offering navigation would imply otherwise.
+            "index": current_index if on_course else None,
             "count": len(usable),
             "is_finish": view.is_finish,
         },
-        "is_live_checkpoint": current_index == frontier,
+        "is_live_checkpoint": is_live,
+        "on_course": on_course,
         "elapsed_text": format_tenths(view.clock_tenths) if view.clock_tenths else None,
         "baseline": view.baseline_checkpoint.label if view.baseline_checkpoint else None,
         "ahead": _neighbour_payload(view.ahead),

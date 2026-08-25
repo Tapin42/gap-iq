@@ -76,6 +76,7 @@ export interface AthleteDetail {
   division?: { id: string; label: string; scope: string };
   checkpoint?: { id: string; label: string; index: number | null; count: number; is_finish: boolean };
   is_live_checkpoint?: boolean;
+  on_course?: boolean;
   elapsed_text?: string | null;
   baseline?: string | null;
   ahead?: Neighbour | null;

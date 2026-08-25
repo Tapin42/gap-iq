@@ -96,7 +96,7 @@ export function GapRow({
           <div className="text-4xl leading-none font-black tabular-nums">
             {neighbour.gap_text}
           </div>
-          <div className="mt-1 text-sm font-semibold whitespace-nowrap">
+          <div className="mt-1 text-base font-bold whitespace-nowrap">
             <span aria-hidden="true">{arrow}</span>{" "}
             {neighbour.trend === "undefined" ? "no trend yet" : neighbour.trend}
             {neighbour.trend_delta_text && neighbour.trend !== "undefined"
@@ -108,7 +108,7 @@ export function GapRow({
 
       {neighbour.is_stale && neighbour.measured_at && (
         // Never present an older measurement as if it were current.
-        <p className="text-ink-muted text-sm text-balance">
+        <p className="text-ink-muted text-sm font-medium text-balance">
           {slot === "ahead"
             ? "Not recorded at this checkpoint yet."
             : "Hasn't reached this checkpoint yet."}{" "}

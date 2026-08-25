@@ -123,7 +123,7 @@ export function Roster() {
                       <>{row.progress || statusCopy(row.status)}</>
                     )}
                   </div>
-                  <div className="mt-1 flex gap-3 text-xs">
+                  <div className="mt-1 flex gap-4 text-sm font-semibold">
                     <NeighbourChip slot="ahead" row={row} />
                     <NeighbourChip slot="behind" row={row} />
                   </div>
@@ -139,7 +139,7 @@ export function Roster() {
                         ? "Elite has no age groups, so there is nothing to switch"
                         : "Switch between age-group and overall position"
                     }
-                    className="rounded-md bg-white/15 px-2 py-1 text-xs font-semibold disabled:opacity-40"
+                    className="min-h-[40px] min-w-[92px] rounded-md bg-white/20 px-3 py-2 text-sm font-semibold disabled:opacity-40"
                   >
                     {row.scope === "agegroup" ? "Age group" : "Overall"}
                   </button>
@@ -147,7 +147,7 @@ export function Roster() {
                     type="button"
                     onClick={() => remove(row)}
                     disabled={busy === row.athlete_slug}
-                    className="text-ink-muted px-2 py-1 text-xs disabled:opacity-40"
+                    className="text-ink-muted min-h-[40px] px-3 py-2 text-sm disabled:opacity-40"
                   >
                     Remove
                   </button>
