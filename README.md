@@ -68,8 +68,7 @@ the env vars it sets.
 ```bash
 pytest                    # unit + fixture tests, no network
 pytest -m live            # hits live upstream APIs; needs egress
-cd web && npm test        # component tests
-cd web && npx playwright test   # end-to-end against the replay simulator
+cd web && npm run test:e2e   # Playwright against the replay simulator
 ```
 
 ## Deployment

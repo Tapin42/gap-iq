@@ -40,6 +40,7 @@ RACE_COMPLETE_FRACTION = 0.9
 router = APIRouter()
 
 POSITION_PROVISIONAL_LEAD = "provisional_lead"
+POSITION_LONE_AT_MAT = "lone_at_mat"
 POSITION_CONFIRMED = "confirmed"
 
 
@@ -47,6 +48,8 @@ def _position_context(view: GapView) -> str:
     """Whether the displayed rank is a confirmed division standing or only at this mat."""
     if view.display_rank == 1 and view.ahead is not None and view.ahead.is_stale:
         return POSITION_PROVISIONAL_LEAD
+    if view.field_size == 1 and not view.is_finish:
+        return POSITION_LONE_AT_MAT
     return POSITION_CONFIRMED
 
 

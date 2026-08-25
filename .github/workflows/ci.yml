@@ -36,6 +36,25 @@ jobs:
         run: npm run build
         working-directory: web
 
+  e2e:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: pip install --quiet -e ".[dev]"
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "22"
+      - run: npm install
+        working-directory: web
+      - run: npx playwright install --with-deps chromium
+        working-directory: web
+      - name: Playwright against replay simulator
+        run: npm run test:e2e
+        working-directory: web
+
   canary:
     # Only on a schedule or by hand: it hits the live timing API, so it should not run on
     # every push, and a red canary means upstream changed rather than that we broke a build.

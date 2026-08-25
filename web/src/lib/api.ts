@@ -81,7 +81,7 @@ export interface AthleteDetail {
   status: string;
   has_data: boolean;
   position?: number | null;
-  position_context?: "provisional_lead" | "confirmed";
+  position_context?: "provisional_lead" | "lone_at_mat" | "confirmed";
   field_size?: number;
   division?: { id: string; label: string; scope: string };
   checkpoint?: { id: string; label: string; index: number | null; count: number; is_finish: boolean };

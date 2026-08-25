@@ -98,6 +98,7 @@ export function Dashboard() {
   };
 
   const provisionalLead = data.position_context === "provisional_lead";
+  const loneAtMat = data.position_context === "lone_at_mat";
 
   return (
     <Shell historic={historicView}>
@@ -190,13 +191,18 @@ export function Dashboard() {
             <div className="text-[clamp(3rem,18vw,7rem)] leading-[0.95] font-black tracking-tight">
               {data.position ?? "—"}. {athlete.last_name || athlete.name}
             </div>
-            <div className="text-ink-muted text-sm text-balance">
+            <div className="text-ink-muted text-sm text-balance" data-testid="position-copy">
               {provisionalLead && data.field_size && checkpointLabel ? (
                 <>
                   first of {data.field_size} at {checkpointLabel}
                   <div className="mt-1 text-xs font-semibold text-amber-100/90">
                     Division lead not confirmed yet
                   </div>
+                </>
+              ) : loneAtMat && checkpointLabel ? (
+                <>
+                  only one at {checkpointLabel}
+                  {data.division?.label ? <> in {data.division.label}</> : null}
                 </>
               ) : (
                 <>

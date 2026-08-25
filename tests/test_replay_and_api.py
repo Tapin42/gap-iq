@@ -236,6 +236,24 @@ def test_athlete_endpoint_marks_provisional_lead(monkeypatch):
     reset_roster_cache()
 
 
+def test_athlete_endpoint_marks_lone_at_mat_when_solely_recorded_there(monkeypatch):
+    """At 255 minutes Furler is alone at Bike - Wiliberg 3; copy must not read as sole
+    division member."""
+    with _client_at_offset(monkeypatch, 255 * 60) as client:
+        body = client.get("/api/athlete/furler-mark").json()
+
+    assert body["position"] == 1
+    assert body["position_context"] == "lone_at_mat"
+    assert body["field_size"] == 1
+    assert body["checkpoint"]["label"] == "Bike - Wiliberg 3"
+
+    from app.poller import reset_supervisor
+
+    reset_supervisor()
+    reset_settings_cache()
+    reset_roster_cache()
+
+
 def test_history_view_is_flagged_as_not_live(client):
     body = client.get("/api/athlete/furler-mark?checkpoint_index=3").json()
 
@@ -328,3 +346,21 @@ def test_an_athlete_on_course_still_reports_a_navigable_checkpoint(client):
 
     assert body["on_course"] is True
     assert body["checkpoint"]["index"] is not None
+
+
+def test_replay_invariants_hold_for_every_roster_athlete_at_every_minute():
+    """Automated sweep: no duplicate neighbours or stale/current contradictions."""
+    from scripts.validate_replay import ERROR, run
+
+    findings = run(
+        snapshot=SNAPSHOT,
+        roster_file="roster.zofingen-2025.json",
+        step_minutes=1,
+        max_minutes=430,
+        athlete_filter=None,
+        verbose=False,
+    )
+    errors = [f for f in findings if f.severity == ERROR]
+    assert not errors, "\n".join(
+        f"{f.minute} min {f.athlete_slug} @ {f.checkpoint}: {f.detail}" for f in errors[:20]
+    )
