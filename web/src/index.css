@@ -8,6 +8,7 @@
   --color-surface: oklch(0.16 0.01 260);
   --color-surface-raised: oklch(0.22 0.012 260);
   --color-surface-history: oklch(0.28 0.06 85);
+  --color-surface-provisional: oklch(0.22 0.035 85);
 
   --color-ink: oklch(0.98 0 0);
   --color-ink-muted: oklch(0.72 0.01 260);

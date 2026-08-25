@@ -140,13 +140,26 @@ def test_a_fresh_pass_to_the_ag_lead_does_not_stale_show_the_same_racer_ahead():
     assert not view.behind.is_stale
 
 
+def test_provisional_lead_when_first_at_mat_but_rival_ahead_has_not_crossed():
+    """At Run2 - Lap 2 Furler is first recorded there while Castellano has not crossed yet."""
+    from racedata.core.gaps import compute_gap_view
+
+    view = compute_gap_view(athlete_id="furler-mark", ladder=ladder_at(356))
+
+    assert view.checkpoint.label == "Run2 - Lap 2"
+    assert view.display_rank == 1
+    assert view.ahead is not None and view.ahead.athlete.last_name == "Castellano"
+    assert view.ahead.is_stale
+    assert view.ahead.measured_at is not None
+    assert view.ahead.measured_at.label == "Bike - Wiliberg 2"
+
+
 # -- End to end through the API ---------------------------------------------------------
-@pytest.fixture()
-def client(monkeypatch):
+def _client_at_offset(monkeypatch, offset_seconds: int):
     monkeypatch.setenv("GAPIQ_PROVIDER", "replay")
     monkeypatch.setenv("GAPIQ_IGNORE_ACTIVE_WINDOWS", "true")
     monkeypatch.setenv("GAPIQ_ROSTER_FILE", "roster.zofingen-2025.json")
-    monkeypatch.setenv("GAPIQ_REPLAY_OFFSET_SECONDS", str(430 * 60))
+    monkeypatch.setenv("GAPIQ_REPLAY_OFFSET_SECONDS", str(offset_seconds))
     monkeypatch.setenv("GAPIQ_REPLAY_SPEED", "0")
     reset_settings_cache()
     reset_roster_cache()
@@ -163,8 +176,16 @@ def client(monkeypatch):
 
     from app.main import create_app
 
-    with TestClient(create_app()) as test_client:
+    return TestClient(create_app())
+
+
+@pytest.fixture()
+def client(monkeypatch):
+    test_client = _client_at_offset(monkeypatch, 430 * 60)
+    with test_client:
         yield test_client
+
+    from app.poller import reset_supervisor
 
     reset_supervisor()
     reset_settings_cache()
@@ -188,6 +209,7 @@ def test_athlete_endpoint_serialises_the_dashboard(client):
 
     assert body["has_data"] is True
     assert body["position"] == 2
+    assert body["position_context"] == "confirmed"
     assert body["division"]["label"] == "M40-44"
     assert body["ahead"]["last_name"] == "Ripke"
     assert body["behind"]["last_name"] == "Castellano"
@@ -195,6 +217,23 @@ def test_athlete_endpoint_serialises_the_dashboard(client):
     # Freshness must be epochs, not pre-rendered prose the client cannot age.
     assert isinstance(body["freshness"]["server_time"], (int, float))
     assert "ago" not in str(body["freshness"])
+
+
+def test_athlete_endpoint_marks_provisional_lead(monkeypatch):
+    with _client_at_offset(monkeypatch, 356 * 60) as client:
+        body = client.get("/api/athlete/furler-mark").json()
+
+    assert body["position"] == 1
+    assert body["position_context"] == "provisional_lead"
+    assert body["checkpoint"]["label"] == "Run2 - Lap 2"
+    assert body["ahead"]["is_stale"] is True
+    assert body["ahead"]["measured_at"] == "Bike - Wiliberg 2"
+
+    from app.poller import reset_supervisor
+
+    reset_supervisor()
+    reset_settings_cache()
+    reset_roster_cache()
 
 
 def test_history_view_is_flagged_as_not_live(client):

@@ -1,5 +1,12 @@
 import type { Neighbour } from "../lib/api";
 
+function slotLabel(slot: "ahead" | "behind", neighbour: Neighbour | null): string {
+  if (neighbour?.is_stale) {
+    return slot === "ahead" ? "Last known ahead" : "Last known behind";
+  }
+  return slot === "ahead" ? "Ahead" : "Behind";
+}
+
 /**
  * One neighbour: bib, three-letter country, and the gap with its trend.
  *
@@ -27,7 +34,7 @@ export function GapRow({
     return (
       <div className="flex min-h-[22vh] flex-col justify-center gap-1 px-5 py-4">
         <div className="text-ink-muted text-xs font-semibold tracking-widest uppercase">
-          {slot === "ahead" ? "Ahead" : "Behind"}
+          {slotLabel(slot, null)}
         </div>
         <p className="text-ink-muted text-lg text-balance">{absenceCopy ?? "No data."}</p>
       </div>
@@ -61,7 +68,7 @@ export function GapRow({
       }`}
     >
       <div className="text-ink-muted flex items-center gap-2 text-xs font-semibold tracking-widest uppercase">
-        <span>{slot === "ahead" ? "Ahead" : "Behind"}</span>
+        <span>{slotLabel(slot, neighbour)}</span>
         {neighbour.is_new_occupant && (
           // The person in this position changed since the baseline. The gap is still a real
           // comparison, so the row stays coloured; this says the name is different.

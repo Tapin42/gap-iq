@@ -39,6 +39,16 @@ RACE_COMPLETE_FRACTION = 0.9
 
 router = APIRouter()
 
+POSITION_PROVISIONAL_LEAD = "provisional_lead"
+POSITION_CONFIRMED = "confirmed"
+
+
+def _position_context(view: GapView) -> str:
+    """Whether the displayed rank is a confirmed division standing or only at this mat."""
+    if view.display_rank == 1 and view.ahead is not None and view.ahead.is_stale:
+        return POSITION_PROVISIONAL_LEAD
+    return POSITION_CONFIRMED
+
 
 class ScopeUpdate(BaseModel):
     scope: str
@@ -345,6 +355,7 @@ async def athlete_detail(
         "status": view.status,
         "has_data": True,
         "position": view.display_rank,
+        "position_context": _position_context(view),
         "field_size": view.field_size,
         "division": {
             "id": view.division.id,

@@ -97,6 +97,8 @@ export function Dashboard() {
     setCheckpointIndex(next);
   };
 
+  const provisionalLead = data.position_context === "provisional_lead";
+
   return (
     <Shell historic={historicView}>
       {/* Header: who this is, and where they are. */}
@@ -176,14 +178,34 @@ export function Dashboard() {
             type="button"
             onClick={() => step(-1)}
             disabled={navigating || activeIndex === null || activeIndex <= 0}
-            className="bg-surface-raised flex min-h-[26vh] flex-col items-center justify-center gap-1 px-4 py-6 text-center disabled:opacity-100"
+            className={`flex min-h-[26vh] flex-col items-center justify-center gap-1 px-4 py-6 text-center disabled:opacity-100 ${
+              provisionalLead ? "bg-surface-provisional" : "bg-surface-raised"
+            }`}
           >
+            {provisionalLead && (
+              <div className="mb-1 rounded-sm bg-black/30 px-2 py-0.5 text-[0.65rem] font-black tracking-widest uppercase">
+                At mat
+              </div>
+            )}
             <div className="text-[clamp(3rem,18vw,7rem)] leading-[0.95] font-black tracking-tight">
               {data.position ?? "—"}. {athlete.last_name || athlete.name}
             </div>
-            <div className="text-ink-muted text-sm">
-              {data.field_size ? `of ${data.field_size} in ${data.division?.label ?? "division"}` : ""}
-              {data.checkpoint?.is_finish && " · finished"}
+            <div className="text-ink-muted text-sm text-balance">
+              {provisionalLead && data.field_size && checkpointLabel ? (
+                <>
+                  first of {data.field_size} at {checkpointLabel}
+                  <div className="mt-1 text-xs font-semibold text-amber-100/90">
+                    Division lead not confirmed yet
+                  </div>
+                </>
+              ) : (
+                <>
+                  {data.field_size
+                    ? `of ${data.field_size} in ${data.division?.label ?? "division"}`
+                    : ""}
+                  {data.checkpoint?.is_finish && " · finished"}
+                </>
+              )}
             </div>
             {checkpointLabel && (
               <div className="text-ink-muted max-w-full truncate text-base font-semibold">
