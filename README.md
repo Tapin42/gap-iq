@@ -53,32 +53,15 @@ displayed as if they were sound.
 Requires Python 3.11+ and Node 22+.
 
 ```bash
-# Backend
-python3 -m venv .venv && source .venv/bin/activate
-pip install -e ".[dev]"
-
-# Frontend
-cd web && npm install && cd ..
-
-# Terminal 1 -- API on an uncommon port
-GAPIQ_IGNORE_ACTIVE_WINDOWS=true uvicorn app.main:app --reload --port 8477
-
-# Terminal 2 -- SPA dev server, proxies /api to the backend
-cd web && npm run dev
+./scripts/dev-replay.sh
 ```
 
-Then open the printed Vite URL. `GAPIQ_IGNORE_ACTIVE_WINDOWS=true` is needed because the
-poller is otherwise idle outside the configured race windows.
+This bootstraps dependencies if needed, starts the replay API on port 8477, and the Vite
+dev server on port 8478. Open http://localhost:8478 — the replay simulator serves a
+completed race through a virtual clock, so the whole UI works offline and deterministically.
 
-### Without a network
-
-The replay simulator serves a real completed race through a virtual clock, so the whole UI
-works offline and deterministically:
-
-```bash
-GAPIQ_IGNORE_ACTIVE_WINDOWS=true GAPIQ_PROVIDER=replay \
-  uvicorn app.main:app --reload --port 8477
-```
+For live upstream polling or other provider modes, read `scripts/dev-replay.sh` and adapt
+the env vars it sets.
 
 ## Tests
 

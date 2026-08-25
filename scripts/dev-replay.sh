@@ -23,6 +23,8 @@ trap cleanup EXIT INT TERM
 
 export GAPIQ_IGNORE_ACTIVE_WINDOWS=true
 export GAPIQ_PROVIDER=replay
+# Default roster is 2026 config; use the 2025 roster to match the replay snapshot:
+# GAPIQ_ROSTER_FILE=roster.zofingen-2025.json ./scripts/dev-replay.sh
 
 echo "Starting replay API on http://127.0.0.1:8477"
 .venv/bin/uvicorn app.main:app --reload --port 8477 &
