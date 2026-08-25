@@ -5,6 +5,8 @@ from __future__ import annotations
 import logging
 from pathlib import Path
 
+from contextlib import asynccontextmanager
+
 from fastapi import FastAPI
 from fastapi.responses import FileResponse
 from fastapi.staticfiles import StaticFiles
@@ -21,12 +23,25 @@ log = logging.getLogger("gapiq")
 SPA_DIR = REPO_ROOT / "web" / "dist"
 
 
+@asynccontextmanager
+async def lifespan(app: FastAPI):
+    from app.poller import get_supervisor
+
+    supervisor = get_supervisor()
+    supervisor.start()
+    try:
+        yield
+    finally:
+        await supervisor.stop()
+
+
 def create_app() -> FastAPI:
     settings = get_settings()
     app = FastAPI(
         title="Gap IQ",
         version="0.1.0",
         description="Live race-tracking dashboard: division position and neighbour gaps.",
+        lifespan=lifespan,
     )
 
     # Health first: it must answer even when nothing else is wired up, because its whole
