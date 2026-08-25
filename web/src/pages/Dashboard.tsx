@@ -185,6 +185,12 @@ export function Dashboard() {
               {data.field_size ? `of ${data.field_size} in ${data.division?.label ?? "division"}` : ""}
               {data.checkpoint?.is_finish && " · finished"}
             </div>
+            {checkpointLabel && (
+              <div className="text-ink-muted max-w-full truncate text-base font-semibold">
+                {checkpointLabel}
+                {data.elapsed_text && <> · {data.elapsed_text}</>}
+              </div>
+            )}
             {activeIndex !== null && activeIndex > 0 && !historicView && (
               <div className="text-ink-muted mt-1 text-xs">tap for the previous checkpoint</div>
             )}
