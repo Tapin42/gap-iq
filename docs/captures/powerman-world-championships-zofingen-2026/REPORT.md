@@ -1,7 +1,7 @@
 # Capture report — powerman-world-championships-zofingen-2026
 
-- Frames: **3338**
-- Window: 2026-08-25T18:36:00.954617+00:00 → 2026-08-29T10:53:20.744719+00:00
+- Frames: **3339**
+- Window: 2026-08-25T18:36:00.954617+00:00 → 2026-08-29T15:21:03.545636+00:00
 - Stages observed: reg
 - `refreshwait` values (ms): [15000, 120000]
 
