@@ -1,7 +1,7 @@
 # Capture report — triathlon-lausanne-2026
 
-- Frames: **602**
-- Window: 2026-08-29T10:47:45.150118+00:00 → 2026-08-29T15:22:09.825640+00:00
+- Frames: **1145**
+- Window: 2026-08-29T10:47:45.150118+00:00 → 2026-08-29T21:16:24.944844+00:00
 - Stages observed: idle
 - `refreshwait` values (ms): [3000, 15000]
 
