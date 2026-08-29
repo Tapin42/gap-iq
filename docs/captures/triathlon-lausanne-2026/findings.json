@@ -1,0 +1,25 @@
+{
+ "edition": "triathlon-lausanne-2026",
+ "frames": 543,
+ "first_capture_iso": "2026-08-29T10:47:45.150118+00:00",
+ "last_capture_iso": "2026-08-29T10:49:33.753314+00:00",
+ "stages_seen": [
+  "idle"
+ ],
+ "refresh_wait_values_ms": [
+  3000,
+  15000
+ ],
+ "ranked_then_withdrawn": [],
+ "checkpoint_recomputes_live": {
+  "answer": "not observed",
+  "evidence": [],
+  "checkpoints_observed": 478
+ },
+ "in_race_stage": "idle",
+ "revised_times": [],
+ "row_count_reversals": [],
+ "checkpoint_id_drift": [],
+ "order_label_mismatches": [],
+ "errors": []
+}
