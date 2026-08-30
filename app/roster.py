@@ -31,12 +31,21 @@ SCOPE_AGEGROUP = "agegroup"
 SCOPE_OVERALL = "overall"
 
 
+def _derive_last_name(name: str) -> str:
+    """datasport writes "Surname Forename", so the family name leads."""
+    return name.split(" ")[0] if name else ""
+
+
 @dataclass(frozen=True)
 class TrackedAthlete:
     """One athlete on the roster."""
 
     athlete_slug: str
     name: str
+    #: Family name for display. When absent in the roster JSON, derived at load time from
+    #: the datasport "Surname Forename" name field. Populated from the WT start list
+    #: pre-race so compound surnames display correctly on race day.
+    last_name: str = ""
     bib: str = ""
     country: str = ""
     year_of_birth: int | None = None
@@ -48,11 +57,6 @@ class TrackedAthlete:
     #: Per-athlete display scope. Age group by default, switchable to the wider field for
     #: anyone in contention overall.
     scope: str = SCOPE_AGEGROUP
-
-    @property
-    def last_name(self) -> str:
-        """datasport writes "Surname Forename", so the family name leads."""
-        return self.name.split(" ")[0] if self.name else ""
 
     @property
     def has_agegroup(self) -> bool:
@@ -96,6 +100,7 @@ def load_roster_document(path: Path) -> RosterDocument:
         TrackedAthlete(
             athlete_slug=item["athlete_slug"],
             name=item.get("name", ""),
+            last_name=item.get("last_name") or _derive_last_name(item.get("name", "")),
             bib=item.get("bib", ""),
             country=item.get("country", ""),
             year_of_birth=item.get("year_of_birth"),

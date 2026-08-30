@@ -31,7 +31,8 @@
    "favorite_id": "HE",
    "contest": "World Triathlon Long Distance - AGE GROUPS",
    "gender_list_slug": "world-triathlon-men-age-group",
-   "agegroup_list_slug": "world-triathlon-men-age-group-65-69"
+   "agegroup_list_slug": "world-triathlon-men-age-group-65-69",
+   "last_name": "Boncelet"
   },
   {
    "athlete_slug": "brabander-daniel",
@@ -43,7 +44,8 @@
    "favorite_id": "CZ",
    "contest": "World Triathlon Long Distance - AGE GROUPS",
    "gender_list_slug": "world-triathlon-men-age-group",
-   "agegroup_list_slug": "world-triathlon-men-age-group-60-64"
+   "agegroup_list_slug": "world-triathlon-men-age-group-60-64",
+   "last_name": "Brabander"
   },
   {
    "athlete_slug": "brooks-jr-louis",
@@ -55,7 +57,8 @@
    "favorite_id": "7D",
    "contest": "World Triathlon Long Distance - AGE GROUPS",
    "gender_list_slug": "world-triathlon-men-age-group",
-   "agegroup_list_slug": "world-triathlon-men-age-group-55-59"
+   "agegroup_list_slug": "world-triathlon-men-age-group-55-59",
+   "last_name": "Brooks Jr"
   },
   {
    "athlete_slug": "buckley-michele",
@@ -67,7 +70,8 @@
    "favorite_id": "LL",
    "contest": "World Triathlon Long Distance - AGE GROUPS",
    "gender_list_slug": "world-triathlon-women-age-group",
-   "agegroup_list_slug": "world-triathlon-women-age-group-55-59"
+   "agegroup_list_slug": "world-triathlon-women-age-group-55-59",
+   "last_name": "Buckley"
   },
   {
    "athlete_slug": "chambers-carissa",
@@ -79,7 +83,8 @@
    "favorite_id": "Sf",
    "contest": "World Triathlon Long Distance - AGE GROUPS",
    "gender_list_slug": "world-triathlon-women-age-group",
-   "agegroup_list_slug": "world-triathlon-women-age-group-35-39"
+   "agegroup_list_slug": "world-triathlon-women-age-group-35-39",
+   "last_name": "Chambers"
   },
   {
    "athlete_slug": "cobb-kenneth",
@@ -91,7 +96,8 @@
    "favorite_id": "6r",
    "contest": "World Triathlon Long Distance - AGE GROUPS",
    "gender_list_slug": "world-triathlon-men-age-group",
-   "agegroup_list_slug": "world-triathlon-men-age-group-50-54"
+   "agegroup_list_slug": "world-triathlon-men-age-group-50-54",
+   "last_name": "Cobb"
   },
   {
    "athlete_slug": "furler-mark",
@@ -103,7 +109,8 @@
    "favorite_id": "Qg",
    "contest": "World Triathlon Long Distance - AGE GROUPS",
    "gender_list_slug": "world-triathlon-men-age-group",
-   "agegroup_list_slug": "world-triathlon-men-age-group-40-44"
+   "agegroup_list_slug": "world-triathlon-men-age-group-40-44",
+   "last_name": "Furler"
   },
   {
    "athlete_slug": "galbraith-brad",
@@ -115,7 +122,8 @@
    "favorite_id": "Mk",
    "contest": "World Triathlon Long Distance - AGE GROUPS",
    "gender_list_slug": "world-triathlon-men-age-group",
-   "agegroup_list_slug": "world-triathlon-men-age-group-60-64"
+   "agegroup_list_slug": "world-triathlon-men-age-group-60-64",
+   "last_name": "Galbraith"
   },
   {
    "athlete_slug": "gee-robert",
@@ -127,7 +135,8 @@
    "favorite_id": "RP",
    "contest": "World Triathlon Long Distance - AGE GROUPS",
    "gender_list_slug": "world-triathlon-men-age-group",
-   "agegroup_list_slug": "world-triathlon-men-age-group-65-69"
+   "agegroup_list_slug": "world-triathlon-men-age-group-65-69",
+   "last_name": "Gee"
   },
   {
    "athlete_slug": "humphrey-mary",
@@ -139,7 +148,8 @@
    "favorite_id": "O1",
    "contest": "World Triathlon Long Distance - AGE GROUPS",
    "gender_list_slug": "world-triathlon-women-age-group",
-   "agegroup_list_slug": "world-triathlon-women-age-group-65-69"
+   "agegroup_list_slug": "world-triathlon-women-age-group-65-69",
+   "last_name": "Humphrey"
   },
   {
    "athlete_slug": "joray-samantha",
@@ -151,7 +161,8 @@
    "favorite_id": "0d",
    "contest": "World Triathlon Long Distance - AGE GROUPS",
    "gender_list_slug": "world-triathlon-women-age-group",
-   "agegroup_list_slug": "world-triathlon-women-age-group-25-29"
+   "agegroup_list_slug": "world-triathlon-women-age-group-25-29",
+   "last_name": "Joray"
   },
   {
    "athlete_slug": "marsalli-david",
@@ -163,7 +174,8 @@
    "favorite_id": "Wv",
    "contest": "World Triathlon Long Distance - AGE GROUPS",
    "gender_list_slug": "world-triathlon-men-age-group",
-   "agegroup_list_slug": "world-triathlon-men-age-group-60-64"
+   "agegroup_list_slug": "world-triathlon-men-age-group-60-64",
+   "last_name": "Marsalli"
   },
   {
    "athlete_slug": "muehlfellner-karoline",
@@ -175,7 +187,8 @@
    "favorite_id": "0o",
    "contest": "World Triathlon Long Distance - AGE GROUPS",
    "gender_list_slug": "world-triathlon-women-age-group",
-   "agegroup_list_slug": "world-triathlon-women-age-group-40-44"
+   "agegroup_list_slug": "world-triathlon-women-age-group-40-44",
+   "last_name": "Muehlfellner"
   },
   {
    "athlete_slug": "navratil-joe",
@@ -187,7 +200,8 @@
    "favorite_id": "H2",
    "contest": "World Triathlon Long Distance - AGE GROUPS",
    "gender_list_slug": "world-triathlon-men-age-group",
-   "agegroup_list_slug": "world-triathlon-men-age-group-50-54"
+   "agegroup_list_slug": "world-triathlon-men-age-group-50-54",
+   "last_name": "Navratil"
   },
   {
    "athlete_slug": "reel-jaime",
@@ -199,7 +213,8 @@
    "favorite_id": "5o",
    "contest": "World Triathlon Long Distance - AGE GROUPS",
    "gender_list_slug": "world-triathlon-women-age-group",
-   "agegroup_list_slug": "world-triathlon-women-age-group-35-39"
+   "agegroup_list_slug": "world-triathlon-women-age-group-35-39",
+   "last_name": "Reel"
   },
   {
    "athlete_slug": "starikova-olga",
@@ -211,7 +226,8 @@
    "favorite_id": "Sq",
    "contest": "World Triathlon Long Distance - AGE GROUPS",
    "gender_list_slug": "world-triathlon-women-age-group",
-   "agegroup_list_slug": "world-triathlon-women-age-group-45-49"
+   "agegroup_list_slug": "world-triathlon-women-age-group-45-49",
+   "last_name": "Starikova"
   },
   {
    "athlete_slug": "sturzl-cora",
@@ -223,7 +239,8 @@
    "favorite_id": "T1",
    "contest": "World Triathlon Long Distance - AGE GROUPS",
    "gender_list_slug": "world-triathlon-women-age-group",
-   "agegroup_list_slug": "world-triathlon-women-age-group-60-64"
+   "agegroup_list_slug": "world-triathlon-women-age-group-60-64",
+   "last_name": "Sturzl"
   },
   {
    "athlete_slug": "watson-nicholas",
@@ -235,7 +252,8 @@
    "favorite_id": "RD",
    "contest": "World Triathlon Long Distance - AGE GROUPS",
    "gender_list_slug": "world-triathlon-men-age-group",
-   "agegroup_list_slug": "world-triathlon-men-age-group-50-54"
+   "agegroup_list_slug": "world-triathlon-men-age-group-50-54",
+   "last_name": "Watson"
   },
   {
    "athlete_slug": "weiss-daniel",
@@ -247,7 +265,8 @@
    "favorite_id": "4M",
    "contest": "World Triathlon Long Distance - AGE GROUPS",
    "gender_list_slug": "world-triathlon-men-age-group",
-   "agegroup_list_slug": "world-triathlon-men-age-group-50-54"
+   "agegroup_list_slug": "world-triathlon-men-age-group-50-54",
+   "last_name": "Weiss"
   },
   {
    "athlete_slug": "wightman-ron",
@@ -259,7 +278,8 @@
    "favorite_id": "Ra",
    "contest": "World Triathlon Long Distance - AGE GROUPS",
    "gender_list_slug": "world-triathlon-men-age-group",
-   "agegroup_list_slug": "world-triathlon-men-age-group-75-79"
+   "agegroup_list_slug": "world-triathlon-men-age-group-75-79",
+   "last_name": "Wightman"
   },
   {
    "athlete_slug": "williams-darin",
@@ -271,7 +291,8 @@
    "favorite_id": "3p",
    "contest": "World Triathlon Long Distance - AGE GROUPS",
    "gender_list_slug": "world-triathlon-men-age-group",
-   "agegroup_list_slug": "world-triathlon-men-age-group-40-44"
+   "agegroup_list_slug": "world-triathlon-men-age-group-40-44",
+   "last_name": "Williams"
   },
   {
    "athlete_slug": "worth-steven",
@@ -283,7 +304,8 @@
    "favorite_id": "HO",
    "contest": "World Triathlon Long Distance - AGE GROUPS",
    "gender_list_slug": "world-triathlon-men-age-group",
-   "agegroup_list_slug": "world-triathlon-men-age-group-55-59"
+   "agegroup_list_slug": "world-triathlon-men-age-group-55-59",
+   "last_name": "Worth"
   },
   {
    "athlete_slug": "dietzel-olivia",
@@ -295,7 +317,8 @@
    "favorite_id": "E4",
    "contest": "World Triathlon Long Distance - ELITE",
    "gender_list_slug": "world-triathlon-elite-women-21",
-   "agegroup_list_slug": ""
+   "agegroup_list_slug": "",
+   "last_name": "Dietzel"
   }
  ]
 }
