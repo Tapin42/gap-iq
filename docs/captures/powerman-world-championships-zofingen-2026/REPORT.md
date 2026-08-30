@@ -1,7 +1,7 @@
 # Capture report — powerman-world-championships-zofingen-2026
 
-- Frames: **3341**
-- Window: 2026-08-25T18:36:00.954617+00:00 → 2026-08-30T14:31:46.049313+00:00
+- Frames: **3455**
+- Window: 2026-08-25T18:36:00.954617+00:00 → 2026-08-30T18:10:45.354405+00:00
 - Stages observed: reg
 - `refreshwait` values (ms): [15000, 120000]
 
@@ -14,7 +14,7 @@ immediately everywhere. Do not treat this as proof of the latter.
 
 ### 2. Does `order=split-<id>` recompute during the race?
 
-Answer: _not observed_ (1582 checkpoints observed)
+Answer: _not observed_ (1588 checkpoints observed)
 
 
 ### 3. What is the in-race `stage` value?

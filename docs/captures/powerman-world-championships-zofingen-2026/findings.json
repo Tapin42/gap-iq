@@ -1,8 +1,8 @@
 {
  "edition": "powerman-world-championships-zofingen-2026",
- "frames": 3341,
+ "frames": 3455,
  "first_capture_iso": "2026-08-25T18:36:00.954617+00:00",
- "last_capture_iso": "2026-08-30T14:31:46.049313+00:00",
+ "last_capture_iso": "2026-08-30T18:10:45.354405+00:00",
  "stages_seen": [
   "reg"
  ],
@@ -14,7 +14,7 @@
  "checkpoint_recomputes_live": {
   "answer": "not observed",
   "evidence": [],
-  "checkpoints_observed": 1582
+  "checkpoints_observed": 1588
  },
  "in_race_stage": "not observed",
  "revised_times": [],
