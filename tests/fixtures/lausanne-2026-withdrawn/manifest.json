@@ -1,0 +1,34 @@
+{
+  "femmes-cla-overall.json": {
+    "source": "docs/captures/triathlon-lausanne-2026/frames/ranking/1788083057-ranking-femmes-cla-default-b9902da2.json.gz",
+    "captured_at": "2026-08-30T09:44:17Z",
+    "stage": "live",
+    "ranked_rows": 151,
+    "withdrawn_rows": 3,
+    "totalrowcount": 154
+  },
+  "hommes-cla-overall.json": {
+    "source": "docs/captures/triathlon-lausanne-2026/frames/ranking/1788083060-ranking-hommes-cla-default-baa961f1.json.gz",
+    "captured_at": "2026-08-30T09:44:28Z",
+    "stage": "live",
+    "ranked_rows": 200,
+    "withdrawn_rows": 0,
+    "totalrowcount": 472
+  },
+  "hommes-cla-35-44-overall.json": {
+    "source": "docs/captures/triathlon-lausanne-2026/frames/ranking/1788083068-ranking-hommes-cla-35-44-default-39b24c9b.json.gz",
+    "captured_at": "2026-08-30T09:44:28Z",
+    "stage": "live",
+    "ranked_rows": 132,
+    "withdrawn_rows": 3,
+    "totalrowcount": 135
+  },
+  "hommes-cla-35-44-split-281.json": {
+    "source": "docs/captures/triathlon-lausanne-2026/frames/ranking/1788083068-ranking-hommes-cla-35-44-split-281-4a78cafa.json.gz",
+    "captured_at": "2026-08-30T09:44:28Z",
+    "stage": "live",
+    "ranked_rows": 131,
+    "withdrawn_rows": 1,
+    "totalrowcount": 132
+  }
+}

@@ -35,6 +35,9 @@ pytestmark = pytest.mark.live
 TARGET = "powerman-world-championships-zofingen-2026"
 REFERENCE = "powerman-world-championships-zofingen-2025"
 GENDER_LIST = "world-triathlon-men-age-group"
+LAUSANNE = "triathlon-lausanne-2026"
+LAUSANNE_MEN = "hommes-cla"
+LAUSANNE_MEN_35_44 = "hommes-cla-35-44"
 
 
 @pytest.fixture(scope="module")
@@ -224,3 +227,30 @@ def test_paging_cap_is_still_two_hundred(client: DatasportClient):
 
     assert response.table is not None
     assert len(response.rows) <= 200
+
+
+def test_lausanne_mens_dnfs_are_not_on_the_gender_list(client: DatasportClient):
+    """Captured 2026-08-30: ``hommes-cla`` had finishers but no DNF block, while
+    ``hommes-cla-35-44`` carried withdrawn athletes on the same day.
+
+    The poller must not assume the gender list's withdrawn tuple is complete for men.
+    """
+    agegroup = client.call(
+        "ranking", edition=LAUSANNE, slug=LAUSANNE_MEN_35_44, count=200, page=1
+    )
+    if agegroup.stage not in {"live", "done"} or agegroup.table is None:
+        pytest.skip("Lausanne Olympic results are not published yet")
+
+    _, withdrawn_agegroup = split_ranked_and_withdrawn(agegroup.rows)
+    if not withdrawn_agegroup:
+        pytest.skip("no DNFs on the men's 35-44 list yet")
+
+    gender = client.call("ranking", edition=LAUSANNE, slug=LAUSANNE_MEN, count=200, page=1)
+    assert gender.table is not None
+
+    ranked_gender, withdrawn_gender = split_ranked_and_withdrawn(gender.rows)
+    assert ranked_gender, "expected finishers on the men's gender list"
+    assert withdrawn_gender == [], (
+        "men's DNFs were only visible on age-group lists during the 2026 capture; "
+        "do not rely on the gender list alone"
+    )
