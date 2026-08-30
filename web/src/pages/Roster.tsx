@@ -144,11 +144,12 @@ export function Roster() {
                   >
                     {row.scope === "agegroup" ? "Age group" : "Overall"}
                   </button>
+                  {/* Hidden on the shared roster: removal is global and in-memory only. */}
                   <button
                     type="button"
                     onClick={() => remove(row)}
                     disabled={busy === row.athlete_slug}
-                    className="text-ink-muted min-h-[40px] px-3 py-2 text-sm disabled:opacity-40"
+                    className="text-ink-muted hidden min-h-[40px] px-3 py-2 text-sm disabled:opacity-40"
                   >
                     Remove
                   </button>
