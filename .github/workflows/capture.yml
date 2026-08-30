@@ -14,8 +14,8 @@ on:
   schedule:
     # Every 5 minutes during the Lausanne rehearsal (Sat/Sun 29-30 Aug 2026, 04:00-18:00Z)
     - cron: "*/5 4-18 29-30 8 *"
-    # Zofingen weekend (Sat 5 / Sun 6 Sep 2026, 05:00-19:00Z) -- the Saturday programme
-    # includes Zofingen 5000, which runs on the same edition slug as the long distance.
+    # Zofingen weekend (Sat 5 / Sun 6 Sep 2026, 05:00-19:00Z). The edition slug covers
+    # the whole festival; capture is scoped to Zofingen 5000 only (see Capture step).
     - cron: "*/5 5-19 5-6 9 *"
   workflow_dispatch:
     inputs:
@@ -67,11 +67,16 @@ jobs:
         env:
           EDITION: ${{ matrix.edition }}
         run: |
+          CONTEST_ARGS=()
+          if [ "$EDITION" = "powerman-world-championships-zofingen-2026" ]; then
+            CONTEST_ARGS=(--contest "Zofingen 5000")
+          fi
           python -m capture.harness \
             --edition "$EDITION" \
             --output "docs/captures/$EDITION" \
             --passes "${{ github.event.inputs.passes || '4' }}" \
-            --interval 45
+            --interval 45 \
+            "${CONTEST_ARGS[@]}"
 
       - name: Summarise
         if: steps.gate.outputs.active == 'true'

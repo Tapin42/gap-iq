@@ -3,8 +3,9 @@ from __future__ import annotations
 import json
 
 from capture.gate import is_active
-from capture.harness import CaptureSession
+from capture.harness import CaptureSession, select_contest_lists
 from capture.report import analyse, render_markdown
+from racedata.providers.datasport.parse import ListRef
 
 
 class _Client:
@@ -156,6 +157,24 @@ def test_a_blocked_request_is_recorded_as_an_error_not_a_crash(tmp_path):
     summary = session.run_pass()
 
     assert any("BLOCKED" in message for message in summary.errors)
+
+
+def test_select_contest_lists_matches_a_prefix_and_its_sub_contests():
+    refs = [
+        ListRef("a", "Men", "gender", "Zofingen 5000"),
+        ListRef("b", "U16", "agegroup", "Zofingen 5000 - U16"),
+        ListRef("c", "Men", "gender", "World Triathlon Long Distance - AGE GROUPS"),
+    ]
+
+    selected = select_contest_lists(refs, ("Zofingen 5000",))
+
+    assert [ref.slug for ref in selected] == ["a", "b"]
+
+
+def test_select_contest_lists_with_no_prefix_returns_everything():
+    refs = [ListRef("a", "Men", "gender", "Zofingen 5000")]
+
+    assert select_contest_lists(refs, ()) == refs
 
 
 # -- Report -----------------------------------------------------------------------------

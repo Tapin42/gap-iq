@@ -23,6 +23,7 @@ from racedata.providers.datasport.client import (
     DatasportError,
 )
 from racedata.providers.datasport.parse import (
+    ListRef,
     applied_checkpoint_label,
     checkpoint_catalog,
     contest_lists,
@@ -109,6 +110,23 @@ def _counts(payload: dict) -> tuple[int, int, int]:
     return len(rows), ranked, withdrawn
 
 
+def select_contest_lists(
+    refs: list[ListRef], contest_prefixes: tuple[str, ...]
+) -> list[ListRef]:
+    """Keep lists whose contest name matches a prefix.
+
+    ``Zofingen 5000`` therefore includes ``Zofingen 5000 - U16`` as well as the main
+    contest, without pulling in unrelated races that share the edition slug.
+    """
+    if not contest_prefixes:
+        return refs
+    return [
+        ref
+        for ref in refs
+        if any(ref.contest.startswith(prefix) for prefix in contest_prefixes)
+    ]
+
+
 class CaptureSession:
     """A single pass over one event, writing changed frames to disk."""
 
@@ -120,6 +138,7 @@ class CaptureSession:
         client: DatasportClient | None = None,
         athlete_slugs: tuple[str, ...] = (),
         max_lists: int | None = None,
+        contest_prefixes: tuple[str, ...] = (),
     ) -> None:
         self.edition = edition
         self.output_dir = output_dir
@@ -128,6 +147,7 @@ class CaptureSession:
         self.client = client or DatasportClient()
         self.athlete_slugs = athlete_slugs
         self.max_lists = max_lists
+        self.contest_prefixes = contest_prefixes
         self._seen: set[str] = self._load_seen()
 
     def _load_seen(self) -> set[str]:
@@ -199,6 +219,19 @@ class CaptureSession:
 
         try:
             lists = self._capture_event_tree(summary)
+            if self.contest_prefixes:
+                before = len(lists)
+                lists = select_contest_lists(lists, self.contest_prefixes)
+                log.info(
+                    "contest filter %s: %s of %s lists",
+                    self.contest_prefixes,
+                    len(lists),
+                    before,
+                )
+                if not lists:
+                    summary.errors.append(
+                        f"no lists matched contest prefix(es) {self.contest_prefixes!r}"
+                    )
             for ref in lists[: self.max_lists] if self.max_lists else lists:
                 self._capture_list(ref.slug, summary)
             for slug in self.athlete_slugs:
@@ -298,6 +331,14 @@ def main(argv: list[str] | None = None) -> int:
     parser.add_argument("--athlete", action="append", default=[], dest="athletes")
     parser.add_argument("--max-lists", type=int, default=None)
     parser.add_argument(
+        "--contest",
+        action="append",
+        default=[],
+        metavar="PREFIX",
+        help="limit capture to lists in contests whose name starts with PREFIX "
+        "(repeatable; e.g. --contest 'Zofingen 5000')",
+    )
+    parser.add_argument(
         "--passes", type=int, default=1, help="passes to make before exiting"
     )
     parser.add_argument("--interval", type=float, default=30.0)
@@ -309,6 +350,7 @@ def main(argv: list[str] | None = None) -> int:
         output_dir=args.output,
         athlete_slugs=tuple(args.athletes),
         max_lists=args.max_lists,
+        contest_prefixes=tuple(args.contest),
     )
 
     worst = 0
