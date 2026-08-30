@@ -57,6 +57,16 @@ The consequence is that the poller needs the *union* of all tracked athletes, no
 scope's worth. `RosterStore.list_slugs_in_use` currently takes a scope; it will need a
 variant that spans every scope.
 
+## Future: race-specific URL paths
+
+Zofingen ships at the site root (`/`, `/athlete/:slug`) because one deployment serves one
+edition and one shared roster. After the main race, a natural follow-on is path-scoped
+races — e.g. `/2026-zofingen/` — where the URL selects both the edition and the roster
+context. That pairs with per-supporter rosters rather than a single shared list: a
+supporter at `/2027-ironman/athlete/jane` gets their own tracked athletes for that event,
+not everyone else's. Not needed for Zofingen; revisit once per-user scope and persistence
+land.
+
 ## What this is not
 
 Not authentication. A cookie-scoped roster keeps supporters out of each other's lists; it

@@ -1,0 +1,38 @@
+# Shrink the Fly/Depot build context. The image only needs:
+#   pyproject.toml, README.md, app/, capture/, config/, and web/ sources (built in-stage).
+
+# Python local / build artifacts
+.venv/
+venv/
+__pycache__/
+*.py[cod]
+*.egg-info/
+.pytest_cache/
+.ruff_cache/
+.mypy_cache/
+uv.lock
+
+# Git / CI / secrets
+.git/
+.github/
+.env
+.env.*
+
+# Offline docs and fixture data (capture *source* in capture/ is still included)
+docs/
+snapshots/
+tests/
+scripts/
+capture-scratch/
+
+# Node: npm install + vite build run inside the web stage
+web/node_modules/
+web/dist/
+web/.vite/
+web/test-results/
+web/playwright-report/
+web/playwright/.cache/
+web/e2e/
+
+test-results/
+playwright-report/
