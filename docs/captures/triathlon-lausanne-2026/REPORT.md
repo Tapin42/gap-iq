@@ -148,25 +148,11 @@ A later checkpoint reported more finishers than an earlier one, which breaks any
 ```json
 [
  {
-  "list": "short-hommes-57",
+  "list": "short-65-hommes-931286",
   "from": "split-257",
   "to": "split-258",
-  "from_count": 162,
-  "to_count": 164
- },
- {
-  "list": "short-u18-femmes",
-  "from": "split-257",
-  "to": "split-258",
-  "from_count": 7,
-  "to_count": 8
- },
- {
-  "list": "short-18-34-hommes-931214",
-  "from": "split-242",
-  "to": "split-243",
-  "from_count": 98,
-  "to_count": 99
+  "from_count": 3,
+  "to_count": 4
  },
  {
   "list": "femmes-cla-18-34",
@@ -183,25 +169,39 @@ A later checkpoint reported more finishers than an earlier one, which breaks any
   "to_count": 104
  },
  {
-  "list": "short-35-44-femmes-931258",
+  "list": "short-45-54-femmes-931266",
   "from": "split-252",
   "to": "split-253",
-  "from_count": 22,
-  "to_count": 23
+  "from_count": 9,
+  "to_count": 10
  },
  {
-  "list": "hommes-cla-55-64",
-  "from": "split-286",
-  "to": "split-287",
-  "from_count": 36,
-  "to_count": 37
- },
- {
-  "list": "short-65-hommes-931286",
+  "list": "short-u18-femmes",
   "from": "split-257",
   "to": "split-258",
-  "from_count": 3,
-  "to_count": 4
+  "from_count": 7,
+  "to_count": 8
+ },
+ {
+  "list": "short-18-34-hommes-931214",
+  "from": "split-242",
+  "to": "split-243",
+  "from_count": 98,
+  "to_count": 99
+ },
+ {
+  "list": "short-55-64-hommes-931238",
+  "from": "split-238",
+  "to": "split-239",
+  "from_count": 24,
+  "to_count": 25
+ },
+ {
+  "list": "short-55-64-hommes-931238",
+  "from": "split-242",
+  "to": "split-243",
+  "from_count": 24,
+  "to_count": 25
  },
  {
   "list": "short-femmes-53",
@@ -211,11 +211,11 @@ A later checkpoint reported more finishers than an earlier one, which breaks any
   "to_count": 82
  },
  {
-  "list": "short-18-34-hommes-931254",
-  "from": "split-257",
-  "to": "split-258",
-  "from_count": 68,
-  "to_count": 69
+  "list": "hommes-cla-55-64",
+  "from": "split-286",
+  "to": "split-287",
+  "from_count": 36,
+  "to_count": 37
  }
 ]
 ```
