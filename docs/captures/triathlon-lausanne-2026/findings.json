@@ -1,8 +1,8 @@
 {
  "edition": "triathlon-lausanne-2026",
- "frames": 2726,
+ "frames": 3139,
  "first_capture_iso": "2026-08-29T10:47:45.150118+00:00",
- "last_capture_iso": "2026-08-30T14:41:32.791376+00:00",
+ "last_capture_iso": "2026-08-30T18:11:57.748277+00:00",
  "stages_seen": [
   "idle",
   "live"
@@ -1097,6 +1097,588 @@
    "list": "hommes-cla-55-64",
    "checkpoint": "split-289",
    "withdrawn_first_seen": "2026-08-30T14:32:26.655120+00:00"
+  },
+  {
+   "athlete": "rioux-enora",
+   "list": "short-femmes-53",
+   "checkpoint": "",
+   "withdrawn_first_seen": "2026-08-30T18:11:01.789867+00:00"
+  },
+  {
+   "athlete": "rioux-enora",
+   "list": "short-femmes-53",
+   "checkpoint": "split-250",
+   "withdrawn_first_seen": "2026-08-30T18:11:01.789867+00:00"
+  },
+  {
+   "athlete": "rioux-enora",
+   "list": "short-femmes-53",
+   "checkpoint": "split-251",
+   "withdrawn_first_seen": "2026-08-30T18:11:01.789867+00:00"
+  },
+  {
+   "athlete": "rioux-enora",
+   "list": "short-femmes-53",
+   "checkpoint": "split-252",
+   "withdrawn_first_seen": "2026-08-30T18:11:01.789867+00:00"
+  },
+  {
+   "athlete": "rivier-maxime",
+   "list": "short-hommes-57",
+   "checkpoint": "",
+   "withdrawn_first_seen": "2026-08-30T18:11:04.149420+00:00"
+  },
+  {
+   "athlete": "fourets-arnaud",
+   "list": "short-hommes-57",
+   "checkpoint": "",
+   "withdrawn_first_seen": "2026-08-30T18:11:04.149420+00:00"
+  },
+  {
+   "athlete": "panter-benjamin",
+   "list": "short-hommes-57",
+   "checkpoint": "",
+   "withdrawn_first_seen": "2026-08-30T18:11:04.149420+00:00"
+  },
+  {
+   "athlete": "dos-santos-christopher",
+   "list": "short-hommes-57",
+   "checkpoint": "",
+   "withdrawn_first_seen": "2026-08-30T18:11:04.149420+00:00"
+  },
+  {
+   "athlete": "mazur-matteo",
+   "list": "short-hommes-57",
+   "checkpoint": "",
+   "withdrawn_first_seen": "2026-08-30T18:11:04.149420+00:00"
+  },
+  {
+   "athlete": "rivier-maxime",
+   "list": "short-hommes-57",
+   "checkpoint": "split-250",
+   "withdrawn_first_seen": "2026-08-30T18:11:04.149420+00:00"
+  },
+  {
+   "athlete": "mazur-matteo",
+   "list": "short-hommes-57",
+   "checkpoint": "split-250",
+   "withdrawn_first_seen": "2026-08-30T18:11:04.149420+00:00"
+  },
+  {
+   "athlete": "panter-benjamin",
+   "list": "short-hommes-57",
+   "checkpoint": "split-250",
+   "withdrawn_first_seen": "2026-08-30T18:11:04.149420+00:00"
+  },
+  {
+   "athlete": "fourets-arnaud",
+   "list": "short-hommes-57",
+   "checkpoint": "split-250",
+   "withdrawn_first_seen": "2026-08-30T18:11:04.149420+00:00"
+  },
+  {
+   "athlete": "dos-santos-christopher",
+   "list": "short-hommes-57",
+   "checkpoint": "split-250",
+   "withdrawn_first_seen": "2026-08-30T18:11:04.149420+00:00"
+  },
+  {
+   "athlete": "rivier-maxime",
+   "list": "short-hommes-57",
+   "checkpoint": "split-251",
+   "withdrawn_first_seen": "2026-08-30T18:11:04.149420+00:00"
+  },
+  {
+   "athlete": "mazur-matteo",
+   "list": "short-hommes-57",
+   "checkpoint": "split-251",
+   "withdrawn_first_seen": "2026-08-30T18:11:04.149420+00:00"
+  },
+  {
+   "athlete": "fourets-arnaud",
+   "list": "short-hommes-57",
+   "checkpoint": "split-251",
+   "withdrawn_first_seen": "2026-08-30T18:11:04.149420+00:00"
+  },
+  {
+   "athlete": "panter-benjamin",
+   "list": "short-hommes-57",
+   "checkpoint": "split-251",
+   "withdrawn_first_seen": "2026-08-30T18:11:04.149420+00:00"
+  },
+  {
+   "athlete": "dos-santos-christopher",
+   "list": "short-hommes-57",
+   "checkpoint": "split-251",
+   "withdrawn_first_seen": "2026-08-30T18:11:04.149420+00:00"
+  },
+  {
+   "athlete": "rivier-maxime",
+   "list": "short-hommes-57",
+   "checkpoint": "split-252",
+   "withdrawn_first_seen": "2026-08-30T18:11:04.149420+00:00"
+  },
+  {
+   "athlete": "mazur-matteo",
+   "list": "short-hommes-57",
+   "checkpoint": "split-252",
+   "withdrawn_first_seen": "2026-08-30T18:11:04.149420+00:00"
+  },
+  {
+   "athlete": "fourets-arnaud",
+   "list": "short-hommes-57",
+   "checkpoint": "split-252",
+   "withdrawn_first_seen": "2026-08-30T18:11:04.149420+00:00"
+  },
+  {
+   "athlete": "panter-benjamin",
+   "list": "short-hommes-57",
+   "checkpoint": "split-252",
+   "withdrawn_first_seen": "2026-08-30T18:11:04.149420+00:00"
+  },
+  {
+   "athlete": "dos-santos-christopher",
+   "list": "short-hommes-57",
+   "checkpoint": "split-252",
+   "withdrawn_first_seen": "2026-08-30T18:11:04.149420+00:00"
+  },
+  {
+   "athlete": "rivier-maxime",
+   "list": "short-hommes-57",
+   "checkpoint": "split-253",
+   "withdrawn_first_seen": "2026-08-30T18:11:04.149420+00:00"
+  },
+  {
+   "athlete": "fourets-arnaud",
+   "list": "short-hommes-57",
+   "checkpoint": "split-253",
+   "withdrawn_first_seen": "2026-08-30T18:11:04.149420+00:00"
+  },
+  {
+   "athlete": "panter-benjamin",
+   "list": "short-hommes-57",
+   "checkpoint": "split-253",
+   "withdrawn_first_seen": "2026-08-30T18:11:04.149420+00:00"
+  },
+  {
+   "athlete": "dos-santos-christopher",
+   "list": "short-hommes-57",
+   "checkpoint": "split-253",
+   "withdrawn_first_seen": "2026-08-30T18:11:04.149420+00:00"
+  },
+  {
+   "athlete": "rivier-maxime",
+   "list": "short-hommes-57",
+   "checkpoint": "split-254",
+   "withdrawn_first_seen": "2026-08-30T18:11:04.149420+00:00"
+  },
+  {
+   "athlete": "fourets-arnaud",
+   "list": "short-hommes-57",
+   "checkpoint": "split-254",
+   "withdrawn_first_seen": "2026-08-30T18:11:04.149420+00:00"
+  },
+  {
+   "athlete": "panter-benjamin",
+   "list": "short-hommes-57",
+   "checkpoint": "split-254",
+   "withdrawn_first_seen": "2026-08-30T18:11:04.149420+00:00"
+  },
+  {
+   "athlete": "fourets-arnaud",
+   "list": "short-hommes-57",
+   "checkpoint": "split-255",
+   "withdrawn_first_seen": "2026-08-30T18:11:04.149420+00:00"
+  },
+  {
+   "athlete": "rioux-enora",
+   "list": "short-18-34-femmes-931250",
+   "checkpoint": "",
+   "withdrawn_first_seen": "2026-08-30T18:11:01.789867+00:00"
+  },
+  {
+   "athlete": "rioux-enora",
+   "list": "short-18-34-femmes-931250",
+   "checkpoint": "split-250",
+   "withdrawn_first_seen": "2026-08-30T18:11:01.789867+00:00"
+  },
+  {
+   "athlete": "rioux-enora",
+   "list": "short-18-34-femmes-931250",
+   "checkpoint": "split-251",
+   "withdrawn_first_seen": "2026-08-30T18:11:01.789867+00:00"
+  },
+  {
+   "athlete": "rioux-enora",
+   "list": "short-18-34-femmes-931250",
+   "checkpoint": "split-252",
+   "withdrawn_first_seen": "2026-08-30T18:11:01.789867+00:00"
+  },
+  {
+   "athlete": "dos-santos-christopher",
+   "list": "short-18-34-hommes-931254",
+   "checkpoint": "",
+   "withdrawn_first_seen": "2026-08-30T18:11:04.149420+00:00"
+  },
+  {
+   "athlete": "dos-santos-christopher",
+   "list": "short-18-34-hommes-931254",
+   "checkpoint": "split-250",
+   "withdrawn_first_seen": "2026-08-30T18:11:04.149420+00:00"
+  },
+  {
+   "athlete": "dos-santos-christopher",
+   "list": "short-18-34-hommes-931254",
+   "checkpoint": "split-251",
+   "withdrawn_first_seen": "2026-08-30T18:11:04.149420+00:00"
+  },
+  {
+   "athlete": "dos-santos-christopher",
+   "list": "short-18-34-hommes-931254",
+   "checkpoint": "split-252",
+   "withdrawn_first_seen": "2026-08-30T18:11:04.149420+00:00"
+  },
+  {
+   "athlete": "dos-santos-christopher",
+   "list": "short-18-34-hommes-931254",
+   "checkpoint": "split-253",
+   "withdrawn_first_seen": "2026-08-30T18:11:04.149420+00:00"
+  },
+  {
+   "athlete": "fourets-arnaud",
+   "list": "short-45-54-hommes-931270",
+   "checkpoint": "",
+   "withdrawn_first_seen": "2026-08-30T18:11:04.149420+00:00"
+  },
+  {
+   "athlete": "fourets-arnaud",
+   "list": "short-45-54-hommes-931270",
+   "checkpoint": "split-250",
+   "withdrawn_first_seen": "2026-08-30T18:11:04.149420+00:00"
+  },
+  {
+   "athlete": "fourets-arnaud",
+   "list": "short-45-54-hommes-931270",
+   "checkpoint": "split-251",
+   "withdrawn_first_seen": "2026-08-30T18:11:04.149420+00:00"
+  },
+  {
+   "athlete": "fourets-arnaud",
+   "list": "short-45-54-hommes-931270",
+   "checkpoint": "split-252",
+   "withdrawn_first_seen": "2026-08-30T18:11:04.149420+00:00"
+  },
+  {
+   "athlete": "fourets-arnaud",
+   "list": "short-45-54-hommes-931270",
+   "checkpoint": "split-253",
+   "withdrawn_first_seen": "2026-08-30T18:11:04.149420+00:00"
+  },
+  {
+   "athlete": "fourets-arnaud",
+   "list": "short-45-54-hommes-931270",
+   "checkpoint": "split-254",
+   "withdrawn_first_seen": "2026-08-30T18:11:04.149420+00:00"
+  },
+  {
+   "athlete": "fourets-arnaud",
+   "list": "short-45-54-hommes-931270",
+   "checkpoint": "split-255",
+   "withdrawn_first_seen": "2026-08-30T18:11:04.149420+00:00"
+  },
+  {
+   "athlete": "rivier-maxime",
+   "list": "short-u18-hommes",
+   "checkpoint": "",
+   "withdrawn_first_seen": "2026-08-30T18:11:04.149420+00:00"
+  },
+  {
+   "athlete": "panter-benjamin",
+   "list": "short-u18-hommes",
+   "checkpoint": "",
+   "withdrawn_first_seen": "2026-08-30T18:11:04.149420+00:00"
+  },
+  {
+   "athlete": "mazur-matteo",
+   "list": "short-u18-hommes",
+   "checkpoint": "",
+   "withdrawn_first_seen": "2026-08-30T18:11:04.149420+00:00"
+  },
+  {
+   "athlete": "rivier-maxime",
+   "list": "short-u18-hommes",
+   "checkpoint": "split-250",
+   "withdrawn_first_seen": "2026-08-30T18:11:04.149420+00:00"
+  },
+  {
+   "athlete": "mazur-matteo",
+   "list": "short-u18-hommes",
+   "checkpoint": "split-250",
+   "withdrawn_first_seen": "2026-08-30T18:11:04.149420+00:00"
+  },
+  {
+   "athlete": "panter-benjamin",
+   "list": "short-u18-hommes",
+   "checkpoint": "split-250",
+   "withdrawn_first_seen": "2026-08-30T18:11:04.149420+00:00"
+  },
+  {
+   "athlete": "rivier-maxime",
+   "list": "short-u18-hommes",
+   "checkpoint": "split-251",
+   "withdrawn_first_seen": "2026-08-30T18:11:04.149420+00:00"
+  },
+  {
+   "athlete": "mazur-matteo",
+   "list": "short-u18-hommes",
+   "checkpoint": "split-251",
+   "withdrawn_first_seen": "2026-08-30T18:11:04.149420+00:00"
+  },
+  {
+   "athlete": "panter-benjamin",
+   "list": "short-u18-hommes",
+   "checkpoint": "split-251",
+   "withdrawn_first_seen": "2026-08-30T18:11:04.149420+00:00"
+  },
+  {
+   "athlete": "rivier-maxime",
+   "list": "short-u18-hommes",
+   "checkpoint": "split-252",
+   "withdrawn_first_seen": "2026-08-30T18:11:04.149420+00:00"
+  },
+  {
+   "athlete": "mazur-matteo",
+   "list": "short-u18-hommes",
+   "checkpoint": "split-252",
+   "withdrawn_first_seen": "2026-08-30T18:11:04.149420+00:00"
+  },
+  {
+   "athlete": "panter-benjamin",
+   "list": "short-u18-hommes",
+   "checkpoint": "split-252",
+   "withdrawn_first_seen": "2026-08-30T18:11:04.149420+00:00"
+  },
+  {
+   "athlete": "rivier-maxime",
+   "list": "short-u18-hommes",
+   "checkpoint": "split-253",
+   "withdrawn_first_seen": "2026-08-30T18:11:04.149420+00:00"
+  },
+  {
+   "athlete": "panter-benjamin",
+   "list": "short-u18-hommes",
+   "checkpoint": "split-253",
+   "withdrawn_first_seen": "2026-08-30T18:11:04.149420+00:00"
+  },
+  {
+   "athlete": "rivier-maxime",
+   "list": "short-u18-hommes",
+   "checkpoint": "split-254",
+   "withdrawn_first_seen": "2026-08-30T18:11:04.149420+00:00"
+  },
+  {
+   "athlete": "panter-benjamin",
+   "list": "short-u18-hommes",
+   "checkpoint": "split-254",
+   "withdrawn_first_seen": "2026-08-30T18:11:04.149420+00:00"
+  },
+  {
+   "athlete": "demierre-vincent",
+   "list": "short-hommes-73",
+   "checkpoint": "",
+   "withdrawn_first_seen": "2026-08-30T18:11:38.630075+00:00"
+  },
+  {
+   "athlete": "santin-jose-miguel",
+   "list": "short-hommes-73",
+   "checkpoint": "",
+   "withdrawn_first_seen": "2026-08-30T18:11:50.989359+00:00"
+  },
+  {
+   "athlete": "giannini-lucas",
+   "list": "short-hommes-73",
+   "checkpoint": "split-235",
+   "withdrawn_first_seen": "2026-08-30T18:11:42.842341+00:00"
+  },
+  {
+   "athlete": "devillaz-jean-luc",
+   "list": "short-hommes-73",
+   "checkpoint": "split-235",
+   "withdrawn_first_seen": "2026-08-30T18:11:47.121216+00:00"
+  },
+  {
+   "athlete": "devillaz-jean-luc",
+   "list": "short-hommes-73",
+   "checkpoint": "split-236",
+   "withdrawn_first_seen": "2026-08-30T18:11:47.121216+00:00"
+  },
+  {
+   "athlete": "devillaz-jean-luc",
+   "list": "short-hommes-73",
+   "checkpoint": "split-237",
+   "withdrawn_first_seen": "2026-08-30T18:11:47.121216+00:00"
+  },
+  {
+   "athlete": "demierre-vincent",
+   "list": "short-hommes-73",
+   "checkpoint": "split-243",
+   "withdrawn_first_seen": "2026-08-30T18:11:38.630075+00:00"
+  },
+  {
+   "athlete": "santin-jose-miguel",
+   "list": "short-hommes-73",
+   "checkpoint": "split-243",
+   "withdrawn_first_seen": "2026-08-30T18:11:50.989359+00:00"
+  },
+  {
+   "athlete": "demierre-vincent",
+   "list": "short-18-34-hommes-931214",
+   "checkpoint": "",
+   "withdrawn_first_seen": "2026-08-30T18:11:38.630075+00:00"
+  },
+  {
+   "athlete": "demierre-vincent",
+   "list": "short-18-34-hommes-931214",
+   "checkpoint": "split-235",
+   "withdrawn_first_seen": "2026-08-30T18:11:38.630075+00:00"
+  },
+  {
+   "athlete": "demierre-vincent",
+   "list": "short-18-34-hommes-931214",
+   "checkpoint": "split-236",
+   "withdrawn_first_seen": "2026-08-30T18:11:38.630075+00:00"
+  },
+  {
+   "athlete": "demierre-vincent",
+   "list": "short-18-34-hommes-931214",
+   "checkpoint": "split-237",
+   "withdrawn_first_seen": "2026-08-30T18:11:38.630075+00:00"
+  },
+  {
+   "athlete": "demierre-vincent",
+   "list": "short-18-34-hommes-931214",
+   "checkpoint": "split-238",
+   "withdrawn_first_seen": "2026-08-30T18:11:38.630075+00:00"
+  },
+  {
+   "athlete": "demierre-vincent",
+   "list": "short-18-34-hommes-931214",
+   "checkpoint": "split-239",
+   "withdrawn_first_seen": "2026-08-30T18:11:38.630075+00:00"
+  },
+  {
+   "athlete": "demierre-vincent",
+   "list": "short-18-34-hommes-931214",
+   "checkpoint": "split-240",
+   "withdrawn_first_seen": "2026-08-30T18:11:38.630075+00:00"
+  },
+  {
+   "athlete": "demierre-vincent",
+   "list": "short-18-34-hommes-931214",
+   "checkpoint": "split-241",
+   "withdrawn_first_seen": "2026-08-30T18:11:38.630075+00:00"
+  },
+  {
+   "athlete": "demierre-vincent",
+   "list": "short-18-34-hommes-931214",
+   "checkpoint": "split-243",
+   "withdrawn_first_seen": "2026-08-30T18:11:38.630075+00:00"
+  },
+  {
+   "athlete": "giannini-lucas",
+   "list": "short-35-44-hommes-931222",
+   "checkpoint": "",
+   "withdrawn_first_seen": "2026-08-30T18:11:42.842341+00:00"
+  },
+  {
+   "athlete": "giannini-lucas",
+   "list": "short-35-44-hommes-931222",
+   "checkpoint": "split-235",
+   "withdrawn_first_seen": "2026-08-30T18:11:42.842341+00:00"
+  },
+  {
+   "athlete": "devillaz-jean-luc",
+   "list": "short-45-54-hommes-931230",
+   "checkpoint": "",
+   "withdrawn_first_seen": "2026-08-30T18:11:47.121216+00:00"
+  },
+  {
+   "athlete": "devillaz-jean-luc",
+   "list": "short-45-54-hommes-931230",
+   "checkpoint": "split-235",
+   "withdrawn_first_seen": "2026-08-30T18:11:47.121216+00:00"
+  },
+  {
+   "athlete": "devillaz-jean-luc",
+   "list": "short-45-54-hommes-931230",
+   "checkpoint": "split-236",
+   "withdrawn_first_seen": "2026-08-30T18:11:47.121216+00:00"
+  },
+  {
+   "athlete": "devillaz-jean-luc",
+   "list": "short-45-54-hommes-931230",
+   "checkpoint": "split-237",
+   "withdrawn_first_seen": "2026-08-30T18:11:47.121216+00:00"
+  },
+  {
+   "athlete": "santin-jose-miguel",
+   "list": "short-55-64-hommes-931238",
+   "checkpoint": "",
+   "withdrawn_first_seen": "2026-08-30T18:11:50.989359+00:00"
+  },
+  {
+   "athlete": "santin-jose-miguel",
+   "list": "short-55-64-hommes-931238",
+   "checkpoint": "split-235",
+   "withdrawn_first_seen": "2026-08-30T18:11:50.989359+00:00"
+  },
+  {
+   "athlete": "santin-jose-miguel",
+   "list": "short-55-64-hommes-931238",
+   "checkpoint": "split-236",
+   "withdrawn_first_seen": "2026-08-30T18:11:50.989359+00:00"
+  },
+  {
+   "athlete": "santin-jose-miguel",
+   "list": "short-55-64-hommes-931238",
+   "checkpoint": "split-237",
+   "withdrawn_first_seen": "2026-08-30T18:11:50.989359+00:00"
+  },
+  {
+   "athlete": "santin-jose-miguel",
+   "list": "short-55-64-hommes-931238",
+   "checkpoint": "split-239",
+   "withdrawn_first_seen": "2026-08-30T18:11:50.989359+00:00"
+  },
+  {
+   "athlete": "santin-jose-miguel",
+   "list": "short-55-64-hommes-931238",
+   "checkpoint": "split-240",
+   "withdrawn_first_seen": "2026-08-30T18:11:50.989359+00:00"
+  },
+  {
+   "athlete": "santin-jose-miguel",
+   "list": "short-55-64-hommes-931238",
+   "checkpoint": "split-241",
+   "withdrawn_first_seen": "2026-08-30T18:11:50.989359+00:00"
+  },
+  {
+   "athlete": "santin-jose-miguel",
+   "list": "short-55-64-hommes-931238",
+   "checkpoint": "split-243",
+   "withdrawn_first_seen": "2026-08-30T18:11:50.989359+00:00"
+  },
+  {
+   "athlete": "demierre-vincent",
+   "list": "classement-general-m",
+   "checkpoint": "",
+   "withdrawn_first_seen": "2026-08-30T18:11:38.630075+00:00"
+  },
+  {
+   "athlete": "santin-jose-miguel",
+   "list": "classement-general-m",
+   "checkpoint": "",
+   "withdrawn_first_seen": "2026-08-30T18:11:50.989359+00:00"
   }
  ],
  "checkpoint_recomputes_live": {
@@ -1113,6 +1695,7 @@
      151,
      151,
      147,
+     147,
      147
     ]
    },
@@ -1126,6 +1709,7 @@
      150,
      150,
      150,
+     147,
      147,
      147
     ]
@@ -1141,6 +1725,7 @@
      150,
      150,
      147,
+     147,
      147
     ]
    },
@@ -1154,6 +1739,7 @@
      150,
      150,
      150,
+     147,
      147,
      147
     ]
@@ -1169,6 +1755,7 @@
      150,
      150,
      147,
+     147,
      147
     ]
    },
@@ -1182,6 +1769,7 @@
      149,
      149,
      149,
+     146,
      146,
      146
     ]
@@ -1197,6 +1785,7 @@
      150,
      150,
      147,
+     147,
      147
     ]
    },
@@ -1210,6 +1799,7 @@
      148,
      148,
      148,
+     147,
      147,
      147
     ]
@@ -1225,6 +1815,7 @@
      146,
      146,
      148,
+     148,
      148
     ]
    },
@@ -1238,6 +1829,7 @@
      134,
      135,
      137,
+     147,
      147,
      147
     ]
@@ -1253,6 +1845,7 @@
      95,
      98,
      145,
+     145,
      145
     ]
    },
@@ -1267,6 +1860,7 @@
      94,
      95,
      147,
+     147,
      147
     ]
    },
@@ -1276,6 +1870,7 @@
     "ranked": [
      0,
      0,
+     200,
      200,
      200,
      200,
@@ -1295,6 +1890,7 @@
      200,
      200,
      200,
+     200,
      200
     ]
    },
@@ -1304,6 +1900,7 @@
     "ranked": [
      0,
      0,
+     200,
      200,
      200,
      200,
@@ -1323,6 +1920,7 @@
      200,
      200,
      200,
+     200,
      200
     ]
    },
@@ -1332,6 +1930,7 @@
     "ranked": [
      0,
      0,
+     200,
      200,
      200,
      200,
@@ -1351,6 +1950,7 @@
      200,
      200,
      200,
+     200,
      200
     ]
    },
@@ -1365,6 +1965,7 @@
      200,
      200,
      200,
+     200,
      200
     ]
    },
@@ -1374,6 +1975,7 @@
     "ranked": [
      0,
      0,
+     200,
      200,
      200,
      200,
@@ -5714,9 +6316,4164 @@
    "was": "35:27,9",
    "now": "1:00:32,1",
    "at": "2026-08-30T14:41:24.310726+00:00"
+  },
+  {
+   "athlete": "stefanini-camilla-MpC",
+   "list": "short-femmes-53",
+   "checkpoint": "",
+   "was": "50:41,4",
+   "now": "1:11:28,0",
+   "at": "2026-08-30T18:11:01.789867+00:00"
+  },
+  {
+   "athlete": "brulhart-allyssa",
+   "list": "short-femmes-53",
+   "checkpoint": "",
+   "was": "59:45,7",
+   "now": "1:11:33,8",
+   "at": "2026-08-30T18:11:01.789867+00:00"
+  },
+  {
+   "athlete": "ripoll-charlene",
+   "list": "short-femmes-53",
+   "checkpoint": "",
+   "was": "50:20,3",
+   "now": "1:12:09,7",
+   "at": "2026-08-30T18:11:01.789867+00:00"
+  },
+  {
+   "athlete": "gianina-eline",
+   "list": "short-femmes-53",
+   "checkpoint": "",
+   "was": "52:02,6",
+   "now": "1:12:49,6",
+   "at": "2026-08-30T18:11:01.789867+00:00"
+  },
+  {
+   "athlete": "juilland-florence",
+   "list": "short-femmes-53",
+   "checkpoint": "",
+   "was": "53:05,0",
+   "now": "1:14:34,4",
+   "at": "2026-08-30T18:11:01.789867+00:00"
+  },
+  {
+   "athlete": "kilbert-helene",
+   "list": "short-femmes-53",
+   "checkpoint": "",
+   "was": "53:19,7",
+   "now": "1:15:07,5",
+   "at": "2026-08-30T18:11:01.789867+00:00"
+  },
+  {
+   "athlete": "pautz-clarisse",
+   "list": "short-femmes-53",
+   "checkpoint": "",
+   "was": "51:51,0",
+   "now": "1:16:41,9",
+   "at": "2026-08-30T18:11:01.789867+00:00"
+  },
+  {
+   "athlete": "granger-leeloo",
+   "list": "short-femmes-53",
+   "checkpoint": "",
+   "was": "53:41,1",
+   "now": "1:16:53,0",
+   "at": "2026-08-30T18:11:01.789867+00:00"
+  },
+  {
+   "athlete": "leau-sophie",
+   "list": "short-femmes-53",
+   "checkpoint": "",
+   "was": "55:51,7",
+   "now": "1:17:48,6",
+   "at": "2026-08-30T18:11:01.789867+00:00"
+  },
+  {
+   "athlete": "goguelet-berenice",
+   "list": "short-femmes-53",
+   "checkpoint": "",
+   "was": "55:39,2",
+   "now": "1:20:59,9",
+   "at": "2026-08-30T18:11:01.789867+00:00"
+  },
+  {
+   "athlete": "schnyder-jessica",
+   "list": "short-femmes-53",
+   "checkpoint": "",
+   "was": "56:46,4",
+   "now": "1:21:39,9",
+   "at": "2026-08-30T18:11:01.789867+00:00"
+  },
+  {
+   "athlete": "blatter-adrienne",
+   "list": "short-femmes-53",
+   "checkpoint": "",
+   "was": "57:31,8",
+   "now": "1:22:34,1",
+   "at": "2026-08-30T18:11:01.789867+00:00"
+  },
+  {
+   "athlete": "martini-lola",
+   "list": "short-femmes-53",
+   "checkpoint": "",
+   "was": "58:08,1",
+   "now": "1:23:37,6",
+   "at": "2026-08-30T18:11:01.789867+00:00"
+  },
+  {
+   "athlete": "noel-stephanie",
+   "list": "short-femmes-53",
+   "checkpoint": "",
+   "was": "58:43,0",
+   "now": "1:23:51,8",
+   "at": "2026-08-30T18:11:01.789867+00:00"
+  },
+  {
+   "athlete": "leuenberger-mareva",
+   "list": "short-femmes-53",
+   "checkpoint": "",
+   "was": "57:24,9",
+   "now": "1:23:53,1",
+   "at": "2026-08-30T18:11:01.789867+00:00"
+  },
+  {
+   "athlete": "guilbert-karine",
+   "list": "short-femmes-53",
+   "checkpoint": "",
+   "was": "56:13,7",
+   "now": "1:24:02,8",
+   "at": "2026-08-30T18:11:01.789867+00:00"
+  },
+  {
+   "athlete": "cudre-sarah",
+   "list": "short-femmes-53",
+   "checkpoint": "",
+   "was": "37:22,3",
+   "now": "1:24:23,2",
+   "at": "2026-08-30T18:11:01.789867+00:00"
+  },
+  {
+   "athlete": "santi-alicia",
+   "list": "short-femmes-53",
+   "checkpoint": "",
+   "was": "57:38,8",
+   "now": "1:24:54,3",
+   "at": "2026-08-30T18:11:01.789867+00:00"
+  },
+  {
+   "athlete": "parelle-anne",
+   "list": "short-femmes-53",
+   "checkpoint": "",
+   "was": "58:24,8",
+   "now": "1:25:34,5",
+   "at": "2026-08-30T18:11:01.789867+00:00"
+  },
+  {
+   "athlete": "hurther-marie",
+   "list": "short-femmes-53",
+   "checkpoint": "",
+   "was": "37:44,9",
+   "now": "1:25:36,6",
+   "at": "2026-08-30T18:11:01.789867+00:00"
+  },
+  {
+   "athlete": "chau-allison",
+   "list": "short-femmes-53",
+   "checkpoint": "",
+   "was": "39:19,9",
+   "now": "1:25:58,7",
+   "at": "2026-08-30T18:11:01.789867+00:00"
+  },
+  {
+   "athlete": "bacelar-sofia",
+   "list": "short-femmes-53",
+   "checkpoint": "",
+   "was": "56:24,3",
+   "now": "1:26:00,7",
+   "at": "2026-08-30T18:11:01.789867+00:00"
+  },
+  {
+   "athlete": "sollberger-lydia",
+   "list": "short-femmes-53",
+   "checkpoint": "",
+   "was": "57:20,3",
+   "now": "1:26:05,8",
+   "at": "2026-08-30T18:11:01.789867+00:00"
+  },
+  {
+   "athlete": "ihamouine-eden",
+   "list": "short-femmes-53",
+   "checkpoint": "",
+   "was": "59:07,3",
+   "now": "1:26:12,6",
+   "at": "2026-08-30T18:11:01.789867+00:00"
+  },
+  {
+   "athlete": "faivre-pierret-anna",
+   "list": "short-femmes-53",
+   "checkpoint": "",
+   "was": "36:00,5",
+   "now": "1:26:56,5",
+   "at": "2026-08-30T18:11:01.789867+00:00"
+  },
+  {
+   "athlete": "rouiller-yaelle",
+   "list": "short-femmes-53",
+   "checkpoint": "",
+   "was": "57:38,7",
+   "now": "1:28:40,9",
+   "at": "2026-08-30T18:11:01.789867+00:00"
+  },
+  {
+   "athlete": "chareyre-margaux",
+   "list": "short-femmes-53",
+   "checkpoint": "",
+   "was": "39:18,2",
+   "now": "1:28:43,4",
+   "at": "2026-08-30T18:11:01.789867+00:00"
+  },
+  {
+   "athlete": "kapps-rose",
+   "list": "short-femmes-53",
+   "checkpoint": "",
+   "was": "36:46,4",
+   "now": "1:29:07,1",
+   "at": "2026-08-30T18:11:01.789867+00:00"
+  },
+  {
+   "athlete": "maury-anna-lea",
+   "list": "short-femmes-53",
+   "checkpoint": "",
+   "was": "37:34,9",
+   "now": "1:29:13,9",
+   "at": "2026-08-30T18:11:01.789867+00:00"
+  },
+  {
+   "athlete": "monvert-vali-nakissa",
+   "list": "short-femmes-53",
+   "checkpoint": "",
+   "was": "37:43,6",
+   "now": "1:29:24,1",
+   "at": "2026-08-30T18:11:01.789867+00:00"
+  },
+  {
+   "athlete": "brahimi-bettinger-karine",
+   "list": "short-femmes-53",
+   "checkpoint": "",
+   "was": "58:50,8",
+   "now": "1:30:04,0",
+   "at": "2026-08-30T18:11:01.789867+00:00"
+  },
+  {
+   "athlete": "burri-aline",
+   "list": "short-femmes-53",
+   "checkpoint": "",
+   "was": "37:47,8",
+   "now": "1:30:10,7",
+   "at": "2026-08-30T18:11:01.789867+00:00"
+  },
+  {
+   "athlete": "modoran-oana",
+   "list": "short-femmes-53",
+   "checkpoint": "",
+   "was": "37:01,8",
+   "now": "1:30:22,4",
+   "at": "2026-08-30T18:11:01.789867+00:00"
+  },
+  {
+   "athlete": "guerin-melina",
+   "list": "short-femmes-53",
+   "checkpoint": "",
+   "was": "37:05,3",
+   "now": "1:31:42,4",
+   "at": "2026-08-30T18:11:01.789867+00:00"
+  },
+  {
+   "athlete": "reda-stephanie",
+   "list": "short-femmes-53",
+   "checkpoint": "",
+   "was": "38:10,9",
+   "now": "1:31:44,3",
+   "at": "2026-08-30T18:11:01.789867+00:00"
+  },
+  {
+   "athlete": "auer-silva-66A",
+   "list": "short-femmes-53",
+   "checkpoint": "",
+   "was": "38:36,9",
+   "now": "1:32:42,9",
+   "at": "2026-08-30T18:11:01.789867+00:00"
+  },
+  {
+   "athlete": "magnussen-gina",
+   "list": "short-femmes-53",
+   "checkpoint": "",
+   "was": "39:16,1",
+   "now": "1:32:49,4",
+   "at": "2026-08-30T18:11:01.789867+00:00"
+  },
+  {
+   "athlete": "hoyoux-helene-9fD",
+   "list": "short-femmes-53",
+   "checkpoint": "",
+   "was": "38:57,0",
+   "now": "1:33:10,6",
+   "at": "2026-08-30T18:11:01.789867+00:00"
+  },
+  {
+   "athlete": "blatter-alix",
+   "list": "short-femmes-53",
+   "checkpoint": "",
+   "was": "36:42,2",
+   "now": "1:33:39,4",
+   "at": "2026-08-30T18:11:01.789867+00:00"
+  },
+  {
+   "athlete": "le-roy-caroline",
+   "list": "short-femmes-53",
+   "checkpoint": "",
+   "was": "39:16,2",
+   "now": "1:34:07,2",
+   "at": "2026-08-30T18:11:01.789867+00:00"
+  },
+  {
+   "athlete": "glowinski-justine",
+   "list": "short-femmes-53",
+   "checkpoint": "",
+   "was": "37:55,5",
+   "now": "1:34:27,6",
+   "at": "2026-08-30T18:11:01.789867+00:00"
+  },
+  {
+   "athlete": "cocheme-iris",
+   "list": "short-femmes-53",
+   "checkpoint": "",
+   "was": "38:51,5",
+   "now": "1:34:42,7",
+   "at": "2026-08-30T18:11:01.789867+00:00"
+  },
+  {
+   "athlete": "caume-helene",
+   "list": "short-femmes-53",
+   "checkpoint": "",
+   "was": "37:39,2",
+   "now": "1:34:44,1",
+   "at": "2026-08-30T18:11:01.789867+00:00"
+  },
+  {
+   "athlete": "crozat-florence",
+   "list": "short-femmes-53",
+   "checkpoint": "",
+   "was": "38:51,6",
+   "now": "1:35:10,3",
+   "at": "2026-08-30T18:11:01.789867+00:00"
+  },
+  {
+   "athlete": "karwowska-ania",
+   "list": "short-femmes-53",
+   "checkpoint": "",
+   "was": "40:26,9",
+   "now": "1:35:40,4",
+   "at": "2026-08-30T18:11:01.789867+00:00"
+  },
+  {
+   "athlete": "charlet-samson-fiona",
+   "list": "short-femmes-53",
+   "checkpoint": "",
+   "was": "42:21,1",
+   "now": "1:35:42,2",
+   "at": "2026-08-30T18:11:01.789867+00:00"
+  },
+  {
+   "athlete": "niesink-lorraine",
+   "list": "short-femmes-53",
+   "checkpoint": "",
+   "was": "41:57,5",
+   "now": "1:36:14,6",
+   "at": "2026-08-30T18:11:01.789867+00:00"
+  },
+  {
+   "athlete": "chen-audris",
+   "list": "short-femmes-53",
+   "checkpoint": "",
+   "was": "39:55,4",
+   "now": "1:37:23,2",
+   "at": "2026-08-30T18:11:01.789867+00:00"
+  },
+  {
+   "athlete": "kadiri-erita",
+   "list": "short-femmes-53",
+   "checkpoint": "",
+   "was": "40:19,3",
+   "now": "1:37:30,7",
+   "at": "2026-08-30T18:11:01.789867+00:00"
+  },
+  {
+   "athlete": "vuichard-salome",
+   "list": "short-femmes-53",
+   "checkpoint": "",
+   "was": "37:20,1",
+   "now": "1:38:06,7",
+   "at": "2026-08-30T18:11:01.789867+00:00"
+  },
+  {
+   "athlete": "brandam-deborah",
+   "list": "short-femmes-53",
+   "checkpoint": "",
+   "was": "39:20,0",
+   "now": "1:38:33,3",
+   "at": "2026-08-30T18:11:01.789867+00:00"
+  },
+  {
+   "athlete": "attanasio-valerie",
+   "list": "short-femmes-53",
+   "checkpoint": "",
+   "was": "43:01,4",
+   "now": "1:38:57,0",
+   "at": "2026-08-30T18:11:01.789867+00:00"
+  },
+  {
+   "athlete": "oleary-danielle",
+   "list": "short-femmes-53",
+   "checkpoint": "",
+   "was": "40:53,0",
+   "now": "1:40:57,7",
+   "at": "2026-08-30T18:11:01.789867+00:00"
+  },
+  {
+   "athlete": "pointard-marine",
+   "list": "short-femmes-53",
+   "checkpoint": "",
+   "was": "43:53,3",
+   "now": "1:41:07,1",
+   "at": "2026-08-30T18:11:01.789867+00:00"
+  },
+  {
+   "athlete": "tevaearai-delphine",
+   "list": "short-femmes-53",
+   "checkpoint": "",
+   "was": "42:29,1",
+   "now": "1:41:10,8",
+   "at": "2026-08-30T18:11:01.789867+00:00"
+  },
+  {
+   "athlete": "mathieu-melanie",
+   "list": "short-femmes-53",
+   "checkpoint": "",
+   "was": "43:22,6",
+   "now": "1:42:16,2",
+   "at": "2026-08-30T18:11:01.789867+00:00"
+  },
+  {
+   "athlete": "gerber-noemie",
+   "list": "short-femmes-53",
+   "checkpoint": "",
+   "was": "43:47,7",
+   "now": "1:42:38,8",
+   "at": "2026-08-30T18:11:01.789867+00:00"
+  },
+  {
+   "athlete": "van-kerrebroeck-lucile",
+   "list": "short-femmes-53",
+   "checkpoint": "",
+   "was": "40:23,3",
+   "now": "1:43:08,5",
+   "at": "2026-08-30T18:11:01.789867+00:00"
+  },
+  {
+   "athlete": "toyloy-whitney",
+   "list": "short-femmes-53",
+   "checkpoint": "",
+   "was": "42:11,9",
+   "now": "1:43:11,0",
+   "at": "2026-08-30T18:11:01.789867+00:00"
+  },
+  {
+   "athlete": "pleux-zoe",
+   "list": "short-femmes-53",
+   "checkpoint": "",
+   "was": "41:39,7",
+   "now": "1:43:16,2",
+   "at": "2026-08-30T18:11:01.789867+00:00"
+  },
+  {
+   "athlete": "clerc-maude",
+   "list": "short-femmes-53",
+   "checkpoint": "",
+   "was": "44:52,9",
+   "now": "1:43:47,3",
+   "at": "2026-08-30T18:11:01.789867+00:00"
+  },
+  {
+   "athlete": "emery-manon",
+   "list": "short-femmes-53",
+   "checkpoint": "",
+   "was": "50:07,4",
+   "now": "1:43:57,2",
+   "at": "2026-08-30T18:11:01.789867+00:00"
+  },
+  {
+   "athlete": "ermacora-emma",
+   "list": "short-femmes-53",
+   "checkpoint": "",
+   "was": "43:06,5",
+   "now": "1:44:03,6",
+   "at": "2026-08-30T18:11:01.789867+00:00"
+  },
+  {
+   "athlete": "gortchacow-elise",
+   "list": "short-femmes-53",
+   "checkpoint": "",
+   "was": "45:20,7",
+   "now": "1:44:24,3",
+   "at": "2026-08-30T18:11:01.789867+00:00"
+  },
+  {
+   "athlete": "arteaga-paola",
+   "list": "short-femmes-53",
+   "checkpoint": "",
+   "was": "44:23,4",
+   "now": "1:44:32,5",
+   "at": "2026-08-30T18:11:01.789867+00:00"
+  },
+  {
+   "athlete": "schaller-brigitte",
+   "list": "short-femmes-53",
+   "checkpoint": "",
+   "was": "48:02,0",
+   "now": "1:44:33,0",
+   "at": "2026-08-30T18:11:01.789867+00:00"
+  },
+  {
+   "athlete": "texier-pauline",
+   "list": "short-femmes-53",
+   "checkpoint": "",
+   "was": "41:12,5",
+   "now": "1:46:03,4",
+   "at": "2026-08-30T18:11:01.789867+00:00"
+  },
+  {
+   "athlete": "cuvillier-francoise",
+   "list": "short-femmes-53",
+   "checkpoint": "",
+   "was": "43:34,7",
+   "now": "1:46:05,7",
+   "at": "2026-08-30T18:11:01.789867+00:00"
+  },
+  {
+   "athlete": "vaz-dos-santos-karenn",
+   "list": "short-femmes-53",
+   "checkpoint": "",
+   "was": "45:46,1",
+   "now": "1:46:25,4",
+   "at": "2026-08-30T18:11:01.789867+00:00"
+  },
+  {
+   "athlete": "simon-eszter",
+   "list": "short-femmes-53",
+   "checkpoint": "",
+   "was": "48:55,6",
+   "now": "1:47:20,9",
+   "at": "2026-08-30T18:11:01.789867+00:00"
+  },
+  {
+   "athlete": "wejnger-patricia",
+   "list": "short-femmes-53",
+   "checkpoint": "",
+   "was": "51:55,3",
+   "now": "1:47:53,8",
+   "at": "2026-08-30T18:11:01.789867+00:00"
+  },
+  {
+   "athlete": "vuilleumier-sarah",
+   "list": "short-femmes-53",
+   "checkpoint": "",
+   "was": "45:03,7",
+   "now": "1:49:33,5",
+   "at": "2026-08-30T18:11:01.789867+00:00"
+  },
+  {
+   "athlete": "kaufmann-leila",
+   "list": "short-femmes-53",
+   "checkpoint": "",
+   "was": "45:26,7",
+   "now": "1:51:17,3",
+   "at": "2026-08-30T18:11:01.789867+00:00"
+  },
+  {
+   "athlete": "rousseau-amaya",
+   "list": "short-femmes-53",
+   "checkpoint": "",
+   "was": "44:16,6",
+   "now": "1:52:17,5",
+   "at": "2026-08-30T18:11:01.789867+00:00"
+  },
+  {
+   "athlete": "murisier-meline",
+   "list": "short-femmes-53",
+   "checkpoint": "",
+   "was": "47:05,9",
+   "now": "1:53:30,3",
+   "at": "2026-08-30T18:11:01.789867+00:00"
+  },
+  {
+   "athlete": "suzuki-lisa",
+   "list": "short-femmes-53",
+   "checkpoint": "",
+   "was": "48:11,9",
+   "now": "1:53:33,0",
+   "at": "2026-08-30T18:11:01.789867+00:00"
+  },
+  {
+   "athlete": "felix-emilie",
+   "list": "short-femmes-53",
+   "checkpoint": "",
+   "was": "49:04,5",
+   "now": "1:55:34,3",
+   "at": "2026-08-30T18:11:01.789867+00:00"
+  },
+  {
+   "athlete": "schaub-camille-flora",
+   "list": "short-femmes-53",
+   "checkpoint": "",
+   "was": "44:13,6",
+   "now": "1:56:40,3",
+   "at": "2026-08-30T18:11:01.789867+00:00"
+  },
+  {
+   "athlete": "lourenco-anne-sophie",
+   "list": "short-femmes-53",
+   "checkpoint": "",
+   "was": "46:26,1",
+   "now": "1:56:53,3",
+   "at": "2026-08-30T18:11:01.789867+00:00"
+  },
+  {
+   "athlete": "jameson-rickard-naomi",
+   "list": "short-femmes-53",
+   "checkpoint": "",
+   "was": "46:38,9",
+   "now": "1:58:01,4",
+   "at": "2026-08-30T18:11:01.789867+00:00"
+  },
+  {
+   "athlete": "naharro-raquel",
+   "list": "short-femmes-53",
+   "checkpoint": "",
+   "was": "55:13,2",
+   "now": "2:09:40,5",
+   "at": "2026-08-30T18:11:01.789867+00:00"
+  },
+  {
+   "athlete": "benitez-vanessa",
+   "list": "short-femmes-53",
+   "checkpoint": "",
+   "was": "54:23,0",
+   "now": "2:12:58,5",
+   "at": "2026-08-30T18:11:01.789867+00:00"
+  },
+  {
+   "athlete": "cocheme-iris",
+   "list": "short-femmes-53",
+   "checkpoint": "split-254",
+   "was": "38:51,5",
+   "now": "1:02:32,3",
+   "at": "2026-08-30T18:11:02.897301+00:00"
+  },
+  {
+   "athlete": "schaub-camille-flora",
+   "list": "short-femmes-53",
+   "checkpoint": "split-254",
+   "was": "43:47,7",
+   "now": "1:13:15,3",
+   "at": "2026-08-30T18:11:02.897301+00:00"
+  },
+  {
+   "athlete": "vuilleumier-sarah",
+   "list": "short-femmes-53",
+   "checkpoint": "split-254",
+   "was": "44:38,3",
+   "now": "1:15:05,5",
+   "at": "2026-08-30T18:11:02.897301+00:00"
+  },
+  {
+   "athlete": "emery-manon",
+   "list": "short-femmes-53",
+   "checkpoint": "split-254",
+   "was": "49:18,1",
+   "now": "1:22:59,8",
+   "at": "2026-08-30T18:11:02.897301+00:00"
+  },
+  {
+   "athlete": "schaub-camille-flora",
+   "list": "short-femmes-53",
+   "checkpoint": "split-255",
+   "was": "44:13,6",
+   "now": "1:17:22,9",
+   "at": "2026-08-30T18:11:03.112106+00:00"
+  },
+  {
+   "athlete": "vuilleumier-sarah",
+   "list": "short-femmes-53",
+   "checkpoint": "split-255",
+   "was": "45:03,7",
+   "now": "1:17:39,7",
+   "at": "2026-08-30T18:11:03.112106+00:00"
+  },
+  {
+   "athlete": "emery-manon",
+   "list": "short-femmes-53",
+   "checkpoint": "split-255",
+   "was": "50:07,4",
+   "now": "1:25:24,7",
+   "at": "2026-08-30T18:11:03.112106+00:00"
+  },
+  {
+   "athlete": "rivier-thibault",
+   "list": "short-hommes-57",
+   "checkpoint": "",
+   "was": "53:51,1",
+   "now": "55:41,3",
+   "at": "2026-08-30T18:11:04.149420+00:00"
+  },
+  {
+   "athlete": "rossier-sam",
+   "list": "short-hommes-57",
+   "checkpoint": "",
+   "was": "51:47,3",
+   "now": "1:02:11,2",
+   "at": "2026-08-30T18:11:04.149420+00:00"
+  },
+  {
+   "athlete": "bernais-jules",
+   "list": "short-hommes-57",
+   "checkpoint": "",
+   "was": "55:03,1",
+   "now": "1:05:25,9",
+   "at": "2026-08-30T18:11:04.149420+00:00"
+  },
+  {
+   "athlete": "laarid-bighed",
+   "list": "short-hommes-57",
+   "checkpoint": "",
+   "was": "56:11,7",
+   "now": "1:06:35,1",
+   "at": "2026-08-30T18:11:04.149420+00:00"
+  },
+  {
+   "athlete": "banasik-kevin",
+   "list": "short-hommes-57",
+   "checkpoint": "",
+   "was": "57:32,9",
+   "now": "1:07:46,6",
+   "at": "2026-08-30T18:11:04.149420+00:00"
+  },
+  {
+   "athlete": "rohou-brieuc",
+   "list": "short-hommes-57",
+   "checkpoint": "",
+   "was": "57:01,9",
+   "now": "1:08:04,2",
+   "at": "2026-08-30T18:11:04.149420+00:00"
+  },
+  {
+   "athlete": "clerc-arthur",
+   "list": "short-hommes-57",
+   "checkpoint": "",
+   "was": "56:25,6",
+   "now": "1:09:25,2",
+   "at": "2026-08-30T18:11:04.149420+00:00"
+  },
+  {
+   "athlete": "simon-arthur-9oT",
+   "list": "short-hommes-57",
+   "checkpoint": "",
+   "was": "57:36,5",
+   "now": "1:09:37,2",
+   "at": "2026-08-30T18:11:04.149420+00:00"
+  },
+  {
+   "athlete": "bergamaschi-paolo",
+   "list": "short-hommes-57",
+   "checkpoint": "",
+   "was": "59:17,1",
+   "now": "1:10:05,0",
+   "at": "2026-08-30T18:11:04.149420+00:00"
+  },
+  {
+   "athlete": "de-col-roberto-6hd",
+   "list": "short-hommes-57",
+   "checkpoint": "",
+   "was": "59:02,5",
+   "now": "1:10:50,8",
+   "at": "2026-08-30T18:11:04.149420+00:00"
+  },
+  {
+   "athlete": "talabardon-sebastien",
+   "list": "short-hommes-57",
+   "checkpoint": "",
+   "was": "49:02,1",
+   "now": "1:11:22,3",
+   "at": "2026-08-30T18:11:04.149420+00:00"
+  },
+  {
+   "athlete": "gunderson-ian",
+   "list": "short-hommes-57",
+   "checkpoint": "",
+   "was": "49:48,5",
+   "now": "1:11:36,1",
+   "at": "2026-08-30T18:11:04.149420+00:00"
+  },
+  {
+   "athlete": "cuypers-jean-christophe",
+   "list": "short-hommes-57",
+   "checkpoint": "",
+   "was": "49:47,8",
+   "now": "1:11:51,4",
+   "at": "2026-08-30T18:11:04.149420+00:00"
+  },
+  {
+   "athlete": "freund-stephane",
+   "list": "short-hommes-57",
+   "checkpoint": "",
+   "was": "49:56,7",
+   "now": "1:12:00,5",
+   "at": "2026-08-30T18:11:04.149420+00:00"
+  },
+  {
+   "athlete": "rohrbasser-thomas",
+   "list": "short-hommes-57",
+   "checkpoint": "",
+   "was": "51:16,1",
+   "now": "1:12:20,1",
+   "at": "2026-08-30T18:11:04.149420+00:00"
+  },
+  {
+   "athlete": "decoeyere-maxime",
+   "list": "short-hommes-57",
+   "checkpoint": "",
+   "was": "51:26,6",
+   "now": "1:12:25,1",
+   "at": "2026-08-30T18:11:04.149420+00:00"
+  },
+  {
+   "athlete": "nuoffer-loic",
+   "list": "short-hommes-57",
+   "checkpoint": "",
+   "was": "54:08,0",
+   "now": "1:12:38,8",
+   "at": "2026-08-30T18:11:04.149420+00:00"
+  },
+  {
+   "athlete": "terrier-theo",
+   "list": "short-hommes-57",
+   "checkpoint": "",
+   "was": "51:15,8",
+   "now": "1:12:42,1",
+   "at": "2026-08-30T18:11:04.149420+00:00"
+  },
+  {
+   "athlete": "matheret-titouan",
+   "list": "short-hommes-57",
+   "checkpoint": "",
+   "was": "49:52,6",
+   "now": "1:13:02,9",
+   "at": "2026-08-30T18:11:04.149420+00:00"
+  },
+  {
+   "athlete": "baumann-noe",
+   "list": "short-hommes-57",
+   "checkpoint": "",
+   "was": "50:53,5",
+   "now": "1:13:16,9",
+   "at": "2026-08-30T18:11:04.149420+00:00"
+  },
+  {
+   "athlete": "burri-kevin",
+   "list": "short-hommes-57",
+   "checkpoint": "",
+   "was": "51:25,2",
+   "now": "1:13:47,6",
+   "at": "2026-08-30T18:11:04.149420+00:00"
+  },
+  {
+   "athlete": "galleazzi-luca",
+   "list": "short-hommes-57",
+   "checkpoint": "",
+   "was": "55:19,7",
+   "now": "1:14:15,8",
+   "at": "2026-08-30T18:11:04.149420+00:00"
+  },
+  {
+   "athlete": "palestini-lorenzo",
+   "list": "short-hommes-57",
+   "checkpoint": "",
+   "was": "50:10,9",
+   "now": "1:14:20,9",
+   "at": "2026-08-30T18:11:04.149420+00:00"
+  },
+  {
+   "athlete": "ferreira-d-azevedo-gael",
+   "list": "short-hommes-57",
+   "checkpoint": "",
+   "was": "51:48,5",
+   "now": "1:14:55,9",
+   "at": "2026-08-30T18:11:04.149420+00:00"
+  },
+  {
+   "athlete": "crettaz-jordan",
+   "list": "short-hommes-57",
+   "checkpoint": "",
+   "was": "54:59,2",
+   "now": "1:15:01,1",
+   "at": "2026-08-30T18:11:04.149420+00:00"
+  },
+  {
+   "athlete": "beeler-quentin",
+   "list": "short-hommes-57",
+   "checkpoint": "",
+   "was": "52:11,2",
+   "now": "1:15:22,4",
+   "at": "2026-08-30T18:11:04.149420+00:00"
+  },
+  {
+   "athlete": "randin-olivier",
+   "list": "short-hommes-57",
+   "checkpoint": "",
+   "was": "52:20,2",
+   "now": "1:15:31,8",
+   "at": "2026-08-30T18:11:04.149420+00:00"
+  },
+  {
+   "athlete": "lamamy-sebastien",
+   "list": "short-hommes-57",
+   "checkpoint": "",
+   "was": "55:13,4",
+   "now": "1:15:53,5",
+   "at": "2026-08-30T18:11:04.149420+00:00"
+  },
+  {
+   "athlete": "noverraz-pierre",
+   "list": "short-hommes-57",
+   "checkpoint": "",
+   "was": "53:00,2",
+   "now": "1:16:03,7",
+   "at": "2026-08-30T18:11:04.149420+00:00"
+  },
+  {
+   "athlete": "pelfini-aidan",
+   "list": "short-hommes-57",
+   "checkpoint": "",
+   "was": "52:11,0",
+   "now": "1:16:35,4",
+   "at": "2026-08-30T18:11:04.149420+00:00"
+  },
+  {
+   "athlete": "bedejus-jeremy",
+   "list": "short-hommes-57",
+   "checkpoint": "",
+   "was": "53:15,4",
+   "now": "1:16:36,0",
+   "at": "2026-08-30T18:11:04.149420+00:00"
+  },
+  {
+   "athlete": "jaugey-louis",
+   "list": "short-hommes-57",
+   "checkpoint": "",
+   "was": "52:45,0",
+   "now": "1:16:37,5",
+   "at": "2026-08-30T18:11:04.149420+00:00"
+  },
+  {
+   "athlete": "perseghini-robin",
+   "list": "short-hommes-57",
+   "checkpoint": "",
+   "was": "56:21,9",
+   "now": "1:16:49,1",
+   "at": "2026-08-30T18:11:04.149420+00:00"
+  },
+  {
+   "athlete": "gardiol-loic",
+   "list": "short-hommes-57",
+   "checkpoint": "",
+   "was": "54:07,8",
+   "now": "1:16:50,7",
+   "at": "2026-08-30T18:11:04.149420+00:00"
+  },
+  {
+   "athlete": "courcoux-charles-antoine",
+   "list": "short-hommes-57",
+   "checkpoint": "",
+   "was": "52:55,1",
+   "now": "1:16:59,8",
+   "at": "2026-08-30T18:11:04.149420+00:00"
+  },
+  {
+   "athlete": "fassa-fardad",
+   "list": "short-hommes-57",
+   "checkpoint": "",
+   "was": "35:29,2",
+   "now": "1:17:10,7",
+   "at": "2026-08-30T18:11:04.149420+00:00"
+  },
+  {
+   "athlete": "sawaya-quentin",
+   "list": "short-hommes-57",
+   "checkpoint": "",
+   "was": "54:42,8",
+   "now": "1:17:24,6",
+   "at": "2026-08-30T18:11:04.149420+00:00"
+  },
+  {
+   "athlete": "casier-thibault",
+   "list": "short-hommes-57",
+   "checkpoint": "",
+   "was": "52:34,8",
+   "now": "1:17:41,9",
+   "at": "2026-08-30T18:11:04.149420+00:00"
+  },
+  {
+   "athlete": "auguste-nicolas-4Qa",
+   "list": "short-hommes-57",
+   "checkpoint": "",
+   "was": "53:16,7",
+   "now": "1:17:48,4",
+   "at": "2026-08-30T18:11:04.149420+00:00"
+  },
+  {
+   "athlete": "mao-philipp",
+   "list": "short-hommes-57",
+   "checkpoint": "",
+   "was": "55:28,4",
+   "now": "1:18:27,3",
+   "at": "2026-08-30T18:11:04.149420+00:00"
+  },
+  {
+   "athlete": "fourets-marius",
+   "list": "short-hommes-57",
+   "checkpoint": "",
+   "was": "53:17,7",
+   "now": "1:18:39,5",
+   "at": "2026-08-30T18:11:04.149420+00:00"
+  },
+  {
+   "athlete": "tefra-martin",
+   "list": "short-hommes-57",
+   "checkpoint": "",
+   "was": "54:53,2",
+   "now": "1:18:49,3",
+   "at": "2026-08-30T18:11:04.149420+00:00"
+  },
+  {
+   "athlete": "perozzi-lorenzo",
+   "list": "short-hommes-57",
+   "checkpoint": "",
+   "was": "54:04,1",
+   "now": "1:19:00,9",
+   "at": "2026-08-30T18:11:04.149420+00:00"
+  },
+  {
+   "athlete": "nihil-alessandro",
+   "list": "short-hommes-57",
+   "checkpoint": "",
+   "was": "57:07,9",
+   "now": "1:19:01,3",
+   "at": "2026-08-30T18:11:04.149420+00:00"
+  },
+  {
+   "athlete": "komandnyi-anton",
+   "list": "short-hommes-57",
+   "checkpoint": "",
+   "was": "55:43,7",
+   "now": "1:19:38,7",
+   "at": "2026-08-30T18:11:04.149420+00:00"
+  },
+  {
+   "athlete": "roch-thibault",
+   "list": "short-hommes-57",
+   "checkpoint": "",
+   "was": "55:01,3",
+   "now": "1:19:54,0",
+   "at": "2026-08-30T18:11:04.149420+00:00"
+  },
+  {
+   "athlete": "moretti-lorenzo",
+   "list": "short-hommes-57",
+   "checkpoint": "",
+   "was": "57:25,9",
+   "now": "1:20:02,8",
+   "at": "2026-08-30T18:11:04.149420+00:00"
+  },
+  {
+   "athlete": "williams-leo",
+   "list": "short-hommes-57",
+   "checkpoint": "",
+   "was": "54:46,0",
+   "now": "1:20:10,8",
+   "at": "2026-08-30T18:11:04.149420+00:00"
+  },
+  {
+   "athlete": "monnier-david",
+   "list": "short-hommes-57",
+   "checkpoint": "",
+   "was": "55:00,3",
+   "now": "1:20:10,9",
+   "at": "2026-08-30T18:11:04.149420+00:00"
+  },
+  {
+   "athlete": "vlad-eduard",
+   "list": "short-hommes-57",
+   "checkpoint": "",
+   "was": "54:39,4",
+   "now": "1:20:14,4",
+   "at": "2026-08-30T18:11:04.149420+00:00"
+  },
+  {
+   "athlete": "oyarsabal-david",
+   "list": "short-hommes-57",
+   "checkpoint": "",
+   "was": "54:58,9",
+   "now": "1:20:25,8",
+   "at": "2026-08-30T18:11:04.149420+00:00"
+  },
+  {
+   "athlete": "demenga-lukas",
+   "list": "short-hommes-57",
+   "checkpoint": "",
+   "was": "56:37,3",
+   "now": "1:20:30,6",
+   "at": "2026-08-30T18:11:04.149420+00:00"
+  },
+  {
+   "athlete": "petretti-tiziano",
+   "list": "short-hommes-57",
+   "checkpoint": "",
+   "was": "58:30,5",
+   "now": "1:20:36,9",
+   "at": "2026-08-30T18:11:04.149420+00:00"
+  },
+  {
+   "athlete": "terrier-matthieu",
+   "list": "short-hommes-57",
+   "checkpoint": "",
+   "was": "56:58,8",
+   "now": "1:20:39,3",
+   "at": "2026-08-30T18:11:04.149420+00:00"
+  },
+  {
+   "athlete": "cocheme-vincent",
+   "list": "short-hommes-57",
+   "checkpoint": "",
+   "was": "57:31,2",
+   "now": "1:20:44,8",
+   "at": "2026-08-30T18:11:04.149420+00:00"
+  },
+  {
+   "athlete": "messerli-theo",
+   "list": "short-hommes-57",
+   "checkpoint": "",
+   "was": "58:16,8",
+   "now": "1:20:53,5",
+   "at": "2026-08-30T18:11:04.149420+00:00"
+  },
+  {
+   "athlete": "jeandroz-robin",
+   "list": "short-hommes-57",
+   "checkpoint": "",
+   "was": "55:55,3",
+   "now": "1:21:01,2",
+   "at": "2026-08-30T18:11:04.149420+00:00"
+  },
+  {
+   "athlete": "rubattel-benjamin",
+   "list": "short-hommes-57",
+   "checkpoint": "",
+   "was": "57:04,4",
+   "now": "1:21:02,8",
+   "at": "2026-08-30T18:11:04.149420+00:00"
+  },
+  {
+   "athlete": "scrimitore-gianluca",
+   "list": "short-hommes-57",
+   "checkpoint": "",
+   "was": "57:13,2",
+   "now": "1:21:04,6",
+   "at": "2026-08-30T18:11:04.149420+00:00"
+  },
+  {
+   "athlete": "roger-denis",
+   "list": "short-hommes-57",
+   "checkpoint": "",
+   "was": "55:01,9",
+   "now": "1:21:08,8",
+   "at": "2026-08-30T18:11:04.149420+00:00"
+  },
+  {
+   "athlete": "buttet-robert",
+   "list": "short-hommes-57",
+   "checkpoint": "",
+   "was": "56:33,3",
+   "now": "1:21:33,8",
+   "at": "2026-08-30T18:11:04.149420+00:00"
+  },
+  {
+   "athlete": "dall-aglio-andrea",
+   "list": "short-hommes-57",
+   "checkpoint": "",
+   "was": "55:55,2",
+   "now": "1:22:01,8",
+   "at": "2026-08-30T18:11:04.149420+00:00"
+  },
+  {
+   "athlete": "zinniker-corentin",
+   "list": "short-hommes-57",
+   "checkpoint": "",
+   "was": "57:07,4",
+   "now": "1:22:10,5",
+   "at": "2026-08-30T18:11:04.149420+00:00"
+  },
+  {
+   "athlete": "grau-pierre-frederic",
+   "list": "short-hommes-57",
+   "checkpoint": "",
+   "was": "56:13,3",
+   "now": "1:22:13,6",
+   "at": "2026-08-30T18:11:04.149420+00:00"
+  },
+  {
+   "athlete": "bossel-michael",
+   "list": "short-hommes-57",
+   "checkpoint": "",
+   "was": "55:17,6",
+   "now": "1:22:15,1",
+   "at": "2026-08-30T18:11:04.149420+00:00"
+  },
+  {
+   "athlete": "clerc-alois",
+   "list": "short-hommes-57",
+   "checkpoint": "",
+   "was": "53:50,1",
+   "now": "1:22:23,3",
+   "at": "2026-08-30T18:11:04.149420+00:00"
+  },
+  {
+   "athlete": "manderscheidt-jerome",
+   "list": "short-hommes-57",
+   "checkpoint": "",
+   "was": "55:42,1",
+   "now": "1:22:49,4",
+   "at": "2026-08-30T18:11:04.149420+00:00"
+  },
+  {
+   "athlete": "rogers-lewis",
+   "list": "short-hommes-57",
+   "checkpoint": "",
+   "was": "56:15,8",
+   "now": "1:23:05,0",
+   "at": "2026-08-30T18:11:04.149420+00:00"
+  },
+  {
+   "athlete": "nils-osseiran",
+   "list": "short-hommes-57",
+   "checkpoint": "",
+   "was": "56:43,9",
+   "now": "1:23:06,9",
+   "at": "2026-08-30T18:11:04.149420+00:00"
+  },
+  {
+   "athlete": "payer-jules",
+   "list": "short-hommes-57",
+   "checkpoint": "",
+   "was": "35:00,3",
+   "now": "1:23:07,7",
+   "at": "2026-08-30T18:11:04.149420+00:00"
+  },
+  {
+   "athlete": "decker-virgil",
+   "list": "short-hommes-57",
+   "checkpoint": "",
+   "was": "37:29,3",
+   "now": "1:23:07,9",
+   "at": "2026-08-30T18:11:04.149420+00:00"
+  },
+  {
+   "athlete": "rossat-liam",
+   "list": "short-hommes-57",
+   "checkpoint": "",
+   "was": "55:54,1",
+   "now": "1:23:15,2",
+   "at": "2026-08-30T18:11:04.149420+00:00"
+  },
+  {
+   "athlete": "lin-chenrui",
+   "list": "short-hommes-57",
+   "checkpoint": "",
+   "was": "58:07,6",
+   "now": "1:23:24,4",
+   "at": "2026-08-30T18:11:04.149420+00:00"
+  },
+  {
+   "athlete": "sahili-abdelkader",
+   "list": "short-hommes-57",
+   "checkpoint": "",
+   "was": "36:25,5",
+   "now": "1:23:27,2",
+   "at": "2026-08-30T18:11:04.149420+00:00"
+  },
+  {
+   "athlete": "holvoet-sebastien",
+   "list": "short-hommes-57",
+   "checkpoint": "",
+   "was": "57:00,7",
+   "now": "1:23:34,8",
+   "at": "2026-08-30T18:11:04.149420+00:00"
+  },
+  {
+   "athlete": "birchmeier-eric",
+   "list": "short-hommes-57",
+   "checkpoint": "",
+   "was": "57:22,6",
+   "now": "1:23:47,6",
+   "at": "2026-08-30T18:11:04.149420+00:00"
+  },
+  {
+   "athlete": "brouhard-ben",
+   "list": "short-hommes-57",
+   "checkpoint": "",
+   "was": "56:25,7",
+   "now": "1:23:56,9",
+   "at": "2026-08-30T18:11:04.149420+00:00"
+  },
+  {
+   "athlete": "lang-pierre-olivier",
+   "list": "short-hommes-57",
+   "checkpoint": "",
+   "was": "57:39,7",
+   "now": "1:24:07,5",
+   "at": "2026-08-30T18:11:04.149420+00:00"
+  },
+  {
+   "athlete": "bessaud-evan",
+   "list": "short-hommes-57",
+   "checkpoint": "",
+   "was": "59:46,5",
+   "now": "1:24:09,4",
+   "at": "2026-08-30T18:11:04.149420+00:00"
+  },
+  {
+   "athlete": "neuveglise-jerome",
+   "list": "short-hommes-57",
+   "checkpoint": "",
+   "was": "57:57,7",
+   "now": "1:24:18,3",
+   "at": "2026-08-30T18:11:04.149420+00:00"
+  },
+  {
+   "athlete": "pizzolante-gianni",
+   "list": "short-hommes-57",
+   "checkpoint": "",
+   "was": "56:12,4",
+   "now": "1:24:26,2",
+   "at": "2026-08-30T18:11:04.149420+00:00"
+  },
+  {
+   "athlete": "north-anthony",
+   "list": "short-hommes-57",
+   "checkpoint": "",
+   "was": "58:59,2",
+   "now": "1:24:34,7",
+   "at": "2026-08-30T18:11:04.149420+00:00"
+  },
+  {
+   "athlete": "slama-patrick",
+   "list": "short-hommes-57",
+   "checkpoint": "",
+   "was": "55:39,6",
+   "now": "1:24:45,7",
+   "at": "2026-08-30T18:11:04.149420+00:00"
+  },
+  {
+   "athlete": "burnier-florian",
+   "list": "short-hommes-57",
+   "checkpoint": "",
+   "was": "38:14,6",
+   "now": "1:24:46,7",
+   "at": "2026-08-30T18:11:04.149420+00:00"
+  },
+  {
+   "athlete": "hasler-yoan",
+   "list": "short-hommes-57",
+   "checkpoint": "",
+   "was": "57:04,9",
+   "now": "1:24:47,0",
+   "at": "2026-08-30T18:11:04.149420+00:00"
+  },
+  {
+   "athlete": "ballentine-daniel",
+   "list": "short-hommes-57",
+   "checkpoint": "",
+   "was": "59:26,3",
+   "now": "1:24:51,1",
+   "at": "2026-08-30T18:11:04.149420+00:00"
+  },
+  {
+   "athlete": "lamiral-fabien",
+   "list": "short-hommes-57",
+   "checkpoint": "",
+   "was": "57:50,6",
+   "now": "1:24:58,4",
+   "at": "2026-08-30T18:11:04.149420+00:00"
+  },
+  {
+   "athlete": "schweizer-huguenot-philipp",
+   "list": "short-hommes-57",
+   "checkpoint": "",
+   "was": "56:59,9",
+   "now": "1:24:59,6",
+   "at": "2026-08-30T18:11:04.149420+00:00"
+  },
+  {
+   "athlete": "huynh-ba-nathan",
+   "list": "short-hommes-57",
+   "checkpoint": "",
+   "was": "58:38,6",
+   "now": "1:25:03,4",
+   "at": "2026-08-30T18:11:04.149420+00:00"
+  },
+  {
+   "athlete": "osman-mahmoud",
+   "list": "short-hommes-57",
+   "checkpoint": "",
+   "was": "38:59,0",
+   "now": "1:25:23,0",
+   "at": "2026-08-30T18:11:04.149420+00:00"
+  },
+  {
+   "athlete": "gerber-daniel",
+   "list": "short-hommes-57",
+   "checkpoint": "",
+   "was": "58:06,7",
+   "now": "1:25:31,0",
+   "at": "2026-08-30T18:11:04.149420+00:00"
+  },
+  {
+   "athlete": "jacquemet-pierre",
+   "list": "short-hommes-57",
+   "checkpoint": "",
+   "was": "54:45,9",
+   "now": "1:25:38,0",
+   "at": "2026-08-30T18:11:04.149420+00:00"
+  },
+  {
+   "athlete": "jacquemet-bruno",
+   "list": "short-hommes-57",
+   "checkpoint": "",
+   "was": "36:22,9",
+   "now": "1:25:38,8",
+   "at": "2026-08-30T18:11:04.149420+00:00"
+  },
+  {
+   "athlete": "mazzeo-luigi",
+   "list": "short-hommes-57",
+   "checkpoint": "",
+   "was": "37:43,9",
+   "now": "1:25:39,3",
+   "at": "2026-08-30T18:11:04.149420+00:00"
+  },
+  {
+   "athlete": "mozzon-nathan",
+   "list": "short-hommes-57",
+   "checkpoint": "",
+   "was": "36:20,4",
+   "now": "1:26:14,8",
+   "at": "2026-08-30T18:11:04.149420+00:00"
+  },
+  {
+   "athlete": "hermann-jonathan",
+   "list": "short-hommes-57",
+   "checkpoint": "",
+   "was": "55:42,7",
+   "now": "1:26:21,3",
+   "at": "2026-08-30T18:11:04.149420+00:00"
+  },
+  {
+   "athlete": "ferraris-anton",
+   "list": "short-hommes-57",
+   "checkpoint": "",
+   "was": "59:34,7",
+   "now": "1:26:24,7",
+   "at": "2026-08-30T18:11:04.149420+00:00"
+  },
+  {
+   "athlete": "golay-michel-HfC",
+   "list": "short-hommes-57",
+   "checkpoint": "",
+   "was": "58:59,3",
+   "now": "1:26:43,2",
+   "at": "2026-08-30T18:11:04.149420+00:00"
+  },
+  {
+   "athlete": "pittet-nicolas",
+   "list": "short-hommes-57",
+   "checkpoint": "",
+   "was": "39:09,8",
+   "now": "1:27:21,2",
+   "at": "2026-08-30T18:11:04.149420+00:00"
+  },
+  {
+   "athlete": "pfeiffer-julien",
+   "list": "short-hommes-57",
+   "checkpoint": "",
+   "was": "38:29,2",
+   "now": "1:27:24,3",
+   "at": "2026-08-30T18:11:04.149420+00:00"
+  },
+  {
+   "athlete": "enz-christian",
+   "list": "short-hommes-57",
+   "checkpoint": "",
+   "was": "36:03,9",
+   "now": "1:27:34,0",
+   "at": "2026-08-30T18:11:04.149420+00:00"
+  },
+  {
+   "athlete": "lamoureux-adrien",
+   "list": "short-hommes-57",
+   "checkpoint": "",
+   "was": "39:32,8",
+   "now": "1:28:06,3",
+   "at": "2026-08-30T18:11:04.149420+00:00"
+  },
+  {
+   "athlete": "pham-thanh-an",
+   "list": "short-hommes-57",
+   "checkpoint": "",
+   "was": "57:21,9",
+   "now": "1:28:10,1",
+   "at": "2026-08-30T18:11:04.149420+00:00"
+  },
+  {
+   "athlete": "genthon-alexis",
+   "list": "short-hommes-57",
+   "checkpoint": "",
+   "was": "56:08,5",
+   "now": "1:28:13,5",
+   "at": "2026-08-30T18:11:04.149420+00:00"
+  },
+  {
+   "athlete": "merciris-stephane",
+   "list": "short-hommes-57",
+   "checkpoint": "",
+   "was": "36:09,6",
+   "now": "1:28:19,0",
+   "at": "2026-08-30T18:11:04.149420+00:00"
+  },
+  {
+   "athlete": "bujard-didier",
+   "list": "short-hommes-57",
+   "checkpoint": "",
+   "was": "57:41,8",
+   "now": "1:28:50,7",
+   "at": "2026-08-30T18:11:04.149420+00:00"
+  },
+  {
+   "athlete": "maciejewski-kevin",
+   "list": "short-hommes-57",
+   "checkpoint": "",
+   "was": "35:55,0",
+   "now": "1:28:59,9",
+   "at": "2026-08-30T18:11:04.149420+00:00"
+  },
+  {
+   "athlete": "bloch-jeremie",
+   "list": "short-hommes-57",
+   "checkpoint": "",
+   "was": "37:57,0",
+   "now": "1:29:39,7",
+   "at": "2026-08-30T18:11:04.149420+00:00"
+  },
+  {
+   "athlete": "tirado-kian",
+   "list": "short-hommes-57",
+   "checkpoint": "",
+   "was": "1:00:32,1",
+   "now": "1:29:58,5",
+   "at": "2026-08-30T18:11:04.149420+00:00"
+  },
+  {
+   "athlete": "wagbe-samuel",
+   "list": "short-hommes-57",
+   "checkpoint": "",
+   "was": "39:43,5",
+   "now": "1:30:19,4",
+   "at": "2026-08-30T18:11:04.149420+00:00"
+  },
+  {
+   "athlete": "patino-oscar",
+   "list": "short-hommes-57",
+   "checkpoint": "",
+   "was": "38:54,7",
+   "now": "1:30:37,4",
+   "at": "2026-08-30T18:11:04.149420+00:00"
+  },
+  {
+   "athlete": "lamoureux-eric",
+   "list": "short-hommes-57",
+   "checkpoint": "",
+   "was": "37:25,1",
+   "now": "1:30:45,6",
+   "at": "2026-08-30T18:11:04.149420+00:00"
+  },
+  {
+   "athlete": "cretegny-remy",
+   "list": "short-hommes-57",
+   "checkpoint": "",
+   "was": "57:54,6",
+   "now": "1:30:46,8",
+   "at": "2026-08-30T18:11:04.149420+00:00"
+  },
+  {
+   "athlete": "schuerman-eric",
+   "list": "short-hommes-57",
+   "checkpoint": "",
+   "was": "41:51,9",
+   "now": "1:31:03,2",
+   "at": "2026-08-30T18:11:04.149420+00:00"
+  },
+  {
+   "athlete": "bocktaels-jeremie",
+   "list": "short-hommes-57",
+   "checkpoint": "",
+   "was": "57:54,2",
+   "now": "1:31:17,8",
+   "at": "2026-08-30T18:11:04.149420+00:00"
+  },
+  {
+   "athlete": "zurcher-gael",
+   "list": "short-hommes-57",
+   "checkpoint": "",
+   "was": "37:07,3",
+   "now": "1:31:36,0",
+   "at": "2026-08-30T18:11:04.149420+00:00"
+  },
+  {
+   "athlete": "valdes-pablo",
+   "list": "short-hommes-57",
+   "checkpoint": "",
+   "was": "38:21,8",
+   "now": "1:31:42,8",
+   "at": "2026-08-30T18:11:04.149420+00:00"
+  },
+  {
+   "athlete": "clottu-stephane",
+   "list": "short-hommes-57",
+   "checkpoint": "",
+   "was": "35:46,9",
+   "now": "1:31:48,4",
+   "at": "2026-08-30T18:11:04.149420+00:00"
+  },
+  {
+   "athlete": "hausmann-matthieu",
+   "list": "short-hommes-57",
+   "checkpoint": "",
+   "was": "40:18,1",
+   "now": "1:32:18,1",
+   "at": "2026-08-30T18:11:04.149420+00:00"
+  },
+  {
+   "athlete": "heyes-ryan",
+   "list": "short-hommes-57",
+   "checkpoint": "",
+   "was": "57:19,9",
+   "now": "1:32:42,9",
+   "at": "2026-08-30T18:11:04.149420+00:00"
+  },
+  {
+   "athlete": "loparco-julian",
+   "list": "short-hommes-57",
+   "checkpoint": "",
+   "was": "39:02,8",
+   "now": "1:33:06,4",
+   "at": "2026-08-30T18:11:04.149420+00:00"
+  },
+  {
+   "athlete": "arbre-maximilian",
+   "list": "short-hommes-57",
+   "checkpoint": "",
+   "was": "38:51,9",
+   "now": "1:33:12,8",
+   "at": "2026-08-30T18:11:04.149420+00:00"
+  },
+  {
+   "athlete": "rochat-josua",
+   "list": "short-hommes-57",
+   "checkpoint": "",
+   "was": "40:04,2",
+   "now": "1:33:21,4",
+   "at": "2026-08-30T18:11:04.149420+00:00"
+  },
+  {
+   "athlete": "sperandio-maxime-HaZ",
+   "list": "short-hommes-57",
+   "checkpoint": "",
+   "was": "36:59,7",
+   "now": "1:33:57,9",
+   "at": "2026-08-30T18:11:04.149420+00:00"
+  },
+  {
+   "athlete": "gomes-ferreira-emerson-junior",
+   "list": "short-hommes-57",
+   "checkpoint": "",
+   "was": "43:57,1",
+   "now": "1:34:07,1",
+   "at": "2026-08-30T18:11:04.149420+00:00"
+  },
+  {
+   "athlete": "de-buttet-ulysse",
+   "list": "short-hommes-57",
+   "checkpoint": "",
+   "was": "44:17,5",
+   "now": "1:34:39,0",
+   "at": "2026-08-30T18:11:04.149420+00:00"
+  },
+  {
+   "athlete": "kay-robert",
+   "list": "short-hommes-57",
+   "checkpoint": "",
+   "was": "38:51,2",
+   "now": "1:34:39,3",
+   "at": "2026-08-30T18:11:04.149420+00:00"
+  },
+  {
+   "athlete": "urbain-nathan",
+   "list": "short-hommes-57",
+   "checkpoint": "",
+   "was": "36:23,8",
+   "now": "1:34:58,9",
+   "at": "2026-08-30T18:11:04.149420+00:00"
+  },
+  {
+   "athlete": "peter-dominik",
+   "list": "short-hommes-57",
+   "checkpoint": "",
+   "was": "57:29,1",
+   "now": "1:35:16,9",
+   "at": "2026-08-30T18:11:04.149420+00:00"
+  },
+  {
+   "athlete": "pean-de-ponfilly-adrien",
+   "list": "short-hommes-57",
+   "checkpoint": "",
+   "was": "40:35,2",
+   "now": "1:35:23,9",
+   "at": "2026-08-30T18:11:04.149420+00:00"
+  },
+  {
+   "athlete": "hodara-michel",
+   "list": "short-hommes-57",
+   "checkpoint": "",
+   "was": "40:00,0",
+   "now": "1:35:28,0",
+   "at": "2026-08-30T18:11:04.149420+00:00"
+  },
+  {
+   "athlete": "chetelat-kilian-QXV",
+   "list": "short-hommes-57",
+   "checkpoint": "",
+   "was": "40:50,1",
+   "now": "1:35:37,7",
+   "at": "2026-08-30T18:11:04.149420+00:00"
+  },
+  {
+   "athlete": "chardonnens-nicolas",
+   "list": "short-hommes-57",
+   "checkpoint": "",
+   "was": "40:09,7",
+   "now": "1:36:18,9",
+   "at": "2026-08-30T18:11:04.149420+00:00"
+  },
+  {
+   "athlete": "dutoit-alain",
+   "list": "short-hommes-57",
+   "checkpoint": "",
+   "was": "42:54,7",
+   "now": "1:36:37,9",
+   "at": "2026-08-30T18:11:04.149420+00:00"
+  },
+  {
+   "athlete": "nobre-renato",
+   "list": "short-hommes-57",
+   "checkpoint": "",
+   "was": "39:10,1",
+   "now": "1:36:48,2",
+   "at": "2026-08-30T18:11:04.149420+00:00"
+  },
+  {
+   "athlete": "guesnerot-alexandre",
+   "list": "short-hommes-57",
+   "checkpoint": "",
+   "was": "38:25,9",
+   "now": "1:37:55,4",
+   "at": "2026-08-30T18:11:04.149420+00:00"
+  },
+  {
+   "athlete": "chetelat-telmo",
+   "list": "short-hommes-57",
+   "checkpoint": "",
+   "was": "43:35,4",
+   "now": "1:38:01,8",
+   "at": "2026-08-30T18:11:04.149420+00:00"
+  },
+  {
+   "athlete": "chiche-christopher",
+   "list": "short-hommes-57",
+   "checkpoint": "",
+   "was": "40:06,2",
+   "now": "1:39:14,3",
+   "at": "2026-08-30T18:11:04.149420+00:00"
+  },
+  {
+   "athlete": "bourbousson-valentin",
+   "list": "short-hommes-57",
+   "checkpoint": "",
+   "was": "43:32,8",
+   "now": "1:39:36,8",
+   "at": "2026-08-30T18:11:04.149420+00:00"
+  },
+  {
+   "athlete": "fassa-hossein",
+   "list": "short-hommes-57",
+   "checkpoint": "",
+   "was": "42:28,3",
+   "now": "1:39:45,8",
+   "at": "2026-08-30T18:11:04.149420+00:00"
+  },
+  {
+   "athlete": "pelletier-cedric",
+   "list": "short-hommes-57",
+   "checkpoint": "",
+   "was": "43:34,7",
+   "now": "1:40:20,6",
+   "at": "2026-08-30T18:11:04.149420+00:00"
+  },
+  {
+   "athlete": "ghirardi-vincent",
+   "list": "short-hommes-57",
+   "checkpoint": "",
+   "was": "41:01,0",
+   "now": "1:41:16,3",
+   "at": "2026-08-30T18:11:04.149420+00:00"
+  },
+  {
+   "athlete": "de-buttet-christophe-xavier",
+   "list": "short-hommes-57",
+   "checkpoint": "",
+   "was": "47:12,4",
+   "now": "1:41:21,0",
+   "at": "2026-08-30T18:11:04.149420+00:00"
+  },
+  {
+   "athlete": "potalivo-michele",
+   "list": "short-hommes-57",
+   "checkpoint": "",
+   "was": "42:10,4",
+   "now": "1:41:30,6",
+   "at": "2026-08-30T18:11:04.149420+00:00"
+  },
+  {
+   "athlete": "bernellon-henrik",
+   "list": "short-hommes-57",
+   "checkpoint": "",
+   "was": "41:27,9",
+   "now": "1:46:14,1",
+   "at": "2026-08-30T18:11:04.149420+00:00"
+  },
+  {
+   "athlete": "zwahlen-chris",
+   "list": "short-hommes-57",
+   "checkpoint": "",
+   "was": "44:56,8",
+   "now": "1:46:15,7",
+   "at": "2026-08-30T18:11:04.149420+00:00"
+  },
+  {
+   "athlete": "cereceda-marcos",
+   "list": "short-hommes-57",
+   "checkpoint": "",
+   "was": "47:04,6",
+   "now": "1:46:17,3",
+   "at": "2026-08-30T18:11:04.149420+00:00"
+  },
+  {
+   "athlete": "bagan-ryan",
+   "list": "short-hommes-57",
+   "checkpoint": "",
+   "was": "45:45,4",
+   "now": "1:46:18,4",
+   "at": "2026-08-30T18:11:04.149420+00:00"
+  },
+  {
+   "athlete": "poitel-stephane",
+   "list": "short-hommes-57",
+   "checkpoint": "",
+   "was": "44:09,7",
+   "now": "1:48:10,5",
+   "at": "2026-08-30T18:11:04.149420+00:00"
+  },
+  {
+   "athlete": "kaspar-julien",
+   "list": "short-hommes-57",
+   "checkpoint": "",
+   "was": "43:30,4",
+   "now": "1:51:40,6",
+   "at": "2026-08-30T18:11:04.149420+00:00"
+  },
+  {
+   "athlete": "joye-olivier",
+   "list": "short-hommes-57",
+   "checkpoint": "",
+   "was": "46:01,4",
+   "now": "1:51:45,1",
+   "at": "2026-08-30T18:11:04.149420+00:00"
+  },
+  {
+   "athlete": "cardis-louis",
+   "list": "short-hommes-57",
+   "checkpoint": "",
+   "was": "46:54,7",
+   "now": "1:54:02,6",
+   "at": "2026-08-30T18:11:04.149420+00:00"
+  },
+  {
+   "athlete": "orel-didier",
+   "list": "short-hommes-57",
+   "checkpoint": "",
+   "was": "48:41,1",
+   "now": "1:54:23,4",
+   "at": "2026-08-30T18:11:04.149420+00:00"
+  },
+  {
+   "athlete": "lavarino-gian-maria",
+   "list": "short-hommes-57",
+   "checkpoint": "",
+   "was": "46:49,7",
+   "now": "1:56:05,0",
+   "at": "2026-08-30T18:11:04.149420+00:00"
+  },
+  {
+   "athlete": "izham-hariz",
+   "list": "short-hommes-57",
+   "checkpoint": "",
+   "was": "47:24,4",
+   "now": "1:56:38,7",
+   "at": "2026-08-30T18:11:04.149420+00:00"
+  },
+  {
+   "athlete": "nirlo-frederic",
+   "list": "short-hommes-57",
+   "checkpoint": "",
+   "was": "49:44,5",
+   "now": "1:59:33,7",
+   "at": "2026-08-30T18:11:04.149420+00:00"
+  },
+  {
+   "athlete": "rivier-thibault",
+   "list": "short-hommes-57",
+   "checkpoint": "split-250",
+   "was": "4:36,8",
+   "now": "6:27,0",
+   "at": "2026-08-30T18:11:04.388718+00:00"
+  },
+  {
+   "athlete": "rivier-thibault",
+   "list": "short-hommes-57",
+   "checkpoint": "split-251",
+   "was": "5:52,0",
+   "now": "7:42,2",
+   "at": "2026-08-30T18:11:04.599219+00:00"
+  },
+  {
+   "athlete": "rivier-thibault",
+   "list": "short-hommes-57",
+   "checkpoint": "split-252",
+   "was": "6:04,9",
+   "now": "7:55,1",
+   "at": "2026-08-30T18:11:04.814608+00:00"
+  },
+  {
+   "athlete": "rivier-thibault",
+   "list": "short-hommes-57",
+   "checkpoint": "split-253",
+   "was": "21:18,6",
+   "now": "23:08,8",
+   "at": "2026-08-30T18:11:05.034058+00:00"
+  },
+  {
+   "athlete": "rivier-thibault",
+   "list": "short-hommes-57",
+   "checkpoint": "split-254",
+   "was": "37:03,5",
+   "now": "38:53,7",
+   "at": "2026-08-30T18:11:05.266176+00:00"
+  },
+  {
+   "athlete": "gomes-ferreira-emerson-junior",
+   "list": "short-hommes-57",
+   "checkpoint": "split-254",
+   "was": "43:57,1",
+   "now": "1:15:53,9",
+   "at": "2026-08-30T18:11:05.266176+00:00"
+  },
+  {
+   "athlete": "cereceda-marcos",
+   "list": "short-hommes-57",
+   "checkpoint": "split-254",
+   "was": "46:34,8",
+   "now": "1:16:25,7",
+   "at": "2026-08-30T18:11:05.266176+00:00"
+  },
+  {
+   "athlete": "rivier-thibault",
+   "list": "short-hommes-57",
+   "checkpoint": "split-255",
+   "was": "38:18,1",
+   "now": "40:08,3",
+   "at": "2026-08-30T18:11:05.525086+00:00"
+  },
+  {
+   "athlete": "cereceda-marcos",
+   "list": "short-hommes-57",
+   "checkpoint": "split-255",
+   "was": "47:04,6",
+   "now": "1:18:44,2",
+   "at": "2026-08-30T18:11:05.525086+00:00"
+  },
+  {
+   "athlete": "rivier-thibault",
+   "list": "short-hommes-57",
+   "checkpoint": "split-256",
+   "was": "45:16,5",
+   "now": "47:06,7",
+   "at": "2026-08-30T18:11:05.789190+00:00"
+  },
+  {
+   "athlete": "rivier-thibault",
+   "list": "short-hommes-57",
+   "checkpoint": "split-257",
+   "was": "53:12,0",
+   "now": "55:02,2",
+   "at": "2026-08-30T18:11:06.006516+00:00"
+  },
+  {
+   "athlete": "rivier-thibault",
+   "list": "short-hommes-57",
+   "checkpoint": "split-258",
+   "was": "53:51,1",
+   "now": "55:41,3",
+   "at": "2026-08-30T18:11:06.255702+00:00"
+  },
+  {
+   "athlete": "stefanini-camilla-MpC",
+   "list": "short-18-34-femmes-931250",
+   "checkpoint": "",
+   "was": "50:41,4",
+   "now": "1:11:28,0",
+   "at": "2026-08-30T18:11:06.469899+00:00"
+  },
+  {
+   "athlete": "ripoll-charlene",
+   "list": "short-18-34-femmes-931250",
+   "checkpoint": "",
+   "was": "50:20,3",
+   "now": "1:12:09,7",
+   "at": "2026-08-30T18:11:06.469899+00:00"
+  },
+  {
+   "athlete": "gianina-eline",
+   "list": "short-18-34-femmes-931250",
+   "checkpoint": "",
+   "was": "52:02,6",
+   "now": "1:12:49,6",
+   "at": "2026-08-30T18:11:06.469899+00:00"
+  },
+  {
+   "athlete": "granger-leeloo",
+   "list": "short-18-34-femmes-931250",
+   "checkpoint": "",
+   "was": "53:41,1",
+   "now": "1:16:53,0",
+   "at": "2026-08-30T18:11:06.469899+00:00"
+  },
+  {
+   "athlete": "schnyder-jessica",
+   "list": "short-18-34-femmes-931250",
+   "checkpoint": "",
+   "was": "56:46,4",
+   "now": "1:21:39,9",
+   "at": "2026-08-30T18:11:06.469899+00:00"
+  },
+  {
+   "athlete": "martini-lola",
+   "list": "short-18-34-femmes-931250",
+   "checkpoint": "",
+   "was": "58:08,1",
+   "now": "1:23:37,6",
+   "at": "2026-08-30T18:11:06.469899+00:00"
+  },
+  {
+   "athlete": "noel-stephanie",
+   "list": "short-18-34-femmes-931250",
+   "checkpoint": "",
+   "was": "58:43,0",
+   "now": "1:23:51,8",
+   "at": "2026-08-30T18:11:06.469899+00:00"
+  },
+  {
+   "athlete": "leuenberger-mareva",
+   "list": "short-18-34-femmes-931250",
+   "checkpoint": "",
+   "was": "57:24,9",
+   "now": "1:23:53,1",
+   "at": "2026-08-30T18:11:06.469899+00:00"
+  },
+  {
+   "athlete": "cudre-sarah",
+   "list": "short-18-34-femmes-931250",
+   "checkpoint": "",
+   "was": "37:22,3",
+   "now": "1:24:23,2",
+   "at": "2026-08-30T18:11:06.469899+00:00"
+  },
+  {
+   "athlete": "hurther-marie",
+   "list": "short-18-34-femmes-931250",
+   "checkpoint": "",
+   "was": "37:44,9",
+   "now": "1:25:36,6",
+   "at": "2026-08-30T18:11:06.469899+00:00"
+  },
+  {
+   "athlete": "chau-allison",
+   "list": "short-18-34-femmes-931250",
+   "checkpoint": "",
+   "was": "39:19,9",
+   "now": "1:25:58,7",
+   "at": "2026-08-30T18:11:06.469899+00:00"
+  },
+  {
+   "athlete": "sollberger-lydia",
+   "list": "short-18-34-femmes-931250",
+   "checkpoint": "",
+   "was": "57:20,3",
+   "now": "1:26:05,8",
+   "at": "2026-08-30T18:11:06.469899+00:00"
+  },
+  {
+   "athlete": "ihamouine-eden",
+   "list": "short-18-34-femmes-931250",
+   "checkpoint": "",
+   "was": "59:07,3",
+   "now": "1:26:12,6",
+   "at": "2026-08-30T18:11:06.469899+00:00"
+  },
+  {
+   "athlete": "faivre-pierret-anna",
+   "list": "short-18-34-femmes-931250",
+   "checkpoint": "",
+   "was": "36:00,5",
+   "now": "1:26:56,5",
+   "at": "2026-08-30T18:11:06.469899+00:00"
+  },
+  {
+   "athlete": "chareyre-margaux",
+   "list": "short-18-34-femmes-931250",
+   "checkpoint": "",
+   "was": "39:18,2",
+   "now": "1:28:43,4",
+   "at": "2026-08-30T18:11:06.469899+00:00"
+  },
+  {
+   "athlete": "kapps-rose",
+   "list": "short-18-34-femmes-931250",
+   "checkpoint": "",
+   "was": "36:46,4",
+   "now": "1:29:07,1",
+   "at": "2026-08-30T18:11:06.469899+00:00"
+  },
+  {
+   "athlete": "burri-aline",
+   "list": "short-18-34-femmes-931250",
+   "checkpoint": "",
+   "was": "37:47,8",
+   "now": "1:30:10,7",
+   "at": "2026-08-30T18:11:06.469899+00:00"
+  },
+  {
+   "athlete": "guerin-melina",
+   "list": "short-18-34-femmes-931250",
+   "checkpoint": "",
+   "was": "37:05,3",
+   "now": "1:31:42,4",
+   "at": "2026-08-30T18:11:06.469899+00:00"
+  },
+  {
+   "athlete": "magnussen-gina",
+   "list": "short-18-34-femmes-931250",
+   "checkpoint": "",
+   "was": "39:16,1",
+   "now": "1:32:49,4",
+   "at": "2026-08-30T18:11:06.469899+00:00"
+  },
+  {
+   "athlete": "blatter-alix",
+   "list": "short-18-34-femmes-931250",
+   "checkpoint": "",
+   "was": "36:42,2",
+   "now": "1:33:39,4",
+   "at": "2026-08-30T18:11:06.469899+00:00"
+  },
+  {
+   "athlete": "crozat-florence",
+   "list": "short-18-34-femmes-931250",
+   "checkpoint": "",
+   "was": "38:51,6",
+   "now": "1:35:10,3",
+   "at": "2026-08-30T18:11:06.469899+00:00"
+  },
+  {
+   "athlete": "chen-audris",
+   "list": "short-18-34-femmes-931250",
+   "checkpoint": "",
+   "was": "39:55,4",
+   "now": "1:37:23,2",
+   "at": "2026-08-30T18:11:06.469899+00:00"
+  },
+  {
+   "athlete": "kadiri-erita",
+   "list": "short-18-34-femmes-931250",
+   "checkpoint": "",
+   "was": "40:19,3",
+   "now": "1:37:30,7",
+   "at": "2026-08-30T18:11:06.469899+00:00"
+  },
+  {
+   "athlete": "vuichard-salome",
+   "list": "short-18-34-femmes-931250",
+   "checkpoint": "",
+   "was": "37:20,1",
+   "now": "1:38:06,7",
+   "at": "2026-08-30T18:11:06.469899+00:00"
+  },
+  {
+   "athlete": "pointard-marine",
+   "list": "short-18-34-femmes-931250",
+   "checkpoint": "",
+   "was": "43:53,3",
+   "now": "1:41:07,1",
+   "at": "2026-08-30T18:11:06.469899+00:00"
+  },
+  {
+   "athlete": "gerber-noemie",
+   "list": "short-18-34-femmes-931250",
+   "checkpoint": "",
+   "was": "43:47,7",
+   "now": "1:42:38,8",
+   "at": "2026-08-30T18:11:06.469899+00:00"
+  },
+  {
+   "athlete": "pleux-zoe",
+   "list": "short-18-34-femmes-931250",
+   "checkpoint": "",
+   "was": "41:39,7",
+   "now": "1:43:16,2",
+   "at": "2026-08-30T18:11:06.469899+00:00"
+  },
+  {
+   "athlete": "ermacora-emma",
+   "list": "short-18-34-femmes-931250",
+   "checkpoint": "",
+   "was": "43:06,5",
+   "now": "1:44:03,6",
+   "at": "2026-08-30T18:11:06.469899+00:00"
+  },
+  {
+   "athlete": "arteaga-paola",
+   "list": "short-18-34-femmes-931250",
+   "checkpoint": "",
+   "was": "44:23,4",
+   "now": "1:44:32,5",
+   "at": "2026-08-30T18:11:06.469899+00:00"
+  },
+  {
+   "athlete": "texier-pauline",
+   "list": "short-18-34-femmes-931250",
+   "checkpoint": "",
+   "was": "41:12,5",
+   "now": "1:46:03,4",
+   "at": "2026-08-30T18:11:06.469899+00:00"
+  },
+  {
+   "athlete": "vaz-dos-santos-karenn",
+   "list": "short-18-34-femmes-931250",
+   "checkpoint": "",
+   "was": "45:46,1",
+   "now": "1:46:25,4",
+   "at": "2026-08-30T18:11:06.469899+00:00"
+  },
+  {
+   "athlete": "wejnger-patricia",
+   "list": "short-18-34-femmes-931250",
+   "checkpoint": "",
+   "was": "51:55,3",
+   "now": "1:47:53,8",
+   "at": "2026-08-30T18:11:06.469899+00:00"
+  },
+  {
+   "athlete": "vuilleumier-sarah",
+   "list": "short-18-34-femmes-931250",
+   "checkpoint": "",
+   "was": "45:03,7",
+   "now": "1:49:33,5",
+   "at": "2026-08-30T18:11:06.469899+00:00"
+  },
+  {
+   "athlete": "rousseau-amaya",
+   "list": "short-18-34-femmes-931250",
+   "checkpoint": "",
+   "was": "44:16,6",
+   "now": "1:52:17,5",
+   "at": "2026-08-30T18:11:06.469899+00:00"
+  },
+  {
+   "athlete": "murisier-meline",
+   "list": "short-18-34-femmes-931250",
+   "checkpoint": "",
+   "was": "47:05,9",
+   "now": "1:53:30,3",
+   "at": "2026-08-30T18:11:06.469899+00:00"
+  },
+  {
+   "athlete": "suzuki-lisa",
+   "list": "short-18-34-femmes-931250",
+   "checkpoint": "",
+   "was": "48:11,9",
+   "now": "1:53:33,0",
+   "at": "2026-08-30T18:11:06.469899+00:00"
+  },
+  {
+   "athlete": "schaub-camille-flora",
+   "list": "short-18-34-femmes-931250",
+   "checkpoint": "",
+   "was": "44:13,6",
+   "now": "1:56:40,3",
+   "at": "2026-08-30T18:11:06.469899+00:00"
+  },
+  {
+   "athlete": "jameson-rickard-naomi",
+   "list": "short-18-34-femmes-931250",
+   "checkpoint": "",
+   "was": "46:38,9",
+   "now": "1:58:01,4",
+   "at": "2026-08-30T18:11:06.469899+00:00"
+  },
+  {
+   "athlete": "schaub-camille-flora",
+   "list": "short-18-34-femmes-931250",
+   "checkpoint": "split-254",
+   "was": "43:47,7",
+   "now": "1:13:15,3",
+   "at": "2026-08-30T18:11:07.639770+00:00"
+  },
+  {
+   "athlete": "vuilleumier-sarah",
+   "list": "short-18-34-femmes-931250",
+   "checkpoint": "split-254",
+   "was": "44:38,3",
+   "now": "1:15:05,5",
+   "at": "2026-08-30T18:11:07.639770+00:00"
+  },
+  {
+   "athlete": "schaub-camille-flora",
+   "list": "short-18-34-femmes-931250",
+   "checkpoint": "split-255",
+   "was": "44:13,6",
+   "now": "1:17:22,9",
+   "at": "2026-08-30T18:11:07.906924+00:00"
+  },
+  {
+   "athlete": "vuilleumier-sarah",
+   "list": "short-18-34-femmes-931250",
+   "checkpoint": "split-255",
+   "was": "45:03,7",
+   "now": "1:17:39,7",
+   "at": "2026-08-30T18:11:07.906924+00:00"
+  },
+  {
+   "athlete": "rivier-thibault",
+   "list": "short-18-34-hommes-931254",
+   "checkpoint": "",
+   "was": "53:51,1",
+   "now": "55:41,3",
+   "at": "2026-08-30T18:11:08.695431+00:00"
+  },
+  {
+   "athlete": "rossier-sam",
+   "list": "short-18-34-hommes-931254",
+   "checkpoint": "",
+   "was": "51:47,3",
+   "now": "1:02:11,2",
+   "at": "2026-08-30T18:11:08.695431+00:00"
+  },
+  {
+   "athlete": "laarid-bighed",
+   "list": "short-18-34-hommes-931254",
+   "checkpoint": "",
+   "was": "56:11,7",
+   "now": "1:06:35,1",
+   "at": "2026-08-30T18:11:08.695431+00:00"
+  },
+  {
+   "athlete": "banasik-kevin",
+   "list": "short-18-34-hommes-931254",
+   "checkpoint": "",
+   "was": "57:32,9",
+   "now": "1:07:46,6",
+   "at": "2026-08-30T18:11:08.695431+00:00"
+  },
+  {
+   "athlete": "rohou-brieuc",
+   "list": "short-18-34-hommes-931254",
+   "checkpoint": "",
+   "was": "57:01,9",
+   "now": "1:08:04,2",
+   "at": "2026-08-30T18:11:08.695431+00:00"
+  },
+  {
+   "athlete": "simon-arthur-9oT",
+   "list": "short-18-34-hommes-931254",
+   "checkpoint": "",
+   "was": "57:36,5",
+   "now": "1:09:37,2",
+   "at": "2026-08-30T18:11:08.695431+00:00"
+  },
+  {
+   "athlete": "bergamaschi-paolo",
+   "list": "short-18-34-hommes-931254",
+   "checkpoint": "",
+   "was": "59:17,1",
+   "now": "1:10:05,0",
+   "at": "2026-08-30T18:11:08.695431+00:00"
+  },
+  {
+   "athlete": "cuypers-jean-christophe",
+   "list": "short-18-34-hommes-931254",
+   "checkpoint": "",
+   "was": "49:47,8",
+   "now": "1:11:51,4",
+   "at": "2026-08-30T18:11:08.695431+00:00"
+  },
+  {
+   "athlete": "decoeyere-maxime",
+   "list": "short-18-34-hommes-931254",
+   "checkpoint": "",
+   "was": "51:26,6",
+   "now": "1:12:25,1",
+   "at": "2026-08-30T18:11:08.695431+00:00"
+  },
+  {
+   "athlete": "nuoffer-loic",
+   "list": "short-18-34-hommes-931254",
+   "checkpoint": "",
+   "was": "54:08,0",
+   "now": "1:12:38,8",
+   "at": "2026-08-30T18:11:08.695431+00:00"
+  },
+  {
+   "athlete": "matheret-titouan",
+   "list": "short-18-34-hommes-931254",
+   "checkpoint": "",
+   "was": "49:52,6",
+   "now": "1:13:02,9",
+   "at": "2026-08-30T18:11:08.695431+00:00"
+  },
+  {
+   "athlete": "baumann-noe",
+   "list": "short-18-34-hommes-931254",
+   "checkpoint": "",
+   "was": "50:53,5",
+   "now": "1:13:16,9",
+   "at": "2026-08-30T18:11:08.695431+00:00"
+  },
+  {
+   "athlete": "burri-kevin",
+   "list": "short-18-34-hommes-931254",
+   "checkpoint": "",
+   "was": "51:25,2",
+   "now": "1:13:47,6",
+   "at": "2026-08-30T18:11:08.695431+00:00"
+  },
+  {
+   "athlete": "galleazzi-luca",
+   "list": "short-18-34-hommes-931254",
+   "checkpoint": "",
+   "was": "55:19,7",
+   "now": "1:14:15,8",
+   "at": "2026-08-30T18:11:08.695431+00:00"
+  },
+  {
+   "athlete": "beeler-quentin",
+   "list": "short-18-34-hommes-931254",
+   "checkpoint": "",
+   "was": "52:11,2",
+   "now": "1:15:22,4",
+   "at": "2026-08-30T18:11:08.695431+00:00"
+  },
+  {
+   "athlete": "bedejus-jeremy",
+   "list": "short-18-34-hommes-931254",
+   "checkpoint": "",
+   "was": "56:13,8",
+   "now": "1:16:36,0",
+   "at": "2026-08-30T18:11:08.695431+00:00"
+  },
+  {
+   "athlete": "jaugey-louis",
+   "list": "short-18-34-hommes-931254",
+   "checkpoint": "",
+   "was": "52:45,0",
+   "now": "1:16:37,5",
+   "at": "2026-08-30T18:11:08.695431+00:00"
+  },
+  {
+   "athlete": "perseghini-robin",
+   "list": "short-18-34-hommes-931254",
+   "checkpoint": "",
+   "was": "56:21,9",
+   "now": "1:16:49,1",
+   "at": "2026-08-30T18:11:08.695431+00:00"
+  },
+  {
+   "athlete": "sawaya-quentin",
+   "list": "short-18-34-hommes-931254",
+   "checkpoint": "",
+   "was": "54:42,8",
+   "now": "1:17:24,6",
+   "at": "2026-08-30T18:11:08.695431+00:00"
+  },
+  {
+   "athlete": "casier-thibault",
+   "list": "short-18-34-hommes-931254",
+   "checkpoint": "",
+   "was": "52:34,8",
+   "now": "1:17:41,9",
+   "at": "2026-08-30T18:11:08.695431+00:00"
+  },
+  {
+   "athlete": "auguste-nicolas-4Qa",
+   "list": "short-18-34-hommes-931254",
+   "checkpoint": "",
+   "was": "53:16,7",
+   "now": "1:17:48,4",
+   "at": "2026-08-30T18:11:08.695431+00:00"
+  },
+  {
+   "athlete": "mao-philipp",
+   "list": "short-18-34-hommes-931254",
+   "checkpoint": "",
+   "was": "55:28,4",
+   "now": "1:18:27,3",
+   "at": "2026-08-30T18:11:08.695431+00:00"
+  },
+  {
+   "athlete": "fourets-marius",
+   "list": "short-18-34-hommes-931254",
+   "checkpoint": "",
+   "was": "53:17,7",
+   "now": "1:18:39,5",
+   "at": "2026-08-30T18:11:08.695431+00:00"
+  },
+  {
+   "athlete": "tefra-martin",
+   "list": "short-18-34-hommes-931254",
+   "checkpoint": "",
+   "was": "54:53,2",
+   "now": "1:18:49,3",
+   "at": "2026-08-30T18:11:08.695431+00:00"
+  },
+  {
+   "athlete": "roch-thibault",
+   "list": "short-18-34-hommes-931254",
+   "checkpoint": "",
+   "was": "55:01,3",
+   "now": "1:19:54,0",
+   "at": "2026-08-30T18:11:08.695431+00:00"
+  },
+  {
+   "athlete": "moretti-lorenzo",
+   "list": "short-18-34-hommes-931254",
+   "checkpoint": "",
+   "was": "57:25,9",
+   "now": "1:20:02,8",
+   "at": "2026-08-30T18:11:08.695431+00:00"
+  },
+  {
+   "athlete": "williams-leo",
+   "list": "short-18-34-hommes-931254",
+   "checkpoint": "",
+   "was": "54:46,0",
+   "now": "1:20:10,8",
+   "at": "2026-08-30T18:11:08.695431+00:00"
+  },
+  {
+   "athlete": "monnier-david",
+   "list": "short-18-34-hommes-931254",
+   "checkpoint": "",
+   "was": "55:00,3",
+   "now": "1:20:10,9",
+   "at": "2026-08-30T18:11:08.695431+00:00"
+  },
+  {
+   "athlete": "vlad-eduard",
+   "list": "short-18-34-hommes-931254",
+   "checkpoint": "",
+   "was": "54:39,4",
+   "now": "1:20:14,4",
+   "at": "2026-08-30T18:11:08.695431+00:00"
+  },
+  {
+   "athlete": "demenga-lukas",
+   "list": "short-18-34-hommes-931254",
+   "checkpoint": "",
+   "was": "56:37,3",
+   "now": "1:20:30,6",
+   "at": "2026-08-30T18:11:08.695431+00:00"
+  },
+  {
+   "athlete": "jeandroz-robin",
+   "list": "short-18-34-hommes-931254",
+   "checkpoint": "",
+   "was": "55:55,3",
+   "now": "1:21:01,2",
+   "at": "2026-08-30T18:11:08.695431+00:00"
+  },
+  {
+   "athlete": "roger-denis",
+   "list": "short-18-34-hommes-931254",
+   "checkpoint": "",
+   "was": "55:01,9",
+   "now": "1:21:08,8",
+   "at": "2026-08-30T18:11:08.695431+00:00"
+  },
+  {
+   "athlete": "clerc-alois",
+   "list": "short-18-34-hommes-931254",
+   "checkpoint": "",
+   "was": "53:50,1",
+   "now": "1:22:23,3",
+   "at": "2026-08-30T18:11:08.695431+00:00"
+  },
+  {
+   "athlete": "manderscheidt-jerome",
+   "list": "short-18-34-hommes-931254",
+   "checkpoint": "",
+   "was": "55:42,1",
+   "now": "1:22:49,4",
+   "at": "2026-08-30T18:11:08.695431+00:00"
+  },
+  {
+   "athlete": "nils-osseiran",
+   "list": "short-18-34-hommes-931254",
+   "checkpoint": "",
+   "was": "56:43,9",
+   "now": "1:23:06,9",
+   "at": "2026-08-30T18:11:08.695431+00:00"
+  },
+  {
+   "athlete": "payer-jules",
+   "list": "short-18-34-hommes-931254",
+   "checkpoint": "",
+   "was": "35:00,3",
+   "now": "1:23:07,7",
+   "at": "2026-08-30T18:11:08.695431+00:00"
+  },
+  {
+   "athlete": "decker-virgil",
+   "list": "short-18-34-hommes-931254",
+   "checkpoint": "",
+   "was": "37:29,3",
+   "now": "1:23:07,9",
+   "at": "2026-08-30T18:11:08.695431+00:00"
+  },
+  {
+   "athlete": "rossat-liam",
+   "list": "short-18-34-hommes-931254",
+   "checkpoint": "",
+   "was": "55:54,1",
+   "now": "1:23:15,2",
+   "at": "2026-08-30T18:11:08.695431+00:00"
+  },
+  {
+   "athlete": "burnier-florian",
+   "list": "short-18-34-hommes-931254",
+   "checkpoint": "",
+   "was": "38:14,6",
+   "now": "1:24:46,7",
+   "at": "2026-08-30T18:11:08.695431+00:00"
+  },
+  {
+   "athlete": "hasler-yoan",
+   "list": "short-18-34-hommes-931254",
+   "checkpoint": "",
+   "was": "57:04,9",
+   "now": "1:24:47,0",
+   "at": "2026-08-30T18:11:08.695431+00:00"
+  },
+  {
+   "athlete": "lamiral-fabien",
+   "list": "short-18-34-hommes-931254",
+   "checkpoint": "",
+   "was": "57:50,6",
+   "now": "1:24:58,4",
+   "at": "2026-08-30T18:11:08.695431+00:00"
+  },
+  {
+   "athlete": "gerber-daniel",
+   "list": "short-18-34-hommes-931254",
+   "checkpoint": "",
+   "was": "58:06,7",
+   "now": "1:25:31,0",
+   "at": "2026-08-30T18:11:08.695431+00:00"
+  },
+  {
+   "athlete": "jacquemet-pierre",
+   "list": "short-18-34-hommes-931254",
+   "checkpoint": "",
+   "was": "54:45,9",
+   "now": "1:25:38,0",
+   "at": "2026-08-30T18:11:08.695431+00:00"
+  },
+  {
+   "athlete": "mozzon-nathan",
+   "list": "short-18-34-hommes-931254",
+   "checkpoint": "",
+   "was": "36:20,4",
+   "now": "1:26:14,8",
+   "at": "2026-08-30T18:11:08.695431+00:00"
+  },
+  {
+   "athlete": "lamoureux-adrien",
+   "list": "short-18-34-hommes-931254",
+   "checkpoint": "",
+   "was": "39:32,8",
+   "now": "1:28:06,3",
+   "at": "2026-08-30T18:11:08.695431+00:00"
+  },
+  {
+   "athlete": "pham-thanh-an",
+   "list": "short-18-34-hommes-931254",
+   "checkpoint": "",
+   "was": "57:21,9",
+   "now": "1:28:10,1",
+   "at": "2026-08-30T18:11:08.695431+00:00"
+  },
+  {
+   "athlete": "maciejewski-kevin",
+   "list": "short-18-34-hommes-931254",
+   "checkpoint": "",
+   "was": "35:55,0",
+   "now": "1:28:59,9",
+   "at": "2026-08-30T18:11:08.695431+00:00"
+  },
+  {
+   "athlete": "wagbe-samuel",
+   "list": "short-18-34-hommes-931254",
+   "checkpoint": "",
+   "was": "39:43,5",
+   "now": "1:30:19,4",
+   "at": "2026-08-30T18:11:08.695431+00:00"
+  },
+  {
+   "athlete": "clottu-stephane",
+   "list": "short-18-34-hommes-931254",
+   "checkpoint": "",
+   "was": "35:46,9",
+   "now": "1:31:48,4",
+   "at": "2026-08-30T18:11:08.695431+00:00"
+  },
+  {
+   "athlete": "hausmann-matthieu",
+   "list": "short-18-34-hommes-931254",
+   "checkpoint": "",
+   "was": "40:18,1",
+   "now": "1:32:18,1",
+   "at": "2026-08-30T18:11:08.695431+00:00"
+  },
+  {
+   "athlete": "heyes-ryan",
+   "list": "short-18-34-hommes-931254",
+   "checkpoint": "",
+   "was": "57:19,9",
+   "now": "1:32:42,9",
+   "at": "2026-08-30T18:11:08.695431+00:00"
+  },
+  {
+   "athlete": "loparco-julian",
+   "list": "short-18-34-hommes-931254",
+   "checkpoint": "",
+   "was": "39:02,8",
+   "now": "1:33:06,4",
+   "at": "2026-08-30T18:11:08.695431+00:00"
+  },
+  {
+   "athlete": "arbre-maximilian",
+   "list": "short-18-34-hommes-931254",
+   "checkpoint": "",
+   "was": "38:51,9",
+   "now": "1:33:12,8",
+   "at": "2026-08-30T18:11:08.695431+00:00"
+  },
+  {
+   "athlete": "sperandio-maxime-HaZ",
+   "list": "short-18-34-hommes-931254",
+   "checkpoint": "",
+   "was": "36:59,7",
+   "now": "1:33:57,9",
+   "at": "2026-08-30T18:11:08.695431+00:00"
+  },
+  {
+   "athlete": "gomes-ferreira-emerson-junior",
+   "list": "short-18-34-hommes-931254",
+   "checkpoint": "",
+   "was": "43:57,1",
+   "now": "1:34:07,1",
+   "at": "2026-08-30T18:11:08.695431+00:00"
+  },
+  {
+   "athlete": "de-buttet-ulysse",
+   "list": "short-18-34-hommes-931254",
+   "checkpoint": "",
+   "was": "44:17,5",
+   "now": "1:34:39,0",
+   "at": "2026-08-30T18:11:08.695431+00:00"
+  },
+  {
+   "athlete": "urbain-nathan",
+   "list": "short-18-34-hommes-931254",
+   "checkpoint": "",
+   "was": "36:23,8",
+   "now": "1:34:58,9",
+   "at": "2026-08-30T18:11:08.695431+00:00"
+  },
+  {
+   "athlete": "pean-de-ponfilly-adrien",
+   "list": "short-18-34-hommes-931254",
+   "checkpoint": "",
+   "was": "40:35,2",
+   "now": "1:35:23,9",
+   "at": "2026-08-30T18:11:08.695431+00:00"
+  },
+  {
+   "athlete": "chetelat-kilian-QXV",
+   "list": "short-18-34-hommes-931254",
+   "checkpoint": "",
+   "was": "40:50,1",
+   "now": "1:35:37,7",
+   "at": "2026-08-30T18:11:08.695431+00:00"
+  },
+  {
+   "athlete": "bourbousson-valentin",
+   "list": "short-18-34-hommes-931254",
+   "checkpoint": "",
+   "was": "43:32,8",
+   "now": "1:39:36,8",
+   "at": "2026-08-30T18:11:08.695431+00:00"
+  },
+  {
+   "athlete": "ghirardi-vincent",
+   "list": "short-18-34-hommes-931254",
+   "checkpoint": "",
+   "was": "41:01,0",
+   "now": "1:41:16,3",
+   "at": "2026-08-30T18:11:08.695431+00:00"
+  },
+  {
+   "athlete": "bernellon-henrik",
+   "list": "short-18-34-hommes-931254",
+   "checkpoint": "",
+   "was": "41:27,9",
+   "now": "1:46:14,1",
+   "at": "2026-08-30T18:11:08.695431+00:00"
+  },
+  {
+   "athlete": "cereceda-marcos",
+   "list": "short-18-34-hommes-931254",
+   "checkpoint": "",
+   "was": "47:04,6",
+   "now": "1:46:17,3",
+   "at": "2026-08-30T18:11:08.695431+00:00"
+  },
+  {
+   "athlete": "poitel-stephane",
+   "list": "short-18-34-hommes-931254",
+   "checkpoint": "",
+   "was": "44:09,7",
+   "now": "1:48:10,5",
+   "at": "2026-08-30T18:11:08.695431+00:00"
+  },
+  {
+   "athlete": "cardis-louis",
+   "list": "short-18-34-hommes-931254",
+   "checkpoint": "",
+   "was": "46:54,7",
+   "now": "1:54:02,6",
+   "at": "2026-08-30T18:11:08.695431+00:00"
+  },
+  {
+   "athlete": "rivier-thibault",
+   "list": "short-18-34-hommes-931254",
+   "checkpoint": "split-250",
+   "was": "4:36,8",
+   "now": "6:27,0",
+   "at": "2026-08-30T18:11:08.902115+00:00"
+  },
+  {
+   "athlete": "rivier-thibault",
+   "list": "short-18-34-hommes-931254",
+   "checkpoint": "split-251",
+   "was": "5:52,0",
+   "now": "7:42,2",
+   "at": "2026-08-30T18:11:09.100127+00:00"
+  },
+  {
+   "athlete": "rivier-thibault",
+   "list": "short-18-34-hommes-931254",
+   "checkpoint": "split-252",
+   "was": "6:04,9",
+   "now": "7:55,1",
+   "at": "2026-08-30T18:11:09.307720+00:00"
+  },
+  {
+   "athlete": "rivier-thibault",
+   "list": "short-18-34-hommes-931254",
+   "checkpoint": "split-253",
+   "was": "21:18,6",
+   "now": "23:08,8",
+   "at": "2026-08-30T18:11:09.505680+00:00"
+  },
+  {
+   "athlete": "rivier-thibault",
+   "list": "short-18-34-hommes-931254",
+   "checkpoint": "split-254",
+   "was": "37:03,5",
+   "now": "38:53,7",
+   "at": "2026-08-30T18:11:09.711820+00:00"
+  },
+  {
+   "athlete": "gomes-ferreira-emerson-junior",
+   "list": "short-18-34-hommes-931254",
+   "checkpoint": "split-254",
+   "was": "43:57,1",
+   "now": "1:15:53,9",
+   "at": "2026-08-30T18:11:09.711820+00:00"
+  },
+  {
+   "athlete": "cereceda-marcos",
+   "list": "short-18-34-hommes-931254",
+   "checkpoint": "split-254",
+   "was": "46:34,8",
+   "now": "1:16:25,7",
+   "at": "2026-08-30T18:11:09.711820+00:00"
+  },
+  {
+   "athlete": "rivier-thibault",
+   "list": "short-18-34-hommes-931254",
+   "checkpoint": "split-255",
+   "was": "38:18,1",
+   "now": "40:08,3",
+   "at": "2026-08-30T18:11:09.906389+00:00"
+  },
+  {
+   "athlete": "cereceda-marcos",
+   "list": "short-18-34-hommes-931254",
+   "checkpoint": "split-255",
+   "was": "47:04,6",
+   "now": "1:18:44,2",
+   "at": "2026-08-30T18:11:09.906389+00:00"
+  },
+  {
+   "athlete": "rivier-thibault",
+   "list": "short-18-34-hommes-931254",
+   "checkpoint": "split-256",
+   "was": "45:16,5",
+   "now": "47:06,7",
+   "at": "2026-08-30T18:11:10.111542+00:00"
+  },
+  {
+   "athlete": "rivier-thibault",
+   "list": "short-18-34-hommes-931254",
+   "checkpoint": "split-257",
+   "was": "53:12,0",
+   "now": "55:02,2",
+   "at": "2026-08-30T18:11:10.322280+00:00"
+  },
+  {
+   "athlete": "rivier-thibault",
+   "list": "short-18-34-hommes-931254",
+   "checkpoint": "split-258",
+   "was": "53:51,1",
+   "now": "55:41,3",
+   "at": "2026-08-30T18:11:10.554648+00:00"
+  },
+  {
+   "athlete": "kilbert-helene",
+   "list": "short-35-44-femmes-931258",
+   "checkpoint": "",
+   "was": "53:19,7",
+   "now": "1:15:07,5",
+   "at": "2026-08-30T18:11:10.750834+00:00"
+  },
+  {
+   "athlete": "leau-sophie",
+   "list": "short-35-44-femmes-931258",
+   "checkpoint": "",
+   "was": "55:51,7",
+   "now": "1:17:48,6",
+   "at": "2026-08-30T18:11:10.750834+00:00"
+  },
+  {
+   "athlete": "guilbert-karine",
+   "list": "short-35-44-femmes-931258",
+   "checkpoint": "",
+   "was": "56:13,7",
+   "now": "1:24:02,8",
+   "at": "2026-08-30T18:11:10.750834+00:00"
+  },
+  {
+   "athlete": "santi-alicia",
+   "list": "short-35-44-femmes-931258",
+   "checkpoint": "",
+   "was": "57:38,8",
+   "now": "1:24:54,3",
+   "at": "2026-08-30T18:11:10.750834+00:00"
+  },
+  {
+   "athlete": "monvert-vali-nakissa",
+   "list": "short-35-44-femmes-931258",
+   "checkpoint": "",
+   "was": "37:43,6",
+   "now": "1:29:24,1",
+   "at": "2026-08-30T18:11:10.750834+00:00"
+  },
+  {
+   "athlete": "auer-silva-66A",
+   "list": "short-35-44-femmes-931258",
+   "checkpoint": "",
+   "was": "38:36,9",
+   "now": "1:32:42,9",
+   "at": "2026-08-30T18:11:10.750834+00:00"
+  },
+  {
+   "athlete": "hoyoux-helene-9fD",
+   "list": "short-35-44-femmes-931258",
+   "checkpoint": "",
+   "was": "38:57,0",
+   "now": "1:33:10,6",
+   "at": "2026-08-30T18:11:10.750834+00:00"
+  },
+  {
+   "athlete": "le-roy-caroline",
+   "list": "short-35-44-femmes-931258",
+   "checkpoint": "",
+   "was": "39:16,2",
+   "now": "1:34:07,2",
+   "at": "2026-08-30T18:11:10.750834+00:00"
+  },
+  {
+   "athlete": "caume-helene",
+   "list": "short-35-44-femmes-931258",
+   "checkpoint": "",
+   "was": "37:39,2",
+   "now": "1:34:44,1",
+   "at": "2026-08-30T18:11:10.750834+00:00"
+  },
+  {
+   "athlete": "karwowska-ania",
+   "list": "short-35-44-femmes-931258",
+   "checkpoint": "",
+   "was": "40:26,9",
+   "now": "1:35:40,4",
+   "at": "2026-08-30T18:11:10.750834+00:00"
+  },
+  {
+   "athlete": "charlet-samson-fiona",
+   "list": "short-35-44-femmes-931258",
+   "checkpoint": "",
+   "was": "42:21,1",
+   "now": "1:35:42,2",
+   "at": "2026-08-30T18:11:10.750834+00:00"
+  },
+  {
+   "athlete": "brandam-deborah",
+   "list": "short-35-44-femmes-931258",
+   "checkpoint": "",
+   "was": "39:20,0",
+   "now": "1:38:33,3",
+   "at": "2026-08-30T18:11:10.750834+00:00"
+  },
+  {
+   "athlete": "attanasio-valerie",
+   "list": "short-35-44-femmes-931258",
+   "checkpoint": "",
+   "was": "43:01,4",
+   "now": "1:38:57,0",
+   "at": "2026-08-30T18:11:10.750834+00:00"
+  },
+  {
+   "athlete": "oleary-danielle",
+   "list": "short-35-44-femmes-931258",
+   "checkpoint": "",
+   "was": "40:53,0",
+   "now": "1:40:57,7",
+   "at": "2026-08-30T18:11:10.750834+00:00"
+  },
+  {
+   "athlete": "tevaearai-delphine",
+   "list": "short-35-44-femmes-931258",
+   "checkpoint": "",
+   "was": "42:29,1",
+   "now": "1:41:10,8",
+   "at": "2026-08-30T18:11:10.750834+00:00"
+  },
+  {
+   "athlete": "mathieu-melanie",
+   "list": "short-35-44-femmes-931258",
+   "checkpoint": "",
+   "was": "43:22,6",
+   "now": "1:42:16,2",
+   "at": "2026-08-30T18:11:10.750834+00:00"
+  },
+  {
+   "athlete": "van-kerrebroeck-lucile",
+   "list": "short-35-44-femmes-931258",
+   "checkpoint": "",
+   "was": "40:23,3",
+   "now": "1:43:08,5",
+   "at": "2026-08-30T18:11:10.750834+00:00"
+  },
+  {
+   "athlete": "toyloy-whitney",
+   "list": "short-35-44-femmes-931258",
+   "checkpoint": "",
+   "was": "42:11,9",
+   "now": "1:43:11,0",
+   "at": "2026-08-30T18:11:10.750834+00:00"
+  },
+  {
+   "athlete": "gortchacow-elise",
+   "list": "short-35-44-femmes-931258",
+   "checkpoint": "",
+   "was": "45:20,7",
+   "now": "1:44:24,3",
+   "at": "2026-08-30T18:11:10.750834+00:00"
+  },
+  {
+   "athlete": "simon-eszter",
+   "list": "short-35-44-femmes-931258",
+   "checkpoint": "",
+   "was": "48:55,6",
+   "now": "1:47:20,9",
+   "at": "2026-08-30T18:11:10.750834+00:00"
+  },
+  {
+   "athlete": "kaufmann-leila",
+   "list": "short-35-44-femmes-931258",
+   "checkpoint": "",
+   "was": "45:26,7",
+   "now": "1:51:17,3",
+   "at": "2026-08-30T18:11:10.750834+00:00"
+  },
+  {
+   "athlete": "lourenco-anne-sophie",
+   "list": "short-35-44-femmes-931258",
+   "checkpoint": "",
+   "was": "46:26,1",
+   "now": "1:56:53,3",
+   "at": "2026-08-30T18:11:10.750834+00:00"
+  },
+  {
+   "athlete": "naharro-raquel",
+   "list": "short-35-44-femmes-931258",
+   "checkpoint": "",
+   "was": "55:13,2",
+   "now": "2:09:40,5",
+   "at": "2026-08-30T18:11:10.750834+00:00"
+  },
+  {
+   "athlete": "gunderson-ian",
+   "list": "short-35-44-hommes-931262",
+   "checkpoint": "",
+   "was": "49:48,5",
+   "now": "1:11:36,1",
+   "at": "2026-08-30T18:11:13.055450+00:00"
+  },
+  {
+   "athlete": "rohrbasser-thomas",
+   "list": "short-35-44-hommes-931262",
+   "checkpoint": "",
+   "was": "51:16,1",
+   "now": "1:12:20,1",
+   "at": "2026-08-30T18:11:13.055450+00:00"
+  },
+  {
+   "athlete": "palestini-lorenzo",
+   "list": "short-35-44-hommes-931262",
+   "checkpoint": "",
+   "was": "50:10,9",
+   "now": "1:14:20,9",
+   "at": "2026-08-30T18:11:13.055450+00:00"
+  },
+  {
+   "athlete": "gardiol-loic",
+   "list": "short-35-44-hommes-931262",
+   "checkpoint": "",
+   "was": "54:07,8",
+   "now": "1:16:50,7",
+   "at": "2026-08-30T18:11:13.055450+00:00"
+  },
+  {
+   "athlete": "perozzi-lorenzo",
+   "list": "short-35-44-hommes-931262",
+   "checkpoint": "",
+   "was": "54:04,1",
+   "now": "1:19:00,9",
+   "at": "2026-08-30T18:11:13.055450+00:00"
+  },
+  {
+   "athlete": "nihil-alessandro",
+   "list": "short-35-44-hommes-931262",
+   "checkpoint": "",
+   "was": "57:07,9",
+   "now": "1:19:01,3",
+   "at": "2026-08-30T18:11:13.055450+00:00"
+  },
+  {
+   "athlete": "terrier-matthieu",
+   "list": "short-35-44-hommes-931262",
+   "checkpoint": "",
+   "was": "56:58,8",
+   "now": "1:20:39,3",
+   "at": "2026-08-30T18:11:13.055450+00:00"
+  },
+  {
+   "athlete": "rubattel-benjamin",
+   "list": "short-35-44-hommes-931262",
+   "checkpoint": "",
+   "was": "57:04,4",
+   "now": "1:21:02,8",
+   "at": "2026-08-30T18:11:13.055450+00:00"
+  },
+  {
+   "athlete": "scrimitore-gianluca",
+   "list": "short-35-44-hommes-931262",
+   "checkpoint": "",
+   "was": "57:13,2",
+   "now": "1:21:04,6",
+   "at": "2026-08-30T18:11:13.055450+00:00"
+  },
+  {
+   "athlete": "dall-aglio-andrea",
+   "list": "short-35-44-hommes-931262",
+   "checkpoint": "",
+   "was": "55:55,2",
+   "now": "1:22:01,8",
+   "at": "2026-08-30T18:11:13.055450+00:00"
+  },
+  {
+   "athlete": "bossel-michael",
+   "list": "short-35-44-hommes-931262",
+   "checkpoint": "",
+   "was": "55:17,6",
+   "now": "1:22:15,1",
+   "at": "2026-08-30T18:11:13.055450+00:00"
+  },
+  {
+   "athlete": "sahili-abdelkader",
+   "list": "short-35-44-hommes-931262",
+   "checkpoint": "",
+   "was": "36:25,5",
+   "now": "1:23:27,2",
+   "at": "2026-08-30T18:11:13.055450+00:00"
+  },
+  {
+   "athlete": "pizzolante-gianni",
+   "list": "short-35-44-hommes-931262",
+   "checkpoint": "",
+   "was": "58:57,5",
+   "now": "1:24:26,2",
+   "at": "2026-08-30T18:11:13.055450+00:00"
+  },
+  {
+   "athlete": "osman-mahmoud",
+   "list": "short-35-44-hommes-931262",
+   "checkpoint": "",
+   "was": "38:59,0",
+   "now": "1:25:23,0",
+   "at": "2026-08-30T18:11:13.055450+00:00"
+  },
+  {
+   "athlete": "mazzeo-luigi",
+   "list": "short-35-44-hommes-931262",
+   "checkpoint": "",
+   "was": "37:43,9",
+   "now": "1:25:39,3",
+   "at": "2026-08-30T18:11:13.055450+00:00"
+  },
+  {
+   "athlete": "hermann-jonathan",
+   "list": "short-35-44-hommes-931262",
+   "checkpoint": "",
+   "was": "55:42,7",
+   "now": "1:26:21,3",
+   "at": "2026-08-30T18:11:13.055450+00:00"
+  },
+  {
+   "athlete": "pittet-nicolas",
+   "list": "short-35-44-hommes-931262",
+   "checkpoint": "",
+   "was": "39:09,8",
+   "now": "1:27:21,2",
+   "at": "2026-08-30T18:11:13.055450+00:00"
+  },
+  {
+   "athlete": "pfeiffer-julien",
+   "list": "short-35-44-hommes-931262",
+   "checkpoint": "",
+   "was": "38:29,2",
+   "now": "1:27:24,3",
+   "at": "2026-08-30T18:11:13.055450+00:00"
+  },
+  {
+   "athlete": "genthon-alexis",
+   "list": "short-35-44-hommes-931262",
+   "checkpoint": "",
+   "was": "59:19,7",
+   "now": "1:28:13,5",
+   "at": "2026-08-30T18:11:13.055450+00:00"
+  },
+  {
+   "athlete": "merciris-stephane",
+   "list": "short-35-44-hommes-931262",
+   "checkpoint": "",
+   "was": "36:09,6",
+   "now": "1:28:19,0",
+   "at": "2026-08-30T18:11:13.055450+00:00"
+  },
+  {
+   "athlete": "bloch-jeremie",
+   "list": "short-35-44-hommes-931262",
+   "checkpoint": "",
+   "was": "37:57,0",
+   "now": "1:29:39,7",
+   "at": "2026-08-30T18:11:13.055450+00:00"
+  },
+  {
+   "athlete": "cretegny-remy",
+   "list": "short-35-44-hommes-931262",
+   "checkpoint": "",
+   "was": "57:54,6",
+   "now": "1:30:46,8",
+   "at": "2026-08-30T18:11:13.055450+00:00"
+  },
+  {
+   "athlete": "schuerman-eric",
+   "list": "short-35-44-hommes-931262",
+   "checkpoint": "",
+   "was": "41:51,9",
+   "now": "1:31:03,2",
+   "at": "2026-08-30T18:11:13.055450+00:00"
+  },
+  {
+   "athlete": "bocktaels-jeremie",
+   "list": "short-35-44-hommes-931262",
+   "checkpoint": "",
+   "was": "57:54,2",
+   "now": "1:31:17,8",
+   "at": "2026-08-30T18:11:13.055450+00:00"
+  },
+  {
+   "athlete": "valdes-pablo",
+   "list": "short-35-44-hommes-931262",
+   "checkpoint": "",
+   "was": "38:21,8",
+   "now": "1:31:42,8",
+   "at": "2026-08-30T18:11:13.055450+00:00"
+  },
+  {
+   "athlete": "rochat-josua",
+   "list": "short-35-44-hommes-931262",
+   "checkpoint": "",
+   "was": "40:04,2",
+   "now": "1:33:21,4",
+   "at": "2026-08-30T18:11:13.055450+00:00"
+  },
+  {
+   "athlete": "kay-robert",
+   "list": "short-35-44-hommes-931262",
+   "checkpoint": "",
+   "was": "38:51,2",
+   "now": "1:34:39,3",
+   "at": "2026-08-30T18:11:13.055450+00:00"
+  },
+  {
+   "athlete": "chardonnens-nicolas",
+   "list": "short-35-44-hommes-931262",
+   "checkpoint": "",
+   "was": "40:09,7",
+   "now": "1:36:18,9",
+   "at": "2026-08-30T18:11:13.055450+00:00"
+  },
+  {
+   "athlete": "nobre-renato",
+   "list": "short-35-44-hommes-931262",
+   "checkpoint": "",
+   "was": "39:10,1",
+   "now": "1:36:48,2",
+   "at": "2026-08-30T18:11:13.055450+00:00"
+  },
+  {
+   "athlete": "chiche-christopher",
+   "list": "short-35-44-hommes-931262",
+   "checkpoint": "",
+   "was": "40:06,2",
+   "now": "1:39:14,3",
+   "at": "2026-08-30T18:11:13.055450+00:00"
+  },
+  {
+   "athlete": "potalivo-michele",
+   "list": "short-35-44-hommes-931262",
+   "checkpoint": "",
+   "was": "42:10,4",
+   "now": "1:41:30,6",
+   "at": "2026-08-30T18:11:13.055450+00:00"
+  },
+  {
+   "athlete": "lavarino-gian-maria",
+   "list": "short-35-44-hommes-931262",
+   "checkpoint": "",
+   "was": "46:49,7",
+   "now": "1:56:05,0",
+   "at": "2026-08-30T18:11:13.055450+00:00"
+  },
+  {
+   "athlete": "izham-hariz",
+   "list": "short-35-44-hommes-931262",
+   "checkpoint": "",
+   "was": "47:24,4",
+   "now": "1:56:38,7",
+   "at": "2026-08-30T18:11:13.055450+00:00"
+  },
+  {
+   "athlete": "nirlo-frederic",
+   "list": "short-35-44-hommes-931262",
+   "checkpoint": "",
+   "was": "49:44,5",
+   "now": "1:59:33,7",
+   "at": "2026-08-30T18:11:13.055450+00:00"
+  },
+  {
+   "athlete": "juilland-florence",
+   "list": "short-45-54-femmes-931266",
+   "checkpoint": "",
+   "was": "53:05,0",
+   "now": "1:14:34,4",
+   "at": "2026-08-30T18:11:15.055579+00:00"
+  },
+  {
+   "athlete": "goguelet-berenice",
+   "list": "short-45-54-femmes-931266",
+   "checkpoint": "",
+   "was": "57:33,2",
+   "now": "1:20:59,9",
+   "at": "2026-08-30T18:11:15.055579+00:00"
+  },
+  {
+   "athlete": "parelle-anne",
+   "list": "short-45-54-femmes-931266",
+   "checkpoint": "",
+   "was": "58:24,8",
+   "now": "1:25:34,5",
+   "at": "2026-08-30T18:11:15.055579+00:00"
+  },
+  {
+   "athlete": "brahimi-bettinger-karine",
+   "list": "short-45-54-femmes-931266",
+   "checkpoint": "",
+   "was": "58:50,8",
+   "now": "1:30:04,0",
+   "at": "2026-08-30T18:11:15.055579+00:00"
+  },
+  {
+   "athlete": "reda-stephanie",
+   "list": "short-45-54-femmes-931266",
+   "checkpoint": "",
+   "was": "38:10,9",
+   "now": "1:31:44,3",
+   "at": "2026-08-30T18:11:15.055579+00:00"
+  },
+  {
+   "athlete": "glowinski-justine",
+   "list": "short-45-54-femmes-931266",
+   "checkpoint": "",
+   "was": "37:55,5",
+   "now": "1:34:27,6",
+   "at": "2026-08-30T18:11:15.055579+00:00"
+  },
+  {
+   "athlete": "niesink-lorraine",
+   "list": "short-45-54-femmes-931266",
+   "checkpoint": "",
+   "was": "41:57,5",
+   "now": "1:36:14,6",
+   "at": "2026-08-30T18:11:15.055579+00:00"
+  },
+  {
+   "athlete": "clerc-maude",
+   "list": "short-45-54-femmes-931266",
+   "checkpoint": "",
+   "was": "44:52,9",
+   "now": "1:43:47,3",
+   "at": "2026-08-30T18:11:15.055579+00:00"
+  },
+  {
+   "athlete": "benitez-vanessa",
+   "list": "short-45-54-femmes-931266",
+   "checkpoint": "",
+   "was": "54:23,0",
+   "now": "2:12:58,5",
+   "at": "2026-08-30T18:11:15.055579+00:00"
+  },
+  {
+   "athlete": "de-col-roberto-6hd",
+   "list": "short-45-54-hommes-931270",
+   "checkpoint": "",
+   "was": "59:02,5",
+   "now": "1:10:50,8",
+   "at": "2026-08-30T18:11:17.019845+00:00"
+  },
+  {
+   "athlete": "talabardon-sebastien",
+   "list": "short-45-54-hommes-931270",
+   "checkpoint": "",
+   "was": "49:02,1",
+   "now": "1:11:22,3",
+   "at": "2026-08-30T18:11:17.019845+00:00"
+  },
+  {
+   "athlete": "courcoux-charles-antoine",
+   "list": "short-45-54-hommes-931270",
+   "checkpoint": "",
+   "was": "52:55,1",
+   "now": "1:16:59,8",
+   "at": "2026-08-30T18:11:17.019845+00:00"
+  },
+  {
+   "athlete": "oyarsabal-david",
+   "list": "short-45-54-hommes-931270",
+   "checkpoint": "",
+   "was": "54:58,9",
+   "now": "1:20:25,8",
+   "at": "2026-08-30T18:11:17.019845+00:00"
+  },
+  {
+   "athlete": "cocheme-vincent",
+   "list": "short-45-54-hommes-931270",
+   "checkpoint": "",
+   "was": "57:31,2",
+   "now": "1:20:44,8",
+   "at": "2026-08-30T18:11:17.019845+00:00"
+  },
+  {
+   "athlete": "holvoet-sebastien",
+   "list": "short-45-54-hommes-931270",
+   "checkpoint": "",
+   "was": "57:00,7",
+   "now": "1:23:34,8",
+   "at": "2026-08-30T18:11:17.019845+00:00"
+  },
+  {
+   "athlete": "brouhard-ben",
+   "list": "short-45-54-hommes-931270",
+   "checkpoint": "",
+   "was": "56:25,7",
+   "now": "1:23:56,9",
+   "at": "2026-08-30T18:11:17.019845+00:00"
+  },
+  {
+   "athlete": "lang-pierre-olivier",
+   "list": "short-45-54-hommes-931270",
+   "checkpoint": "",
+   "was": "57:39,7",
+   "now": "1:24:07,5",
+   "at": "2026-08-30T18:11:17.019845+00:00"
+  },
+  {
+   "athlete": "neuveglise-jerome",
+   "list": "short-45-54-hommes-931270",
+   "checkpoint": "",
+   "was": "57:57,7",
+   "now": "1:24:18,3",
+   "at": "2026-08-30T18:11:17.019845+00:00"
+  },
+  {
+   "athlete": "slama-patrick",
+   "list": "short-45-54-hommes-931270",
+   "checkpoint": "",
+   "was": "55:39,6",
+   "now": "1:24:45,7",
+   "at": "2026-08-30T18:11:17.019845+00:00"
+  },
+  {
+   "athlete": "schweizer-huguenot-philipp",
+   "list": "short-45-54-hommes-931270",
+   "checkpoint": "",
+   "was": "58:57,7",
+   "now": "1:24:59,6",
+   "at": "2026-08-30T18:11:17.019845+00:00"
+  },
+  {
+   "athlete": "golay-michel-HfC",
+   "list": "short-45-54-hommes-931270",
+   "checkpoint": "",
+   "was": "58:59,3",
+   "now": "1:26:43,2",
+   "at": "2026-08-30T18:11:17.019845+00:00"
+  },
+  {
+   "athlete": "patino-oscar",
+   "list": "short-45-54-hommes-931270",
+   "checkpoint": "",
+   "was": "38:54,7",
+   "now": "1:30:37,4",
+   "at": "2026-08-30T18:11:17.019845+00:00"
+  },
+  {
+   "athlete": "zurcher-gael",
+   "list": "short-45-54-hommes-931270",
+   "checkpoint": "",
+   "was": "37:07,3",
+   "now": "1:31:36,0",
+   "at": "2026-08-30T18:11:17.019845+00:00"
+  },
+  {
+   "athlete": "peter-dominik",
+   "list": "short-45-54-hommes-931270",
+   "checkpoint": "",
+   "was": "57:29,1",
+   "now": "1:35:16,9",
+   "at": "2026-08-30T18:11:17.019845+00:00"
+  },
+  {
+   "athlete": "dutoit-alain",
+   "list": "short-45-54-hommes-931270",
+   "checkpoint": "",
+   "was": "42:54,7",
+   "now": "1:36:37,9",
+   "at": "2026-08-30T18:11:17.019845+00:00"
+  },
+  {
+   "athlete": "guesnerot-alexandre",
+   "list": "short-45-54-hommes-931270",
+   "checkpoint": "",
+   "was": "38:25,9",
+   "now": "1:37:55,4",
+   "at": "2026-08-30T18:11:17.019845+00:00"
+  },
+  {
+   "athlete": "zwahlen-chris",
+   "list": "short-45-54-hommes-931270",
+   "checkpoint": "",
+   "was": "44:56,8",
+   "now": "1:46:15,7",
+   "at": "2026-08-30T18:11:17.019845+00:00"
+  },
+  {
+   "athlete": "bagan-ryan",
+   "list": "short-45-54-hommes-931270",
+   "checkpoint": "",
+   "was": "45:45,4",
+   "now": "1:46:18,4",
+   "at": "2026-08-30T18:11:17.019845+00:00"
+  },
+  {
+   "athlete": "kaspar-julien",
+   "list": "short-45-54-hommes-931270",
+   "checkpoint": "",
+   "was": "43:30,4",
+   "now": "1:51:40,6",
+   "at": "2026-08-30T18:11:17.019845+00:00"
+  },
+  {
+   "athlete": "bacelar-sofia",
+   "list": "short-55-64-femmes-931274",
+   "checkpoint": "",
+   "was": "56:24,3",
+   "now": "1:26:00,7",
+   "at": "2026-08-30T18:11:19.146491+00:00"
+  },
+  {
+   "athlete": "modoran-oana",
+   "list": "short-55-64-femmes-931274",
+   "checkpoint": "",
+   "was": "37:01,8",
+   "now": "1:30:22,4",
+   "at": "2026-08-30T18:11:19.146491+00:00"
+  },
+  {
+   "athlete": "schaller-brigitte",
+   "list": "short-55-64-femmes-931274",
+   "checkpoint": "",
+   "was": "48:02,0",
+   "now": "1:44:33,0",
+   "at": "2026-08-30T18:11:19.146491+00:00"
+  },
+  {
+   "athlete": "freund-stephane",
+   "list": "short-55-64-hommes-931278",
+   "checkpoint": "",
+   "was": "49:56,7",
+   "now": "1:12:00,5",
+   "at": "2026-08-30T18:11:21.140749+00:00"
+  },
+  {
+   "athlete": "randin-olivier",
+   "list": "short-55-64-hommes-931278",
+   "checkpoint": "",
+   "was": "52:20,2",
+   "now": "1:15:31,8",
+   "at": "2026-08-30T18:11:21.140749+00:00"
+  },
+  {
+   "athlete": "grau-pierre-frederic",
+   "list": "short-55-64-hommes-931278",
+   "checkpoint": "",
+   "was": "56:13,3",
+   "now": "1:22:13,6",
+   "at": "2026-08-30T18:11:21.140749+00:00"
+  },
+  {
+   "athlete": "birchmeier-eric",
+   "list": "short-55-64-hommes-931278",
+   "checkpoint": "",
+   "was": "57:22,6",
+   "now": "1:23:47,6",
+   "at": "2026-08-30T18:11:21.140749+00:00"
+  },
+  {
+   "athlete": "jacquemet-bruno",
+   "list": "short-55-64-hommes-931278",
+   "checkpoint": "",
+   "was": "56:31,3",
+   "now": "1:25:38,8",
+   "at": "2026-08-30T18:11:21.140749+00:00"
+  },
+  {
+   "athlete": "enz-christian",
+   "list": "short-55-64-hommes-931278",
+   "checkpoint": "",
+   "was": "57:00,6",
+   "now": "1:27:34,0",
+   "at": "2026-08-30T18:11:21.140749+00:00"
+  },
+  {
+   "athlete": "bujard-didier",
+   "list": "short-55-64-hommes-931278",
+   "checkpoint": "",
+   "was": "57:41,8",
+   "now": "1:28:50,7",
+   "at": "2026-08-30T18:11:21.140749+00:00"
+  },
+  {
+   "athlete": "lamoureux-eric",
+   "list": "short-55-64-hommes-931278",
+   "checkpoint": "",
+   "was": "37:25,1",
+   "now": "1:30:45,6",
+   "at": "2026-08-30T18:11:21.140749+00:00"
+  },
+  {
+   "athlete": "fassa-hossein",
+   "list": "short-55-64-hommes-931278",
+   "checkpoint": "",
+   "was": "42:28,3",
+   "now": "1:39:45,8",
+   "at": "2026-08-30T18:11:21.140749+00:00"
+  },
+  {
+   "athlete": "pelletier-cedric",
+   "list": "short-55-64-hommes-931278",
+   "checkpoint": "",
+   "was": "43:34,7",
+   "now": "1:40:20,6",
+   "at": "2026-08-30T18:11:21.140749+00:00"
+  },
+  {
+   "athlete": "de-buttet-christophe-xavier",
+   "list": "short-55-64-hommes-931278",
+   "checkpoint": "",
+   "was": "47:12,4",
+   "now": "1:41:21,0",
+   "at": "2026-08-30T18:11:21.140749+00:00"
+  },
+  {
+   "athlete": "orel-didier",
+   "list": "short-55-64-hommes-931278",
+   "checkpoint": "",
+   "was": "48:41,1",
+   "now": "1:54:23,4",
+   "at": "2026-08-30T18:11:21.140749+00:00"
+  },
+  {
+   "athlete": "cuvillier-francoise",
+   "list": "short-65-femmes-931282",
+   "checkpoint": "",
+   "was": "43:34,7",
+   "now": "1:46:05,7",
+   "at": "2026-08-30T18:11:23.274059+00:00"
+  },
+  {
+   "athlete": "fassa-fardad",
+   "list": "short-65-hommes-931286",
+   "checkpoint": "",
+   "was": "35:29,2",
+   "now": "1:17:10,7",
+   "at": "2026-08-30T18:11:25.297659+00:00"
+  },
+  {
+   "athlete": "buttet-robert",
+   "list": "short-65-hommes-931286",
+   "checkpoint": "",
+   "was": "56:33,3",
+   "now": "1:21:33,8",
+   "at": "2026-08-30T18:11:25.297659+00:00"
+  },
+  {
+   "athlete": "hodara-michel",
+   "list": "short-65-hommes-931286",
+   "checkpoint": "",
+   "was": "40:00,0",
+   "now": "1:35:28,0",
+   "at": "2026-08-30T18:11:25.297659+00:00"
+  },
+  {
+   "athlete": "joye-olivier",
+   "list": "short-65-hommes-931286",
+   "checkpoint": "",
+   "was": "46:01,4",
+   "now": "1:51:45,1",
+   "at": "2026-08-30T18:11:25.297659+00:00"
+  },
+  {
+   "athlete": "brulhart-allyssa",
+   "list": "short-u18-femmes",
+   "checkpoint": "",
+   "was": "59:45,7",
+   "now": "1:11:33,8",
+   "at": "2026-08-30T18:11:27.213776+00:00"
+  },
+  {
+   "athlete": "pautz-clarisse",
+   "list": "short-u18-femmes",
+   "checkpoint": "",
+   "was": "51:51,0",
+   "now": "1:16:41,9",
+   "at": "2026-08-30T18:11:27.213776+00:00"
+  },
+  {
+   "athlete": "blatter-adrienne",
+   "list": "short-u18-femmes",
+   "checkpoint": "",
+   "was": "57:31,8",
+   "now": "1:22:34,1",
+   "at": "2026-08-30T18:11:27.213776+00:00"
+  },
+  {
+   "athlete": "rouiller-yaelle",
+   "list": "short-u18-femmes",
+   "checkpoint": "",
+   "was": "57:38,7",
+   "now": "1:28:40,9",
+   "at": "2026-08-30T18:11:27.213776+00:00"
+  },
+  {
+   "athlete": "maury-anna-lea",
+   "list": "short-u18-femmes",
+   "checkpoint": "",
+   "was": "1:00:31,6",
+   "now": "1:29:13,9",
+   "at": "2026-08-30T18:11:27.213776+00:00"
+  },
+  {
+   "athlete": "cocheme-iris",
+   "list": "short-u18-femmes",
+   "checkpoint": "",
+   "was": "38:51,5",
+   "now": "1:34:42,7",
+   "at": "2026-08-30T18:11:27.213776+00:00"
+  },
+  {
+   "athlete": "emery-manon",
+   "list": "short-u18-femmes",
+   "checkpoint": "",
+   "was": "50:07,4",
+   "now": "1:43:57,2",
+   "at": "2026-08-30T18:11:27.213776+00:00"
+  },
+  {
+   "athlete": "felix-emilie",
+   "list": "short-u18-femmes",
+   "checkpoint": "",
+   "was": "49:04,5",
+   "now": "1:55:34,3",
+   "at": "2026-08-30T18:11:27.213776+00:00"
+  },
+  {
+   "athlete": "cocheme-iris",
+   "list": "short-u18-femmes",
+   "checkpoint": "split-254",
+   "was": "38:51,5",
+   "now": "1:02:32,3",
+   "at": "2026-08-30T18:11:28.184269+00:00"
+  },
+  {
+   "athlete": "emery-manon",
+   "list": "short-u18-femmes",
+   "checkpoint": "split-254",
+   "was": "49:18,1",
+   "now": "1:22:59,8",
+   "at": "2026-08-30T18:11:28.184269+00:00"
+  },
+  {
+   "athlete": "emery-manon",
+   "list": "short-u18-femmes",
+   "checkpoint": "split-255",
+   "was": "50:07,4",
+   "now": "1:25:24,7",
+   "at": "2026-08-30T18:11:28.664439+00:00"
+  },
+  {
+   "athlete": "bernais-jules",
+   "list": "short-u18-hommes",
+   "checkpoint": "",
+   "was": "55:03,1",
+   "now": "1:05:25,9",
+   "at": "2026-08-30T18:11:29.840153+00:00"
+  },
+  {
+   "athlete": "clerc-arthur",
+   "list": "short-u18-hommes",
+   "checkpoint": "",
+   "was": "56:25,6",
+   "now": "1:09:25,2",
+   "at": "2026-08-30T18:11:29.840153+00:00"
+  },
+  {
+   "athlete": "terrier-theo",
+   "list": "short-u18-hommes",
+   "checkpoint": "",
+   "was": "1:01:05,2",
+   "now": "1:12:42,1",
+   "at": "2026-08-30T18:11:29.840153+00:00"
+  },
+  {
+   "athlete": "ferreira-d-azevedo-gael",
+   "list": "short-u18-hommes",
+   "checkpoint": "",
+   "was": "51:48,5",
+   "now": "1:14:55,9",
+   "at": "2026-08-30T18:11:29.840153+00:00"
+  },
+  {
+   "athlete": "crettaz-jordan",
+   "list": "short-u18-hommes",
+   "checkpoint": "",
+   "was": "54:59,2",
+   "now": "1:15:01,1",
+   "at": "2026-08-30T18:11:29.840153+00:00"
+  },
+  {
+   "athlete": "lamamy-sebastien",
+   "list": "short-u18-hommes",
+   "checkpoint": "",
+   "was": "55:13,4",
+   "now": "1:15:53,5",
+   "at": "2026-08-30T18:11:29.840153+00:00"
+  },
+  {
+   "athlete": "noverraz-pierre",
+   "list": "short-u18-hommes",
+   "checkpoint": "",
+   "was": "53:00,2",
+   "now": "1:16:03,7",
+   "at": "2026-08-30T18:11:29.840153+00:00"
+  },
+  {
+   "athlete": "pelfini-aidan",
+   "list": "short-u18-hommes",
+   "checkpoint": "",
+   "was": "52:11,0",
+   "now": "1:16:35,4",
+   "at": "2026-08-30T18:11:29.840153+00:00"
+  },
+  {
+   "athlete": "komandnyi-anton",
+   "list": "short-u18-hommes",
+   "checkpoint": "",
+   "was": "55:43,7",
+   "now": "1:19:38,7",
+   "at": "2026-08-30T18:11:29.840153+00:00"
+  },
+  {
+   "athlete": "petretti-tiziano",
+   "list": "short-u18-hommes",
+   "checkpoint": "",
+   "was": "58:30,5",
+   "now": "1:20:36,9",
+   "at": "2026-08-30T18:11:29.840153+00:00"
+  },
+  {
+   "athlete": "messerli-theo",
+   "list": "short-u18-hommes",
+   "checkpoint": "",
+   "was": "58:16,8",
+   "now": "1:20:53,5",
+   "at": "2026-08-30T18:11:29.840153+00:00"
+  },
+  {
+   "athlete": "zinniker-corentin",
+   "list": "short-u18-hommes",
+   "checkpoint": "",
+   "was": "57:07,4",
+   "now": "1:22:10,5",
+   "at": "2026-08-30T18:11:29.840153+00:00"
+  },
+  {
+   "athlete": "rogers-lewis",
+   "list": "short-u18-hommes",
+   "checkpoint": "",
+   "was": "56:15,8",
+   "now": "1:23:05,0",
+   "at": "2026-08-30T18:11:29.840153+00:00"
+  },
+  {
+   "athlete": "lin-chenrui",
+   "list": "short-u18-hommes",
+   "checkpoint": "",
+   "was": "1:00:46,5",
+   "now": "1:23:24,4",
+   "at": "2026-08-30T18:11:29.840153+00:00"
+  },
+  {
+   "athlete": "bessaud-evan",
+   "list": "short-u18-hommes",
+   "checkpoint": "",
+   "was": "59:46,5",
+   "now": "1:24:09,4",
+   "at": "2026-08-30T18:11:29.840153+00:00"
+  },
+  {
+   "athlete": "north-anthony",
+   "list": "short-u18-hommes",
+   "checkpoint": "",
+   "was": "1:00:54,1",
+   "now": "1:24:34,7",
+   "at": "2026-08-30T18:11:29.840153+00:00"
+  },
+  {
+   "athlete": "ballentine-daniel",
+   "list": "short-u18-hommes",
+   "checkpoint": "",
+   "was": "59:26,3",
+   "now": "1:24:51,1",
+   "at": "2026-08-30T18:11:29.840153+00:00"
+  },
+  {
+   "athlete": "huynh-ba-nathan",
+   "list": "short-u18-hommes",
+   "checkpoint": "",
+   "was": "58:38,6",
+   "now": "1:25:03,4",
+   "at": "2026-08-30T18:11:29.840153+00:00"
+  },
+  {
+   "athlete": "ferraris-anton",
+   "list": "short-u18-hommes",
+   "checkpoint": "",
+   "was": "59:34,7",
+   "now": "1:26:24,7",
+   "at": "2026-08-30T18:11:29.840153+00:00"
+  },
+  {
+   "athlete": "tirado-kian",
+   "list": "short-u18-hommes",
+   "checkpoint": "",
+   "was": "1:00:32,1",
+   "now": "1:29:58,5",
+   "at": "2026-08-30T18:11:29.840153+00:00"
+  },
+  {
+   "athlete": "chetelat-telmo",
+   "list": "short-u18-hommes",
+   "checkpoint": "",
+   "was": "43:35,4",
+   "now": "1:38:01,8",
+   "at": "2026-08-30T18:11:29.840153+00:00"
+  },
+  {
+   "athlete": "rivier-thibault",
+   "list": "classement-general-m",
+   "checkpoint": "",
+   "was": "53:51,1",
+   "now": "55:41,3",
+   "at": "2026-08-30T18:11:57.748277+00:00"
   }
  ],
  "row_count_reversals": [
+  {
+   "list": "short-hommes-57",
+   "from": "split-257",
+   "to": "split-258",
+   "from_count": 162,
+   "to_count": 164
+  },
+  {
+   "list": "short-u18-femmes",
+   "from": "split-257",
+   "to": "split-258",
+   "from_count": 7,
+   "to_count": 8
+  },
+  {
+   "list": "short-18-34-hommes-931214",
+   "from": "split-242",
+   "to": "split-243",
+   "from_count": 98,
+   "to_count": 99
+  },
+  {
+   "list": "femmes-cla-18-34",
+   "from": "split-286",
+   "to": "split-287",
+   "from_count": 107,
+   "to_count": 108
+  },
+  {
+   "list": "femmes-cla-18-34",
+   "from": "split-291",
+   "to": "split-292",
+   "from_count": 102,
+   "to_count": 104
+  },
   {
    "list": "short-35-44-femmes-931258",
    "from": "split-252",
@@ -5725,18 +10482,39 @@
    "to_count": 23
   },
   {
+   "list": "hommes-cla-55-64",
+   "from": "split-286",
+   "to": "split-287",
+   "from_count": 36,
+   "to_count": 37
+  },
+  {
+   "list": "short-65-hommes-931286",
+   "from": "split-257",
+   "to": "split-258",
+   "from_count": 3,
+   "to_count": 4
+  },
+  {
+   "list": "short-femmes-53",
+   "from": "split-257",
+   "to": "split-258",
+   "from_count": 81,
+   "to_count": 82
+  },
+  {
+   "list": "short-18-34-hommes-931254",
+   "from": "split-257",
+   "to": "split-258",
+   "from_count": 68,
+   "to_count": 69
+  },
+  {
    "list": "hommes-cla-18-34",
    "from": "split-291",
    "to": "split-292",
    "from_count": 192,
    "to_count": 193
-  },
-  {
-   "list": "short-u18-femmes",
-   "from": "split-253",
-   "to": "split-254",
-   "from_count": 6,
-   "to_count": 7
   },
   {
    "list": "hommes-cla-35-44",
@@ -5760,27 +10538,6 @@
    "to_count": 130
   },
   {
-   "list": "femmes-cla",
-   "from": "split-286",
-   "to": "split-287",
-   "from_count": 149,
-   "to_count": 150
-  },
-  {
-   "list": "femmes-cla",
-   "from": "split-291",
-   "to": "split-292",
-   "from_count": 145,
-   "to_count": 147
-  },
-  {
-   "list": "hommes-cla-55-64",
-   "from": "split-286",
-   "to": "split-287",
-   "from_count": 36,
-   "to_count": 37
-  },
-  {
    "list": "short-55-64-hommes-931238",
    "from": "split-238",
    "to": "split-239",
@@ -5795,18 +10552,18 @@
    "to_count": 25
   },
   {
-   "list": "femmes-cla-18-34",
+   "list": "femmes-cla",
    "from": "split-286",
    "to": "split-287",
-   "from_count": 107,
-   "to_count": 108
+   "from_count": 149,
+   "to_count": 150
   },
   {
-   "list": "femmes-cla-18-34",
+   "list": "femmes-cla",
    "from": "split-291",
    "to": "split-292",
-   "from_count": 102,
-   "to_count": 104
+   "from_count": 145,
+   "to_count": 147
   },
   {
    "list": "short-45-54-femmes-931266",
@@ -5814,13 +10571,6 @@
    "to": "split-253",
    "from_count": 9,
    "to_count": 10
-  },
-  {
-   "list": "short-18-34-hommes-931214",
-   "from": "split-242",
-   "to": "split-243",
-   "from_count": 98,
-   "to_count": 99
   }
  ],
  "checkpoint_id_drift": [],
