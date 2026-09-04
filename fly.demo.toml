@@ -1,0 +1,45 @@
+# Gap IQ demo — replay of Powerman Zofingen 2025 for walkthroughs and testing.
+# Production live race stays on gap-iq (fly.toml). Deploy with:
+#   ./scripts/fly-mode.sh deploy-demo
+#
+# Single machine only (no HA standby). Scale is not stored in fly.toml — use
+# deploy-demo (passes --ha=false) or: fly scale count 1 -y -a gap-iq-demo
+
+app = "gap-iq-demo"
+primary_region = "fra"
+
+[build]
+
+[env]
+  PORT = "8080"
+  GAPIQ_PROVIDER = "replay"
+  GAPIQ_EDITION = "powerman-world-championships-zofingen-2025"
+  GAPIQ_EVENT_LABEL = "Powerman Zofingen 2025 (REPLAY)"
+  GAPIQ_ROSTER_FILE = "roster.zofingen-2025.json"
+  GAPIQ_REPLAY_SNAPSHOT = "snapshots/zofingen-2025-men.json"
+  GAPIQ_REPLAY_SPEED = "120"
+  GAPIQ_REPLAY_OFFSET_SECONDS = "0"
+  GAPIQ_IGNORE_ACTIVE_WINDOWS = "true"
+
+[http_service]
+  internal_port = 8080
+  force_https = true
+  auto_stop_machines = "suspend"
+  auto_start_machines = true
+  min_machines_running = 1
+
+  [http_service.concurrency]
+    type = "requests"
+    soft_limit = 200
+    hard_limit = 400
+
+[[http_service.checks]]
+  interval = "30s"
+  timeout = "5s"
+  grace_period = "20s"
+  method = "GET"
+  path = "/health/live"
+
+[[vm]]
+  size = "shared-cpu-1x"
+  memory = "512mb"

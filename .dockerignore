@@ -20,7 +20,6 @@ uv.lock
 
 # Offline docs and fixture data (capture *source* in capture/ is still included)
 docs/
-snapshots/
 tests/
 scripts/
 capture-scratch/

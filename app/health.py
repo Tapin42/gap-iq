@@ -51,8 +51,9 @@ async def health() -> JSONResponse:
 
     payload = {
         "status": status,
+        "mode": "replay" if settings.provider == "replay" else "live",
         "now": now,
-        "event": {"provider": settings.provider, "edition": settings.edition},
+        "event": {"provider": settings.provider, "edition": settings.edition, "label": settings.event_label},
         "polling": {"allowed": allowed, "reason": reason, "running": h.running},
         # Three separate facts. See app/state.PollerHealth.
         "freshness": {

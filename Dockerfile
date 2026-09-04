@@ -19,6 +19,7 @@ COPY pyproject.toml README.md ./
 COPY app/ ./app/
 COPY capture/ ./capture/
 COPY config/ ./config/
+COPY snapshots/ ./snapshots/
 RUN pip install --no-cache-dir .
 
 COPY --from=web /web/dist ./web/dist

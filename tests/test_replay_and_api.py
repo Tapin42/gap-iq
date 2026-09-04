@@ -316,6 +316,16 @@ def test_meta_reports_the_event_and_freshness(client):
     assert body["has_data"] is True
     assert body["roster_count"] > 0
     assert body["freshness"]["polling"]["allowed"] is True
+    assert body["mode"] == "replay"
+    assert body["replay"]["frozen"] is True
+    assert body["replay"]["elapsed_text"]
+
+
+def test_health_reports_mode(client):
+    body = client.get("/health").json()
+
+    assert body["mode"] == "replay"
+    assert body["event"]["label"]
 
 
 def test_health_is_ok_while_polling_is_permitted(client):

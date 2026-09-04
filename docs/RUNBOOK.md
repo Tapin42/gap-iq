@@ -5,6 +5,72 @@ author is competing and unreachable.
 
 ---
 
+## Demo replay app
+
+Production live race: **https://gap-iq.fly.dev** (`gap-iq`, never switched to replay).
+
+Walkthroughs and testing use a separate Fly app that permanently replays Powerman Zofingen
+2025:
+
+- **https://gap-iq-demo.navratils.org** (custom domain)
+- **https://gap-iq-demo.fly.dev** (Fly default hostname)
+
+The UI shows an amber **REPLAY — not live data** banner on every page. `/api/meta` and
+`/health` both expose `"mode": "replay"` vs `"live"`.
+
+### First-time setup
+
+```bash
+./scripts/fly-mode.sh setup-demo    # create app, request TLS cert, print DNS records
+```
+
+Add the DNS records at your registrar for `gap-iq-demo.navratils.org`:
+
+```bash
+fly certs setup gap-iq-demo.navratils.org --app gap-iq-demo
+```
+
+Fly prints the exact **A** and **AAAA** values. Point the `gap-iq-demo` host at those
+records. Certificate issuance usually completes within a few minutes once DNS propagates;
+check with:
+
+```bash
+./scripts/fly-mode.sh dns
+```
+
+Then deploy:
+
+```bash
+./scripts/fly-mode.sh deploy-demo
+```
+
+### Day-to-day commands
+
+```bash
+./scripts/fly-mode.sh status          # confirm live vs replay on both apps
+./scripts/fly-mode.sh reset           # restart demo — virtual race starts over
+./scripts/fly-mode.sh deploy-demo     # ship code changes to the demo app
+```
+
+The demo app runs on **one machine** (no HA standby). If a deploy recreates a second
+machine, run `fly scale count 1 -y -a gap-iq-demo`. Future deploys use `--ha=false`.
+
+To start the replay partway through (e.g. bike leg), set `GAPIQ_REPLAY_OFFSET_SECONDS` in
+`fly.demo.toml` before deploying, or override at deploy time:
+
+```bash
+fly deploy -c fly.demo.toml --app gap-iq-demo \
+  --env GAPIQ_REPLAY_OFFSET_SECONDS=7200
+```
+
+At default `120×` speed a full race takes about three and a half minutes. For a quick
+walkthrough, try `GAPIQ_REPLAY_SPEED=600` (~40 seconds).
+
+Mode profiles (all vars for copy/paste) live in `config/modes/live.env` and
+`config/modes/replay-zofingen-2025.env`.
+
+---
+
 ## Race-morning smoke check
 
 Run this before the gun. Every check below has a verified failure mode that returns

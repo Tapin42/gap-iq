@@ -1,6 +1,7 @@
 import { useCallback, useEffect, useRef, useState } from "react";
 
-import type { Freshness } from "./api";
+import type { Freshness, Meta } from "./api";
+import { api } from "./api";
 
 /**
  * Poll only while the page is actually being looked at.
@@ -130,4 +131,36 @@ export function formatAge(seconds: number | null): string {
   if (minutes < 90) return `${minutes} min ago`;
   const hours = Math.floor(minutes / 60);
   return `${hours}h ${minutes % 60}m ago`;
+}
+
+/** App-wide mode banner — polls faster in replay so the virtual clock stays current. */
+export function useMeta(): Meta | null {
+  const [meta, setMeta] = useState<Meta | null>(null);
+
+  useEffect(() => {
+    let cancelled = false;
+    let timer: number | undefined;
+
+    const load = async () => {
+      try {
+        const next = await api.meta();
+        if (cancelled) return;
+        setMeta(next);
+        if (timer) window.clearInterval(timer);
+        const intervalMs = next.mode === "replay" ? 5_000 : 60_000;
+        timer = window.setInterval(() => void load(), intervalMs);
+      } catch {
+        // Banner is supplementary; pages still load roster data on their own.
+      }
+    };
+
+    void load();
+
+    return () => {
+      cancelled = true;
+      if (timer) window.clearInterval(timer);
+    };
+  }, []);
+
+  return meta;
 }

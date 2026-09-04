@@ -229,6 +229,22 @@ def _race_summary(sweep: SweepResult | None) -> dict[str, str]:
     return summary
 
 
+def _replay_meta() -> dict | None:
+    settings = get_settings()
+    if settings.provider != "replay":
+        return None
+    from app.replay import ReplayProvider, replay_status_payload
+
+    provider = get_supervisor().sweeper.provider
+    if not isinstance(provider, ReplayProvider):
+        return None
+    return replay_status_payload(
+        provider,
+        speed=settings.replay_speed,
+        offset_seconds=settings.replay_offset_seconds,
+    )
+
+
 # -- Endpoints --------------------------------------------------------------------------
 @router.get("/meta")
 async def meta() -> dict:
@@ -242,11 +258,13 @@ async def meta() -> dict:
             "edition": settings.edition,
             "provider": settings.provider,
         },
+        "mode": "replay" if settings.provider == "replay" else "live",
         "polling": {"allowed": allowed, "reason": reason},
         "trend_policy": settings.trend_policy,
         "has_data": sweep is not None,
         "roster_count": len(store.list_athletes(resolve_scope())),
         "freshness": _freshness(None, None).as_payload(),
+        "replay": _replay_meta(),
     }
 
 

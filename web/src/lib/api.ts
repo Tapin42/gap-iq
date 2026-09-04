@@ -99,11 +99,22 @@ export interface AthleteDetail {
 
 export interface Meta {
   event: { label: string; edition: string; provider: string };
+  mode: "live" | "replay";
   polling: { allowed: boolean; reason: string };
   trend_policy: string;
   has_data: boolean;
   roster_count: number;
   freshness: Freshness;
+  replay: ReplayMeta | null;
+}
+
+export interface ReplayMeta {
+  speed: number;
+  offset_seconds: number;
+  elapsed_text: string;
+  frozen: boolean;
+  race_duration_text: string | null;
+  remaining_wall_seconds: number | null;
 }
 
 export class ApiError extends Error {

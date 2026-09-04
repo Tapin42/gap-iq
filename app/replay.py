@@ -173,3 +173,33 @@ class _NullClient:
     """Stands in for the HTTP client so request accounting still works."""
 
     request_count = 0
+
+
+def _max_elapsed_tenths(provider: ReplayProvider) -> int:
+    max_tenths = 0
+    for slug_times in provider._times.values():
+        for cp_times in slug_times.values():
+            for tenths in cp_times.values():
+                max_tenths = max(max_tenths, int(tenths))
+    return max_tenths
+
+
+def replay_status_payload(provider: ReplayProvider, *, speed: float, offset_seconds: int) -> dict:
+    """Fields for /api/meta when running the replay harness."""
+    from racedata.providers.datasport.parse import format_tenths
+
+    elapsed = provider.clock.elapsed_tenths()
+    max_tenths = _max_elapsed_tenths(provider)
+    frozen = speed == 0
+    remaining_tenths = max(0, max_tenths - elapsed)
+    remaining_wall_seconds = (
+        None if frozen or speed <= 0 else round(remaining_tenths / (speed * 10))
+    )
+    return {
+        "speed": speed,
+        "offset_seconds": offset_seconds,
+        "elapsed_text": format_tenths(elapsed),
+        "frozen": frozen,
+        "race_duration_text": format_tenths(max_tenths) if max_tenths else None,
+        "remaining_wall_seconds": remaining_wall_seconds,
+    }

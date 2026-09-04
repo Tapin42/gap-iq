@@ -73,9 +73,13 @@ cd web && npm run test:e2e   # Playwright against the replay simulator
 
 ## Deployment
 
-One fly.io app, two stateless machines in `fra`, no volume. See
+**Live race:** one fly.io app (`gap-iq`), two stateless machines in `fra`, no volume. See
 [docs/RUNBOOK.md](docs/RUNBOOK.md) for the race-morning smoke check, the alerting setup,
 the cost kill switch, and the post-race teardown.
+
+**Demo replay:** a separate app (`gap-iq-demo`) at https://gap-iq-demo.navratils.org replays
+Powerman Zofingen 2025 for walkthroughs. Production is never switched to replay mode.
+Setup: `./scripts/fly-mode.sh setup-demo` then `./scripts/fly-mode.sh deploy-demo`.
 
 ## Documentation
 
