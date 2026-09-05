@@ -1,9 +1,10 @@
 {
  "edition": "powerman-world-championships-zofingen-2026",
- "frames": 3579,
+ "frames": 3711,
  "first_capture_iso": "2026-08-25T18:36:00.954617+00:00",
- "last_capture_iso": "2026-09-05T08:51:44.120565+00:00",
+ "last_capture_iso": "2026-09-05T15:19:45.987157+00:00",
  "stages_seen": [
+  "live",
   "reg"
  ],
  "refresh_wait_values_ms": [
@@ -13,12 +14,250 @@
  ],
  "ranked_then_withdrawn": [],
  "checkpoint_recomputes_live": {
-  "answer": "not observed",
-  "evidence": [],
+  "answer": "yes",
+  "evidence": [
+   {
+    "list": "zofingen-5000-jugend-weiblich",
+    "checkpoint": "split-1135",
+    "ranked": [
+     0,
+     0,
+     0,
+     1
+    ]
+   },
+   {
+    "list": "zofingen-5000-jugend-weiblich",
+    "checkpoint": "split-1137",
+    "ranked": [
+     0,
+     0,
+     0,
+     1
+    ]
+   },
+   {
+    "list": "zofingen-5000-jugend-weiblich",
+    "checkpoint": "split-1138",
+    "ranked": [
+     0,
+     0,
+     0,
+     1
+    ]
+   },
+   {
+    "list": "zofingen-5000-jugend-weiblich-u16-908894",
+    "checkpoint": "split-1135",
+    "ranked": [
+     0,
+     0,
+     0,
+     1
+    ]
+   },
+   {
+    "list": "zofingen-5000-jugend-weiblich-u16-908894",
+    "checkpoint": "split-1137",
+    "ranked": [
+     0,
+     0,
+     0,
+     1
+    ]
+   },
+   {
+    "list": "zofingen-5000-jugend-weiblich-u16-908894",
+    "checkpoint": "split-1138",
+    "ranked": [
+     0,
+     0,
+     0,
+     1
+    ]
+   },
+   {
+    "list": "zofingen-5000-women",
+    "checkpoint": "split-1144",
+    "ranked": [
+     0,
+     0,
+     0,
+     0,
+     27
+    ]
+   },
+   {
+    "list": "zofingen-5000-women",
+    "checkpoint": "split-1151",
+    "ranked": [
+     0,
+     0,
+     0,
+     0,
+     27
+    ]
+   },
+   {
+    "list": "zofingen-5000-women",
+    "checkpoint": "split-1153",
+    "ranked": [
+     0,
+     0,
+     0,
+     0,
+     27
+    ]
+   },
+   {
+    "list": "zofingen-5000-women",
+    "checkpoint": "split-1155",
+    "ranked": [
+     0,
+     0,
+     0,
+     0,
+     27
+    ]
+   },
+   {
+    "list": "zofingen-5000-women",
+    "checkpoint": "split-1146",
+    "ranked": [
+     0,
+     0,
+     0,
+     0,
+     27
+    ]
+   },
+   {
+    "list": "zofingen-5000-women",
+    "checkpoint": "split-1147",
+    "ranked": [
+     0,
+     0,
+     0,
+     0,
+     27
+    ]
+   },
+   {
+    "list": "zofingen-5000-men",
+    "checkpoint": "split-1144",
+    "ranked": [
+     0,
+     0,
+     0,
+     0,
+     36,
+     36
+    ]
+   },
+   {
+    "list": "zofingen-5000-men",
+    "checkpoint": "split-1151",
+    "ranked": [
+     0,
+     0,
+     0,
+     0,
+     36,
+     36
+    ]
+   },
+   {
+    "list": "zofingen-5000-men",
+    "checkpoint": "split-1153",
+    "ranked": [
+     0,
+     0,
+     0,
+     0,
+     36,
+     36
+    ]
+   },
+   {
+    "list": "zofingen-5000-men",
+    "checkpoint": "split-1155",
+    "ranked": [
+     0,
+     0,
+     0,
+     0,
+     36,
+     36
+    ]
+   },
+   {
+    "list": "zofingen-5000-men",
+    "checkpoint": "split-1146",
+    "ranked": [
+     0,
+     0,
+     0,
+     0,
+     35,
+     36
+    ]
+   },
+   {
+    "list": "zofingen-5000-men",
+    "checkpoint": "split-1147",
+    "ranked": [
+     0,
+     0,
+     0,
+     0,
+     35,
+     36
+    ]
+   },
+   {
+    "list": "zofingen-5000-maenner-m20-908898",
+    "checkpoint": "split-1144",
+    "ranked": [
+     0,
+     0,
+     0,
+     0,
+     5
+    ]
+   },
+   {
+    "list": "zofingen-5000-maenner-m20-908898",
+    "checkpoint": "split-1151",
+    "ranked": [
+     0,
+     0,
+     0,
+     0,
+     5
+    ]
+   }
+  ],
   "checkpoints_observed": 1588
  },
- "in_race_stage": "not observed",
- "revised_times": [],
+ "in_race_stage": "live",
+ "revised_times": [
+  {
+   "athlete": "fajardo-manuel",
+   "list": "zofingen-5000-men",
+   "checkpoint": "",
+   "was": "26:53,9",
+   "now": "34:17,0",
+   "at": "2026-09-05T15:19:41.748185+00:00"
+  },
+  {
+   "athlete": "fajardo-manuel",
+   "list": "zofingen-5000-maenner-m40-908906",
+   "checkpoint": "",
+   "was": "26:53,9",
+   "now": "34:17,0",
+   "at": "2026-09-05T15:19:45.122387+00:00"
+  }
+ ],
  "row_count_reversals": [],
  "checkpoint_id_drift": [],
  "order_label_mismatches": [],
