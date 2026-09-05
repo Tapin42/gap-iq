@@ -3,18 +3,32 @@ import { Link } from "react-router-dom";
 
 import { FreshnessBar } from "../components/FreshnessBar";
 import { api, type RaceSummary, type RosterResponse, type RosterRow } from "../lib/api";
-import { usePolling } from "../lib/hooks";
+import { useHiddenAthletes } from "../lib/hidden-athletes";
+import { useMeta, usePolling } from "../lib/hooks";
 
 // Slower than the dashboard: the roster is a scanning view, and the whole list comes from
 // one upstream request per sweep anyway.
 const POLL_MS = 60_000;
 
 export function Roster() {
+  const meta = useMeta();
   const { data, error, loading, refresh, refreshing } = usePolling<RosterResponse>(
     api.roster,
     POLL_MS,
   );
+  const { hide, unhide, isHidden, hiddenSlugs } = useHiddenAthletes(meta?.event.edition);
   const [busy, setBusy] = useState<string | null>(null);
+  const [showHiddenSection, setShowHiddenSection] = useState(false);
+
+  const handleUnhide = useCallback(
+    (slug: string) => {
+      if (hiddenSlugs.size === 1 && hiddenSlugs.has(slug)) {
+        setShowHiddenSection(false);
+      }
+      unhide(slug);
+    },
+    [hiddenSlugs, unhide],
+  );
 
   const onRefresh = useCallback(async () => {
     await api.refresh().catch(() => undefined);
@@ -71,12 +85,18 @@ export function Roster() {
     );
   }
 
+  const visibleAthletes = data.athletes.filter((row) => !isHidden(row.athlete_slug));
+  const hiddenAthletes = data.athletes.filter((row) => isHidden(row.athlete_slug));
+  const hiddenCount = hiddenAthletes.length;
+
   return (
     <div className="flex min-h-full flex-col">
       <header className="px-4 pt-4 pb-2">
         <h1 className="text-2xl font-black tracking-tight">Gap IQ</h1>
         <p className="text-ink-muted text-sm">
-          {data.athletes.length} tracked · tap an athlete for their gaps
+          {hiddenCount > 0
+            ? `${visibleAthletes.length} shown · ${hiddenCount} hidden · tap an athlete for their gaps`
+            : `${data.athletes.length} tracked · tap an athlete for their gaps`}
         </p>
       </header>
 
@@ -95,9 +115,16 @@ export function Roster() {
             Add an athlete to start tracking their position and gaps.
           </p>
         </div>
+      ) : visibleAthletes.length === 0 ? (
+        <div className="flex flex-1 flex-col items-center justify-center px-8 text-center">
+          <p className="text-lg font-semibold">All athletes hidden</p>
+          <p className="text-ink-muted mt-2 text-balance">
+            Expand the hidden section below to unhide athletes.
+          </p>
+        </div>
       ) : (
         <ul className="divide-y divide-white/10">
-          {data.athletes.map((row) => (
+          {visibleAthletes.map((row) => (
             <li key={row.athlete_slug} className="px-4 py-3">
               <div className="flex items-start gap-3">
                 <Link to={`/athlete/${row.athlete_slug}`} className="min-w-0 flex-1">
@@ -144,6 +171,15 @@ export function Roster() {
                   >
                     {row.scope === "agegroup" ? "Age group" : "Overall"}
                   </button>
+                  <button
+                    type="button"
+                    onClick={() => hide(row.athlete_slug)}
+                    data-testid={`hide-${row.athlete_slug}`}
+                    title="Hide this athlete from your roster view"
+                    className="text-ink-muted min-h-[40px] min-w-[92px] rounded-md bg-white/10 px-3 py-2 text-sm font-semibold"
+                  >
+                    Hide
+                  </button>
                   {/* Hidden on the shared roster: removal is global and in-memory only. */}
                   <button
                     type="button"
@@ -158,6 +194,53 @@ export function Roster() {
             </li>
           ))}
         </ul>
+      )}
+
+      {hiddenCount > 0 && (
+        <section className="border-t border-white/10 px-4 py-3">
+          <button
+            type="button"
+            onClick={() => setShowHiddenSection((open) => !open)}
+            data-testid="hidden-section-toggle"
+            className="text-ink-muted flex w-full items-center gap-2 py-2 text-sm font-semibold"
+          >
+            <span
+              aria-hidden="true"
+              className={`inline-block transition-transform ${showHiddenSection ? "rotate-90" : ""}`}
+            >
+              ›
+            </span>
+            {hiddenCount} hidden athlete{hiddenCount === 1 ? "" : "s"}
+          </button>
+          {showHiddenSection && (
+            <ul className="divide-y divide-white/10">
+              {hiddenAthletes.map((row) => (
+                <li key={row.athlete_slug} className="flex items-center gap-3 py-3">
+                  <div className="min-w-0 flex-1">
+                    <div className="flex items-baseline gap-2">
+                      <span className="truncate text-lg font-bold">
+                        {row.last_name || row.name}
+                      </span>
+                      {row.bib && (
+                        <span className="text-ink-muted shrink-0 text-sm tabular-nums">
+                          #{row.bib}
+                        </span>
+                      )}
+                    </div>
+                  </div>
+                  <button
+                    type="button"
+                    onClick={() => handleUnhide(row.athlete_slug)}
+                    data-testid={`unhide-${row.athlete_slug}`}
+                    className="text-ink-muted min-h-[40px] min-w-[92px] shrink-0 rounded-md bg-white/10 px-3 py-2 text-sm font-semibold"
+                  >
+                    Unhide
+                  </button>
+                </li>
+              ))}
+            </ul>
+          )}
+        </section>
       )}
     </div>
   );
